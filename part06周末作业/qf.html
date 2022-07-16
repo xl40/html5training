@@ -18,7 +18,7 @@
         }
 
         .banner-part1-parent {
-            background-color: #c0b2b2;
+            background-color: #f6f6f6;
         }
 
         .banner-part1-sub {
@@ -28,17 +28,16 @@
         }
 
         .banner-part1-left {
+            margin: 5px 0;
+            color: #74657c;
+            font-size: 10px;
             float: left;
-        }
-
-        .banner-part1-right {
-            float: right;
         }
 
         /*    part2     */
         .banner-part2-parent {
-            border: 1px solid red;
-            height: 80px;
+            border: 2px solid #f0f0f0;
+            height: 90px;
         }
 
         .banner-part2-sub {
@@ -47,21 +46,13 @@
             height: 30px;
         }
 
-        .banner-part2-left {
-            float: left;
-            width: 100px;
-            height: 60px;
-            border: 2px solid black;
-        }
-
-        .banner-part2-right {
-            float: right;
-            width: 300px;
-            height: 60px;
-            border: 2px solid black;
-        }
-
         /*daohang*/
+        .daohang-sub {
+            height: 50px;
+            width: 1000px;
+            margin: auto;
+        }
+
         ul {
             list-style-type: none;
             margin: 0;
@@ -75,9 +66,7 @@
         }
 
         a:link, a:visited {
-            font-weight: bold;
             color: #FFFFFF;
-            /*background-color:#98bf21;*/
             text-align: center;
             padding: 6px;
             text-decoration: none;
@@ -88,17 +77,13 @@
             background-color: #ffffff;
         }
 
-        .daohang-sub {
-            width: 1000px;
-            margin: auto;
-        }
-
         .daohang-parent {
-            background-color: blue;
+            background-color: #008dd5;
         }
 
-        .lunbo {
-            height: 500px;
+        .banner-img {
+            height: 560px;
+            width: 100%;
             background-color: #794622;
         }
 
@@ -107,24 +92,23 @@
             zoom: 1;
             margin: auto;
             width: 1000px;
-            height: 200px;
-            background-color: bisque;
+            /*border: 1px blue solid;*/
         }
 
         .content1-1 {
-            border: white solid 1px;
+            /*overflow: hidden;*/
+            /*zoom: 1;*/
             width: 248px;
-            height: 150px;
+            height: 250px;
             float: left;
-            background-color: cornflowerblue;
+            /*border: 1px firebrick solid;*/
         }
 
         .content2-sub {
-            background-color: floralwhite;
-            margin: 10px auto;
+            background-color: white;
+            margin: 50px auto;
             width: 1000px;
-            height: 190px;
-            border: 1px solid red;
+            height: 200px;
         }
 
         .content2-left {
@@ -140,14 +124,13 @@
             margin: 20px;
             width: 700px;
             height: 150px;
-            background-color: #00AA88;
         }
 
         .content3-top {
             padding: 10px;
             margin: auto;
             width: 1000px;
-            height: 50px;
+            height: 80px;
             border-bottom: 1px solid #8f8a8a;
         }
 
@@ -168,48 +151,109 @@
         .content2-parent {
             overflow: hidden;
             zoom: 1;
-            height: 220px;
-            background-color: #8f8a8a;
+            height: 290px;
+            background-color: #f5f5f5;
         }
-        .content3-middle-sub-top{
+
+        .content3-middle-sub-top {
             height: 193px;
-            background-color: #8f8a8a;
+            background-color: #eaeaea;
         }
-        .content3-middle-sub-bottom{
+
+        .content3-middle-sub-bottom {
             height: 97px;
             background-color: #b4aeae;
             padding: 10px;
         }
-        .content3-top-left{
+
+        .content3-top-left {
             float: left;
         }
-        .content3-top-right{
+
+        .content3-top-right {
             float: right;
+        }
+
+        .wechat {
+            width: 60px;
+            height: 20px;
+            border-radius: 4px;
+            padding: 5px 0;
+            float: right;
+        }
+
+        .logo {
+            width: 190px;
+            height: 50px;
+            padding: 20px 0;
+        }
+
+        .slogan {
+            width: 410px;
+            height: 35px;
+            padding: 30px 0;
+            float: right;
+        }
+
+        .tu1 {
+            margin-inline: 80px;
+            margin-top: 80px;
+            width: 65px;
+            height: 75px;
+        }
+
+        .zi1 {
+            /*width: 200px;*/
+            /*height: 200px;*/
+            margin-left: 50px;
+            font-size: 20px;
+        }
+
+        .zi0 {
+            margin-left: 50px;
+        }
+
+        .laoshi {
+            margin: 50px 0 0 65px;
+            width: 95px;
+            height: 95px;
+            border-radius: 500px;
+        }
+
+        .laoshi-wenzi {
+            margin: 50px 0 0 85px;
+        }
+
+        .laoshi-wenzi2 {
+            height: 50px;
+            margin: 50px 0 0 80px;
+            background-color: #61a0fd;
+        }
+
+        .wenzi-mian {
+            margin-top: 50px;
+            font-size: 30px;
+        }
+        .wenzi-shushiwei{
+            color: red;
         }
     </style>
 </head>
 <body>
 <div class="container">
-
     <div class="banner-part1-parent">
         <div class="banner-part1-sub">
             <div class="banner-part1-left">
                 千峰教育-做有情怀、有良心，有品质的一流教育机构
             </div>
-            <div class="banner-part1-right">
-                wechat
-            </div>
+            <img class="wechat" src="images/wechat_logo.png" alt="" sizes="10px">
         </div>
     </div>
 
     <div class="banner-part2-parent">
         <div class="banner-part2-sub">
-            <div class="banner-part2-left">
-                千峰教育
-            </div>
-            <div class="banner-part2-right">
-                坚持面授品质，坚持良心教育
-            </div>
+            <img class="logo" src="images/logo.png" alt="">
+            <img class="slogan" src="images/slogan.png" alt="">
         </div>
     </div>
 
@@ -233,23 +277,39 @@
     </div>
 
     <div class="lunbo">
-        这是轮播图
+        <img class="banner-img" src="images/banner.png" alt="">
     </div>
     <div class="content">
         <div class="content1">
-            <div class="content1-1">六维全息课程</div>
-            <div class="content1-1">CREA 项目研发模型</div>
-            <div class="content1-1">百人讲师天团</div>
-            <div class="content1-1">学员就业均薪过万</div>
+            <div class="content1-1">
+                <img class="tu1" src="images/图标1.png" alt="">
+                <div class="zi0">课程体系颠覆升级</div>
+                <div class="zi1">六维全息课程</div>
+            </div>
+            <div class="content1-1">
+                <img class="tu1" src="images/图标2.png" alt="">
+                <div class="zi0">开创多学科联合项目</div>
+                <div class="zi1">CREA 项目研发模型</div>
+            </div>
+            <div class="content1-1">
+                <img class="tu1" src="images/图标3.png" alt="">
+                <div class="zi0">全程面授大咖云集</div>
+                <div class="zi1">百人讲师天团</div>
+            </div>
+            <div class="content1-1">
+                <img class="tu1" src="images/图标4.png" alt="">
+                <div class="zi0">就业薪资持续高稳</div>
+                <div class="zi1">学员就业均薪过万</div>
+            </div>
         </div>
 
         <div class="content2-parent">
             <div class="content2-sub">
-                <div class="content2-left">
-                    这里有图片
-                </div>
+                <img src="images/图标2-1.png" class="content2-left" alt="">
                 <div class="content2-right">
-                    HTML5 大前端开发
+                    <span>HTML5 大前端开发</span>
+                    <span>月薪：10-15K 查看就业情况</span>
+                    <span>全栈HTML5+web前端开发培训工程师体系课程，通过一系列由入门到实战项目系列由入门到实战项目系列由入门到实战项目系列由入门到实战项目系列由入门到实战项目系列，掌握前端工程师所需技能，学习前后端开发关键技术】特效高级实战、企业级应用，更有微信小程序开发，成为...</span>
                 </div>
 
             </div>
@@ -257,44 +317,52 @@
         <div class="content3">
             <div class="content3-top">
                 <div class="content3-top-left">
-                    面授名师
+                    <span class="wenzi-mian">面授名师</span>
                 </div>
                 <div class="content3-top-right">
-                    数十位总监级专家讲师全职授课，200 余位业内强师全程面授 >>
+                    <span class="wenzi-shushiwei">数十位总监级专家讲师全职授课，200 余位业内强师全程面授 >></span>
                 </div>
             </div>
 
             <div class="content3-middle">
                 <div class="content3-middle-sub">
                     <div class="content3-middle-sub-top">
-                        王老师
+                        <img class="laoshi" src="images/laoshi1.png" alt="">
+                        <span class="laoshi-wenzi">王老师</span>
+                        <span class="laoshi-wenzi2">原中科院计算所专家</span>
                     </div>
                     <div class="content3-middle-sub-bottom">
-                        11年从业经验
+                        11年从业经验，曾任北京市高校师资培训中心特邀讲师，多年担任北京市属高校师资培训工作
                     </div>
                 </div>
                 <div class="content3-middle-sub">
                     <div class="content3-middle-sub-top">
-                        王老师
+                        <img class="laoshi" src="images/laoshi2.png" alt="">
+                        <span class="laoshi-wenzi">罗老师</span>
+                        <span class="laoshi-wenzi2">微软中国项目负责人</span>
                     </div>
                     <div class="content3-middle-sub-bottom">
-                        11年从业经验
+                        10年多软件开发经验，7年多教学经验，精通Java企业平台技术、企业搜索引擎、Hadoop大数据、一级分布式架构、开发过山...
                     </div>
                 </div>
                 <div class="content3-middle-sub">
                     <div class="content3-middle-sub-top">
-                        王老师
+                        <img class="laoshi" src="images/laoshi3.png">
+                        <span class="laoshi-wenzi">杜老师</span>
+                        <span class="laoshi-wenzi2">移动类游戏奠基人</span>
                     </div>
                     <div class="content3-middle-sub-bottom">
-                        11年从业经验
+                        12年从业经验，火电厂燃烧优化系统项目负责人，移动端网棋牌游戏奠基人
                     </div>
                 </div>
                 <div class="content3-middle-sub">
                     <div class="content3-middle-sub-top">
-                        王老师
+                        <img class="laoshi" src="images/laoshi4.png">
+                        <span class="laoshi-wenzi">狄老师</span>
+                        <span class="laoshi-wenzi2">中科院项目负责人</span>
                     </div>
                     <div class="content3-middle-sub-bottom">
-                        11年从业经验
+                        10年从业经验，军队及中科院西安网络中心J2EE教育与研发负责人，山西省税务局软件开发培训讲师
                     </div>
                 </div>
             </div>
