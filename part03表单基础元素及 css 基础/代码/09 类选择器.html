@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo{
+            color: red;
+        }
+        .box{
+            font-size: 60px;
+        }
+        .demo.box{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+    类选择器
+        - 通过给元素起一个类名，在css内用类名去查找页面中的元素
+        - 语法
+            - HTML部分 <div class="demo"></div>
+            - CSS部分 .demo{ }
+        - 多个类
+            - 多个类名共用一个class属性，多个类名之间用空格隔开
+            - 多个类名同时使用语法：
+                - HTML部分 <div class="demo box"></div>
+                - CSS部分 .demo.box{ }
+     -->
+
+    <div>我是div1</div>
+    <div>我是div2</div>
+    <p class="demo box">我是段落1</p>
+    <div>
+        <p class="demo">我是div里面的段落</p>
+        <h1>我是第1个标题</h1>
+    </div>
+    <h1 class="demo">我是第2个标题</h1>
+    <p>我是段落2</p>
+    <div class="box">我是div3</div>
+    <p>我是段落3</p>
+    
+</body>
+</html>

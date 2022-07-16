@@ -1,0 +1,265 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>day02-HTML基础</title>
+<style>
+*{ margin:0; padding:0;}
+body{ padding: 30px; padding-top:10px; line-height: 35px; font-family: "微软雅黑";}
+h1,h2{padding: 20px 0;}
+h3{    background: #00AA88;
+    color: #FFFCF4;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0;
+    border-radius: 4px;
+    padding: 5px 0px 5px 15px;}
+p{ line-height: 40px;}
+ul li{ list-style: none;line-height: 40px;}
+span{ color: #199475; font-weight: 700; font-size:18px; display: block; border-radius: 4px; padding: 10px; font-size: 18px; padding-left: 0px;}
+em{ font-style: normal; color:red;}
+.other{ color:#044D22;}
+.oo{ color:red; display:inline; font-size:18px; font-weight:normal;}
+.marleft{ margin-left:30px;}
+.marbtom{ margin:15px 0; font-weight:600;}
+.borderbtm{ border-bottom: solid 1px #eee;
+				    padding-bottom: 15px;margin-bottom: 15px;}
+.textcon{
+	    margin: 10px 0;
+    border: solid 1px #ddd;
+    border-left-width: 6px;
+    padding: 10px;
+    border-radius: 4px;
+    border-color: #f60;
+	
+}
+</style>
+</head>
+
+<body>
+<div class="boxs">
+	<h1>day02-HTML基础</h1>
+    <h2 class="borderbtm">学习目标</h2>
+    <ul >
+   	  <li>1、本专业介绍、HTML相关概念，HTML发展历史</li>
+    	<li>2、WEB标准，W3C/WHATWG/ECMA相关概念</li>
+    	<li>3、相关软件的应用以及站点的创建</li>
+    	<li>4、HTML基本结构和HTML语法</li>
+    	<li>5、HTML常用标记</li>
+    </ul>
+    
+    <h3>一、本专业介绍、HTML相关概念，HTML发展历史</h3>
+    <div class="marleft">
+    <p><span>本专业介绍</span></p>
+  <p>移动前端/WEB前端</p>
+    <p><span>网站建站流程</span></p>
+    <p><img src="images/pic01.png"/></p>
+    </div>
+    <h3>二、WEB标准，W3C/WHATWG/ECMA相关概念</h3>
+    <div class="marleft">
+  <p><span>WEB标准组成</span></p>
+    <p><img src="images/pic02.png"/></p>
+    <p><img src="images/web.jpg"/></p>
+    
+    <p>组织解析：<br>
+      （1）W3C( World Wide Web Consortium )万维网联盟，创建于1994年是Web技术领域最具权威和影响力的国际中立性技术标准机构。<br>
+     <span class="oo">W3C (制定了结构(xhtml、xml)和表现(css)的标准，非赢利性的。)</span><br>
+      （2）ECMA(European Computer Manufactures Association)               欧洲电脑场商联合会。<br>
+<span class="oo">ECMA制定了行为(DOM(文档对象模型)，ECMAScript)标准</span></p>
+    <p>（3）WHATWG网页超文本应用技术工作小组是：</p>
+    <p>一个以推动网络HTML 5 标准为目的而成立的组织。在2004年，由Opera、Mozilla基金会和苹果这些浏览器厂商组成。<br>
+  </p>
+  <p><span>HTML及相关概念的介绍</span></p>
+  <p><span class="oo">HTML 指的是超文本标记语言 (Hyper Text Markup Language) www万维网的描述性语言。</span></p>
+  <p>XHTML指可扩展超文本标记语言（标识语言）（EXtensible HyperText Markup Language）是一种置标语言，表现方式与超文本标记语言（HTML）类似，不过语法上更加严格。</p>
+  <p>HTML5指的是HTML的第五次重大修改（第5个版本）(HTML5 是 W3C 与 WHATWG 合作的结果)<br>
+  </p>
+  <p><span>HTML发展历史</span></p>
+    <p><img src="images/pic03.png"/></p>
+    </div>
+    <h3>三、相关软件的应用以及站点的创建</h3>
+    <div class="marleft">
+      <p><b class="oo">1)站点的作用</b><br>
+            A/ 用来归纳一个网站上所有的网页、素材以及他们之间的联系<br>
+           B/  规划网站的所有内容和代码     整合资源<br>
+           <strong> 2)创建站点的步骤</strong><br>
+            创建网页所需各个文件夹 css、js、images<br>
+            <strong class="oo">3)文件的命名规则</strong><br>
+            A/ 件命名规则：用英文，不用中文<br>
+            B/ 名称全部用小写英文字母、数字、下划线的组合，其中不得包含汉字、空格和特殊字符；必须以英文字母开头。@#￥%……！   <br>
+            C/ 网站的首页必须命名为index.html不能使用shouye.html</p>
+      <p><strong>常用快捷键：</strong><br>
+        ctrl+s保存<br>
+        ctrl+shift+s另存为<br>
+        ctrl+c复制<br>
+        ctrl+v粘贴<br>
+        ctrl+x剪切<br>
+        ctrl+u首选参数<br>
+        f12在浏览器中预览<br>
+        ctrl+N新建<br>
+        ctrl+Z返回上一步
+        <br>
+      </p>
+  </div>
+    <h3>四、HTML基本结构和HTML基本语法</h3>
+    <div class="marleft">
+      <p><span>HTML基本结构</span></p>
+    <p><img src="images/pic06.png"/></p>
+    
+    <p><span>HTML的基本语法</span></p>
+      <blockquote class="textcon">
+      <p><strong class="oo">1、&lt;常规标记&gt;</strong>也叫双标记<br>
+&lt;标记  属性=“属性值”   属性=“属性值”&gt;&lt;/标记&gt;</p>
+      <p>标记也可叫标签或叫元素<br>
+        例如：&lt;head&gt;&lt;/head&gt;</p>
+      </blockquote>
+<blockquote class="textcon">
+      <p><strong class="oo">2.空标记</strong>也叫单标记<br>
+  &lt;标记 属性=“属性值”  /&gt;<br>
+  例如：&lt;meta charset=”utf-8”&gt;</p>
+  </blockquote>
+      <p><strong>说明：</strong><br>
+        1.写在&lt;&gt;中的第一个单词叫做标记，标签，元素。<br>
+        2.标记和属性用空格隔开，属性和属性值用等号连接，属性值必须放在“”号内。<br>
+        3.一个标记可以没有属性也可以有多个属性，属性和属性之间不分先后顺序。<br>
+        4.空标记没有结束标签，用“/”代替。<br>
+      </p>
+      </div>
+    <h3>五、HTML常用标记</h3>
+  <div class="marleft">
+      <p class="marbtom">1、文本标题（h1-h6）  </p>
+      <blockquote class="textcon">
+      <p>&lt;h1&gt;一级标题&lt;/h1&gt; <br>
+        &lt;h2&gt;二级标题&lt;/h2&gt; <br>
+        &lt;h3&gt;三级标题H3&lt;/h3&gt; <br>
+        &lt;h4&gt;四级标题H4&lt;/h4&gt; <br>
+        &lt;h5&gt;五级标题&lt;/h5&gt;<br>
+        &lt;h6&gt;六级标题&lt;/h6&gt;</p>
+      <p>注：文本标题标签自带加粗，有自己的文本大小，并且独占一行，有默认间距<br>
+      </p>
+      </blockquote>
+  <p class="marbtom">2、段落文本(p)  </p>
+      <blockquote class="textcon">
+      <p>&lt;p&gt;段落文本内容&lt;/p&gt;<br>
+        标识一个段落(段落与段落之间有段间距)</p>
+    </blockquote>
+        
+      <p class="marbtom">3、空格  </p>
+      <blockquote class="textcon">
+    <p>&amp;nbsp;<br>
+    所占位置没有一个确定的值,这与当前字体字号都有关系.</p>
+    </blockquote>
+      <p class="marbtom">4、换行(br) </p>
+      <blockquote class="textcon">
+      <p>&lt;br /&gt;<br>
+        换行是一个空标记(强制换行)</p>
+      
+    </blockquote>
+          <p><strong class="marbtom">5、水平线</strong> 
+          <blockquote class="textcon">  &nbsp;&nbsp;&nbsp;&lt;hr /&gt;空标记<br></blockquote>
+        <strong class="marbtom">6、加粗有两个标记</strong><br>
+        <blockquote class="textcon">
+        A、&lt;b&gt;加粗内容&lt;/b&gt;只是显示加粗<br>
+        B、&lt;strong&gt;强调的内容&lt;/strong&gt;突出的文本<br>
+        </blockquote>
+<strong class="marbtom">7、倾斜<br></strong>
+<blockquote class="textcon">
+<p>&lt;em&gt;强调文本&lt;/em&gt;</p>
+<p>&lt;i&gt;倾斜文本&lt;/i&gt;</p>
+
+</p>
+
+</blockquote>
+    <p><strong class="marbtom">8、</strong> 
+    扩展<blockquote class="textcon">
+      <p>&lt;u&gt;文本&lt;/u&gt;下划线      </p>
+      <p>&lt;s&gt;文本&lt;/s&gt;删除线      </p>
+      <p>&lt;del&gt;文本&lt;/del&gt;删除线</p>
+      <p>&lt;sub&gt;&lt;/sub&gt;下标</p>
+      <p>&lt;sup&gt;&lt;/sup&gt;上标<br>
+      </p>
+    </blockquote> 
+        <strong class="marbtom">9、列表(ul,ol,dl)</strong> 
+        <blockquote class="textcon">      
+    <p>HTML中有三种列表分别是：无序列表，有序列表，自定义列表<br>
+     	<div style="overflow:hidden;height:300px;">
+ <div style="float:left; height:220px; margin-right:30px; ">
+        *无序列表<br>
+        无序列表组成：<br>
+        &lt;ul&gt;(unordered list)<br>
+        	 &nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;/li&gt;<br>
+        ．．．．．．<br>
+        &lt;/ul&gt;<br>
+        </div>
+        <div style="float:left; height:220px; margin-right:30px; ">
+        *有序列表<br>
+        有序列表组成：<br>
+        &lt;ol&gt;(ordered list)<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;/li&gt;<br>
+        ．．．．．．<br>
+        &lt;/ol&gt;<br>
+        </div>
+        <div style="float:left; height:220px; margin-right:30px; overflow:hidden; ">
+        *自定义列表<br>
+        &lt;dl&gt;(definition list)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;dt&gt;名词&lt;/dt&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt;解释&lt;/dd&gt;<br>
+(definition  description)<br>
+．．．．．．<br>
+&lt;/dl&gt;<br>
+        <br>
+        </div> 
+        </div>
+        </p></blockquote>
+      <p><strong class="other">知识扩展2----有序列表的属性</strong><br>
+      <blockquote class="textcon">
+        1)、type:规定列表中的列表项目的项目符号的类型<br>
+        语法：&lt;ol type=&quot;a&quot;&gt;&lt;/ol&gt;<br>
+        1 数字顺序的有序列表（默认值）（1, 2, 3, 4）。<br>
+        a 字母顺序的有序列表，小写（a, b, c, d）。<br>
+        A 字母顺序的有序列表，大写（A,B,C,D)<br>
+        i 罗马数字，小写（i, ii, iii, iv）。<br>
+        I 罗马数字，大写（I, ii, iii, iv）。<br>
+        2)、start 属性规定有序列表的开始点。<br>
+语法：&lt;ol start=&quot;5&quot;&gt;&lt;/ol&gt;<br>
+      </p>
+      </blockquote>
+      <p class="marbtom">10、插入图片</p>
+      <blockquote class="textcon">
+      <p>&lt;img src=&quot;目标文件路径及全称&quot; alt=&quot;图片替换文本&quot; title=&quot;图片标题&quot; width=&quot;宽度&quot;  height=&quot;高度&quot;/&gt;<br>
+       <strong class="oo"> 注:所要插入的图片必须放在站点下</strong><br>
+        <strong class="oo">title的作用:图片的标题； </strong>在你鼠标悬停在该图片上时显示的提示文本，鼠标离开就没有了，HTML的绝大多数标签都支持title属性，title属性就是专门做提示信息的<br>
+      <strong class="oo"> alt的作用:</strong>提示文本 必写；alt属性是在你的图片因为某种原因不能加载时在页面显示的提示信息，它会直接输出在原本加载图片的地方。（第二个功能，优化图片的）</p>
+      <p><strong class="oo">*相对路径的写法：</strong><br>
+        1)当当前文件与目标文件在同一目录下，直接书写目标文件文件名+扩展名；&lt;img src=”q12.jpg”/&gt;<br>
+        2)当当前文件与目标文件所处的文件夹在同一目录下，写法如下：<br>
+        文件夹名/目标文件全称+扩展名；&lt;img src=”images/q12.jpg”/&gt;<br>
+        3)当当前文件所处的文件夹和目标文件所处的文件夹在同一目录下，写法如下：<br>
+        ../目标文件所处文件夹名/目标文件文件名+扩展名；<br>
+        &lt;img src=”../images/q12.jpg”/&gt;<br>
+        </p></blockquote>
+        
+    <strong class="marbtom">11、超链接的应用</strong></p>
+    <blockquote class="textcon">
+      <p>语法：<br>
+        &lt;a href=&quot;目标文件路径及全称/连接地址&quot; title=&quot;链接的标题&quot; target=&quot;_blank&quot;&gt;链接文本/图片&lt;/a&gt;<br>
+        &lt;a href=&quot;#&quot;&gt;&lt;/a&gt;空链接<br>
+        属性：target:页面打开方式，默认属性值_self。<br>
+        属性值：<strong class="oo">_blank 新窗口打开</strong><br>
+        &lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;新页面打开&lt;/a&gt;<br>
+      </p>
+    </blockquote>
+ 
+      </blockquote>
+  
+      
+      
+</div>
+<br />
+<br />
+<br />
+<br />
+</body>
+</html>

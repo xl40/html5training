@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 
+        - img 图片标签
+            - src 图片地址
+            - width 图片宽度
+            - height 图片高度
+            - title 悬浮提示框
+            - alt 文本替换，若图片正常显示，alt不显示，利于搜索引擎抓取图片关键词；若图片不正常显示，alt显示，利于文案提示
+        - 图片路径
+            - 相对路径：相对于自己目标文件的位置
+                - 与图片同级  ./1.jpg
+                - 与图片所在文件夹同级  ./images/1.jpg
+                - 所在文件夹与图片所在文件夹同级  ../images/1.jpg
+            - 绝对路径：硬盘上存在的路径（一般不用）
+                - 例如：file:///Users/zhangwenqing/Desktop/sh2205-%E4%B8%80%E9%98%B6%E6%AE%B5/day02%20HTML%E5%9F%BA%E7%A1%80/%E4%BB%A3%E7%A0%81/images/zhangyiming.jpg
+            - 网址：线上图片地址
+                - 例如：https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png
+     -->
+
+    <!-- 相对路径：html与图片所在文件夹同级 -->
+    <img src="./images/dilireba.jpg" width="300" height="400" title="迪丽热巴" alt="迪丽热巴漂亮">
+
+    <!-- 相对路径：html与图片同级  -->
+    <img src="./qiaobusi.jpg">
+
+    <!-- 绝对路径：硬盘上存在的路径 -->
+    <img src="file:///Users/zhangwenqing/Desktop/sh2205-%E4%B8%80%E9%98%B6%E6%AE%B5/day02%20HTML%E5%9F%BA%E7%A1%80/%E4%BB%A3%E7%A0%81/images/zhangyiming.jpg">
+
+    <!-- 网址：线上图片地址 -->
+    <img src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png">
+    
+</body>
+</html>

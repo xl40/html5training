@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        background-attachment 背景图片的固定和滚动
+            - scroll 默认值，滚动
+            - fixed 固定，默认在浏览器窗口左上角，以浏览器窗口为参照物
+        */
+        .box{
+            width: 500px;
+            height: 2000px;
+            border: 5px solid red;
+            background-image: url(./images/photo.jpg);
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+    
+</body>
+</html>

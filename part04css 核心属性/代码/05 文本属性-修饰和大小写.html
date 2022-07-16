@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        text-decoration 文本修饰线
+            - underline 下划线 u
+            - line-through 中划线 del/s
+            - overline 上划线
+            - none 取消修饰线
+        text-transform 检索字符大小写
+            - capitalize 单词的首字母大写
+            - uppercase 全大写
+            - lowercase 全小写
+            - none 不转换
+        */
+        h1{
+            font-size: 60px;
+            text-decoration: underline;
+            text-decoration: line-through;
+            text-decoration: overline;
+        }
+        u,del,s{
+            text-decoration: none;
+        }
+        .text1{
+            text-transform: uppercase;
+            text-transform: lowercase;
+            text-transform: capitalize;
+            text-transform: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>我是标题一</h1>
+    <u>u下划线标签</u>
+    <del>del删除</del>
+    <s>s删除</s>
+    <div class="text1">How are you</div>
+    
+</body>
+</html>

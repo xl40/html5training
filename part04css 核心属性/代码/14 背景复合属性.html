@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        背景复合属性
+            - background: url(./images/aixin.png) no-repeat 100px 50px fixed yellow;
+            - 背景：图片路径 是否平铺 水平位置 垂直位置 是否固定 背景颜色
+            - 注意事项：
+                - 复合属性可以取一个值，但是这行代码放在最后会覆盖前面的单一属性
+                - 可以跟少量值或者6个值
+        */
+        .box{
+            width: 500px;
+            height: 300px;
+            border: 2px solid red;
+            /* background-image: url(./images/aixin.png);
+            background-repeat: no-repeat;
+            background-position: 100px 50px;
+            background-attachment: fixed;
+            background-color: yellow; */
+
+            background: url(./images/aixin.png) no-repeat 100px 50px fixed yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+    
+</body>
+</html>

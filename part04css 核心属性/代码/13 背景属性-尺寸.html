@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        background-size 背景图片的尺寸
+            - cover 覆盖，等比例缩放到图片铺满盒子，容易出现裁剪效果
+            - contain 包含，等比例缩放到撑满某一个方向为止，容易出现留白区域
+            - 一个值x，背景图宽度为x，高度等比例缩放
+            - 两个值x y，x为背景图的宽度，y为背景图的高度
+            - 百分比，背景图片的宽高是模块宽高的百分比
+        */
+        .box{
+            width: 500px;
+            height: 300px;
+            border: 3px solid red;
+            background-image: url(./images/photo.jpg);
+            background-repeat: no-repeat;
+            background-size: 100px 200px;
+            background-size: 50% 50%;
+            background-size: contain;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+    
+</body>
+</html>

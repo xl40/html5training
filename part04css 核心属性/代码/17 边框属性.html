@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        1. border-width 边框宽度
+
+        2. border-style 边框样式
+            - solid 单实线
+            - double 双实线
+            - dashed 虚线
+            - dotted 点状线
+        
+        3. border-color 边框颜色
+
+        4. 边框复合属性
+            - border:10px solid red;
+            - 边框：宽度  样式  颜色;
+        
+        5. 边框方向
+            - border-top 上边框
+            - border-left 左边框
+            - border-bottom 下边框
+            - border-right 右边框
+        */
+        .box{
+            width: 500px;
+            height: 300px;
+            background-color: yellow;
+            /* border-width: 10px;
+            border-style: dashed;
+            border-color: red; */
+            /* border: 10px dashed red; */
+            border-top: 5px solid red;
+            border-left: 10px dashed blue;
+            border-bottom: 10px dotted orange;
+            border-right: 10px double deeppink;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+    
+</body>
+</html>
