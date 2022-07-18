@@ -40,7 +40,26 @@ ul, ol {
     margin-top: 5px;
 }
 
+.header{
+    width: 1200px;
+    margin:  0 auto;
+    /*border: 2px solid red;*/
+}
 
+.logo{
+    float: left;
+    width: 205px;
+    height: 90px;
+    background: url("../images/logo.png");
+    /*border: 2px blue solid;*/
+    text-indent: -9999px;
+}
+
+.add{
+    float: right;
+    width: 420px;
+    height: 90px;
+}
 
 
 
