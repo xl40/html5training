@@ -66,17 +66,24 @@ ul, ol {
     height: 90px;
 }
 
+.nav{
+    background-color: #e78c16;
+}
 
+.navcon{
+    width: 1200px;
+    margin: 0 auto;
+    height: 50px;
+}
 
+.navcon li{
+    float: left;
+    line-height: 50px;
+    margin-right: 47px;
 
+}
 
-
-
-
-
-
-
-
-
-
-
+.navcon li a {
+    color: #f6f6f6;
+    font-size: 14px;
+}
