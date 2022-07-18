@@ -93,3 +93,27 @@ ul, ol {
     background: url("../images/banner.png") no-repeat center;
     background-size: cover;
 }
+
+.first{
+    width: 1200px;
+    margin:  0 auto;
+    margin-top: 45px;
+}
+.first dl{
+    width: 298px;
+    float: left;
+    border: 1px red solid;
+    text-align: center;
+}
+
+.first dl dd{
+    font-size: 16px;
+    font-weight: bold;
+    color: #999;
+}
+
+.first dl dd span{
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
