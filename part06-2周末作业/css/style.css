@@ -100,9 +100,9 @@ ul, ol {
     margin-top: 45px;
 }
 .first dl{
-    width: 298px;
+    width: 300px;
     float: left;
-    border: 1px red solid;
+    /*border: 1px red solid;*/
     text-align: center;
 }
 
@@ -117,3 +117,45 @@ ul, ol {
     font-weight: bold;
     color: #333;
 }
+
+.second{
+    background-color: #f5f5f5;
+    margin-top: 25px;
+    padding: 45px 0 45px 0 ;
+}
+
+.secondcon{
+    width: 1015px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+}
+
+.secondimg{
+    float: left;
+    width: 276px;
+    height: 156px;
+    margin-right: 24px;
+}
+
+.secondcon dl{
+    float: right;
+    width: 715px;
+    line-height: 24px;
+}
+
+.secondcon dl dt{
+    font-size: 16px;
+}
+.secondcon dl dd{
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.secondcon dl dd strong{
+    color: #1ea151;
+}
+.secondcon dl dd span{
+    color: #666666;
+}
+
