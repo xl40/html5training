@@ -139,3 +139,10 @@ ul,ol{
 .img-logo{
     float: left;
 }
+
+.add-border{
+    float: right;
+    width: 330px;
+    height: 325px;
+    border-bottom: 2px red solid;
+}
