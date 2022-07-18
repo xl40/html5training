@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    width: 1200px;
+    height: 400px;
+    /*border: 1px solid red;*/
+    overflow: auto;
+    zoom: 1;
+    margin: 0 auto;
+}
+
+.box{
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 10px;
+}
+
+.top{
+    height: 150px;
+    background-color: #aba6a6;
+    overflow: hidden;
+}
+.top p{
+    float: left;
+    color: white;
+    margin: 20px 0 0 30px;
+    line-height: 50px;
+}
+
+.box p{
+    text-align: center;
+    line-height: 50px;
+}
