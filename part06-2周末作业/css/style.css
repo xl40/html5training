@@ -159,3 +159,21 @@ ul, ol {
     color: #666666;
 }
 
+.title{
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 60px;
+    border-bottom: 1px solid #cccccc;
+    margin-top: 10px;
+}
+
+.titleleft{
+    float: left;
+    font-size: 22px
+;
+}
+.titleright{
+    float: right;
+    font-size: 18px;
+    color: red;
+}
