@@ -60,7 +60,7 @@ ul, ol {
 }
 
 .logo a {
-    border: 1px red solid;
+    /*border: 1px red solid;*/
     display: block;
     width: 205px;
     height: 90px;
