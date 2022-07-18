@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-a {
+a, u, del, s {
     text-decoration: none;
 }
 
@@ -20,3 +20,7 @@ ul, ol {
     list-style: none;
 }
 
+.over{
+    overflow: hidden;
+    zoom: 1;
+}
