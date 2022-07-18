@@ -10,7 +10,7 @@
 
 .top{
     height: 36px;
-    background-color: #e78c16;
+    background-color: snow;
 }
 
 .topcon{
@@ -28,4 +28,24 @@
 .topright{
     float: right;
     margin-top: 5px;
+}
+
+.header{
+    border: 1px solid red;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header-left{
+    float: left;
+    background: url("../images/logo.png");
+    width: 205px;
+    height: 90px;
+    text-indent: -999999px;
+}
+
+.header-right{
+    float: right;
+    width: 420px;
+    height: 90px;
 }
