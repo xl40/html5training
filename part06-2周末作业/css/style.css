@@ -87,3 +87,9 @@ ul, ol {
     color: #f6f6f6;
     font-size: 14px;
 }
+
+.banner{
+    height: 560px;
+    background: url("../images/banner.png") no-repeat center;
+    background-size: cover;
+}
