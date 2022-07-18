@@ -3,24 +3,56 @@
     margin: 0;
     padding: 0;
 }
-
 a, u, del, s {
     text-decoration: none;
 }
-
 strong, b {
     font-weight: normal;
 }
-
 em, i {
     font-style: normal;
 }
-
 ul, ol {
     list-style: none;
 }
-
 .over{
     overflow: hidden;
     zoom: 1;
 }
+/*top*/
+.top{
+    height: 36px;
+    background-color: #f6f6f6;
+    border-bottom: 1px solid #f2f2f2;
+}
+.topcon{
+    width: 1200px;
+    margin: auto;
+}
+.topleft{
+    float: left;
+    font-size: 14px;
+    color: #666666;
+    line-height: 36px;
+}
+.topright{
+    float: right;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
