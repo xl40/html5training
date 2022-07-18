@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+            test-overflow 文本溢出处理
+                - clip 裁剪
+                - ellipsis 显示三个圆点
+
+            单行文本省略号
+                - 设置宽度 width width: 200px;
+                - 文本不换行 white-space: nowrap;
+                - 文本溢出隐藏 overflow: hidden;
+                - 文本后显示三个小圆点 text-overflow: ellipsis;
+        */
+        li{
+            border: 1px solid red;
+            width: 200px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>联播+ 7月12日至15日，习近平总书记时隔八年再次考察新疆。他先后来到乌鲁木齐、石河子、吐鲁番等地，深入学校、国际陆港区、社区、博物馆、农村和新疆生产建设兵团等进行调研。</li>
+    <li>他先后来到乌鲁木齐、石河子、吐鲁番等地，深入学校、国际陆港区、社区、博物馆、农村和新疆生产建设兵团等进行调研。</li>
+    <li>联播+ 7月12日至15日，习近平总书记时隔八年再次考察新疆。</li>
+    <li>联播</li>
+    <li>联播+ 7月12日至15日，习近平总书记时隔八年再次考察新疆。他先后来到乌鲁木齐、石河子、吐鲁番等地，深入学校、国际陆港区、社区、博物馆、农村和新疆生产建设兵团等进行调研。</li>
+    <li>联播+ 7月12日至15日，习近平总书记时隔八年再次考察新疆。他先后来到乌鲁木齐、石河子、吐鲁番等地，深入学校、国际陆港区、社区、博物馆、农村和新疆生产建设兵团等进行调研。</li>
+</ul>
+</body>
+</html>

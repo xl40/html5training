@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+            多行文本省略号
+                - 设置宽高 width height 行高* 行数
+                - 设置弹性伸缩盒子 display：-webkit-box
+                - 垂直排列子元素
+                - 文本显示行数
+                - 文本溢出隐藏
+        */
+        .box {
+            border: 1px solid red;
+            line-height: 40px;
+            width: 400px;
+            height: 120px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    联播+ 7月12日至15日，习近平总书记时隔八年再次考察新疆。
+    他先后来到乌鲁木齐、石河子、吐鲁番等地，深入学校、国际陆港区、社区、博物馆、农村和新疆生产建设兵团等进行调研。
+    联播+ 7月12日至15日，习近平总书记时隔八年再次考察新疆。他先后来到乌鲁木齐、石河子、吐鲁番等地，深入学校、国际陆港区、社区、博物馆、农村和新疆生产建设兵团等进行调研。
+</div>
+
+</body>
+</html>
