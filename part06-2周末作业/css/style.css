@@ -43,7 +43,6 @@ ul, ol {
 .header{
     width: 1200px;
     margin:  0 auto;
-    /*border: 2px solid red;*/
 }
 
 .logo{
@@ -51,7 +50,6 @@ ul, ol {
     width: 205px;
     height: 90px;
     background: url("../images/logo.png");
-    /*border: 2px blue solid;*/
     text-indent: -9999px;
 }
 
