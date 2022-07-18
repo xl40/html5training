@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* 
+        外边距均分
+            - 让该元素在父元素内水平居中
+            - margin:0 auto; 0代表上下边距为0，auto左右边距均分
+    */
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: yellowgreen;
+            margin: 0 auto;
+        }
+        .box2{
+            width: 500px;
+            height: 500px;
+            background-color: orange;
+        }
+        .small{
+            width: 100px;
+            height: 100px;
+            background-color: deeppink;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box1"></div>
+
+    <div class="box2">
+        <div class="small"></div>
+    </div>
+    
+</body>
+</html>

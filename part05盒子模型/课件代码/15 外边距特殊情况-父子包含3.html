@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* 
+    父子包含
+        - 给子元素添加上外边距的时候会作用到父元素上
+        - 解决方法
+            - 给子元素或父元素添加浮动
+    */
+        .big{
+            width: 500px;
+            height: 500px;
+            background-color: yellowgreen;
+            float: left;
+        }
+        .small{
+            width: 200px;
+            height: 200px;
+            background-color: deeppink;
+            margin-top: 50px;
+            /* float: left; */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="big">
+        <div class="small"></div>
+    </div>
+    
+</body>
+</html>

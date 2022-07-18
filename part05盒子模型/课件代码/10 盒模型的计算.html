@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+    /* 
+    盒模型的计算
+        - 组成部分：
+            - 四部分组成：内容width/height，内边距padding，边框border，外边距margin
+        - 计算方式
+            - W3C官方盒模型（标准盒模型）
+                - 实际的宽度 = width+左右padding+左右border+左右margin
+                - 实际的高度 = height+上下padding+上下border+上下margin
+            - IE怪异盒模型
+                - 实际的宽度 = width（包括内容、边框和内边距）+左右margin
+                - 实际的高度 = height（包括内容、边框和内边距）+上下margin
+        - box-sizing 盒模型转成怪异盒模型
+            - content-box（内容盒子，W3C官方盒子），默认
+            - border-box（边框盒子，IE怪异盒子）
+    */
+        .box{
+            width: 300px;
+            height: 300px;
+            border: 20px solid #ccc;
+            padding: 30px;
+            /* margin: 50px; */
+            box-sizing: content-box;
+        }
+        .box2{
+            width: 300px;
+            height: 300px;
+            border: 20px solid #ccc;
+            padding: 30px;
+            /* margin: 50px; */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">123</div>
+    <div class="box2">456</div>
+    
+</body>
+</html>
