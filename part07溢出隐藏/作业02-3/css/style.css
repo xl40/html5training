@@ -186,7 +186,7 @@ img {
 
 .lowermid{
     margin-left: 55px;
-    background-color: #7d7df5;
+    /*background-color: #7d7df5;*/
     width: 420px;
     float: left;
 }
@@ -215,7 +215,7 @@ img {
     text-overflow: ellipsis;
 }
 
-.lowerleft ul{
+.lowerleft,.lowermid ul{
     font-size: 12px;
 }
 
@@ -223,3 +223,31 @@ img {
     color: #666666;
 }
 
+
+.p19 {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.p-date {
+    font-size: 12px;
+}
+
+.lowermind-content-left{
+    color: white;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    background-color: #af0202;
+    float: left;
+}
+.lowermind-content-right{
+    float: right;
+    font-size: 12px;
+    width: 345px;
+    height: 60px;
+    margin-top: 10px;
+}
+.lowermind-content-right strong{
+    font-weight: bold;
+}
