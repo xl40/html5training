@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .nav{
+            width: 900px;
+            margin: 0 auto;
+            height: 50px;
+            margin-top: 100px;
+            background-color: yellowgreen;
+        }
+        .nav a{
+            text-decoration: none;
+            font-size: 14px;
+            color: #fff;
+        }
+        .nav > li{
+            width: 148px;
+            float: left;   
+            text-align: center;
+            line-height: 50px;
+        }
+        .nav > li > ul > li{
+            background-color: orange;
+            border-bottom: 1px solid #fff;
+            line-height: 35px;
+        }
+        .nav > li > ul{
+            display: none;
+        }
+        .nav > li:hover > ul{
+            display: block;
+        }
+        .nav > li:hover{
+            background-color: orange;
+        }
+        .nav > li > ul > li:hover{
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <ul class="nav">
+        <li><a href="#">首页</a></li>
+        <li>
+            <a href="#">关于我们</a>
+            <ul>
+                <li><a href="#">关于我们1</a></li>
+                <li><a href="#">关于我们2</a></li>
+                <li><a href="#">关于我们3</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">新闻中心</a>
+            <ul>
+                <li><a href="#">新闻中心1</a></li>
+                <li><a href="#">新闻中心2</a></li>
+                <li><a href="#">新闻中心3</a></li>
+            </ul>
+        </li>
+        <li><a href="#">经典案例</a></li>
+        <li><a href="#">联系我们</a></li>
+        <li><a href="#">加入我们</a></li>
+    </ul>
+    
+</body>
+</html>
