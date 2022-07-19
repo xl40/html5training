@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box2{
+            width: 200px;
+            height: 40px;
+            background-color: orange;
+            text-align: center;
+            color: white;
+            line-height: 40px;
+        }
+        .box2 span {
+            width: 0;
+            height: 0;
+            display: inline-block;
+            border: 5px solid transparent;
+            border-top: 5px solid #FFFCF4;
+            margin-top: 5px;
+        }
+
+        .box2:hover span{
+            border: 5px solid transparent;
+            border-bottom: 5px solid #FFFCF4;
+        }
+
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+<div class="box2">请选择 <span></span></div>
+</body>
+</html>
