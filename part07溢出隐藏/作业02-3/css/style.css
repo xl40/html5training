@@ -104,3 +104,23 @@ img {
     height: 98px;
     text-indent: -999px;
 }
+
+.nav{
+    background-color: #d92b34;
+}
+
+.nav ul{
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #c8141f;
+}
+
+.nav ul li{
+    float: left;
+    line-height: 45px;
+    margin: 0 17px;
+}
+
+.nav ul li a {
+    color: white;
+}
