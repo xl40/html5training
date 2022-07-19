@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+            图片与下面块元素产生缝隙：
+                - 原因：元素显示类型不一致，图片与基线对齐，基线是英文格子的第三条线
+                - 方法：
+                    - display:block;
+                    - vertical-align:top;
+                    - float:left;
+        */
+        img {
+            width: 200px;
+            vertical-align: top;
+            /*display: block;*/
+            /*float: left;*/
+        }
+
+        div {
+            width: 500px;
+            height: 200px;
+            background-color: orange;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<img src="img.png" alt="">
+jpg
+<div></div>
+</body>
+</html>
