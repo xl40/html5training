@@ -175,7 +175,6 @@ img {
 }
 
 .lowerleft{
-    background-color: #f57979;
     width: 270px;
     float: left;
 }
@@ -206,3 +205,21 @@ img {
     margin-top: 50px;
     font-size: 16px;
 }
+
+.p1-1{
+    width: 190px;
+    font-size: 12px;
+    margin:  0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.lowerleft ul{
+    font-size: 12px;
+}
+
+.lowerleft ul span{
+    color: #666666;
+}
+
