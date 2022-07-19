@@ -124,3 +124,47 @@ img {
 .nav ul li a {
     color: white;
 }
+
+.content{
+    background: #e6e6e6;
+}
+
+.banner{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.banleft{
+    width: 669px;
+    height: 328px;
+    float: left;
+}
+
+.banright{
+    width: 261px;
+    height: 308px;
+    float: right;
+    background-color: #eeeeee;
+    padding: 20px 35px 0 35px;
+}
+
+.news li {
+    border-bottom: 1px dashed #ccc;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.news li a {
+    font-weight: bold;
+}
+.news li span{
+    color: #999;
+}
+.more{
+    text-align: right;
+    margin-top: 15px;
+    font-size: 14px;
+}
+.more a {
+    color: #999999;
+}
