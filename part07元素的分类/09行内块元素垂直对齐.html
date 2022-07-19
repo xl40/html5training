@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+            vertical-align 行内块元素的垂直对齐效果，注意跟着文本行高走
+                - baseline 默认，基线对齐
+                - top 顶线对齐
+                - middle 中线对齐
+                - bottom 底线对齐
+        */
+        .box{
+            width: 500px;
+            height: 500px;
+            background-color: yellowgreen;
+            line-height: 120px;
+        }
+
+        .box img{
+            vertical-align: baseline;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="img.png" alt="">
+        一些文字
+    </div>
+</body>
+</html>
