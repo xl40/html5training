@@ -181,13 +181,14 @@ img {
 }
 
 .lowermid{
+    margin-left: 55px;
     background-color: #7d7df5;
-    width: 265px;
+    width: 420px;
     float: left;
 }
 
 .lowerright{
     background-color: #83f583;
-    width: 265px;
+    width: 240px;
     float: right;
 }
