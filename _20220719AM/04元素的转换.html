@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    /*
+       display 控制元素的显示类型
+        - inline 行内元素
+        - block 块级元素
+        - inline-block 行内块元素
+        - none 隐藏元素
+       如何让一个元素识别宽高
+        - display:block/inline-block
+        - 添加浮动 float
+        - 添加定位 position
+        - 让父元素变成弹性盒子 display:flex;
+
+     */
+    .box1{
+        width: 200px;
+        height: 200px;
+        border: red 4px solid;
+        display: block;
+    }
+    .box2{
+        width: 200px;
+        height: 200px;
+        border: blue 4px solid;
+        display: inline-block;
+    }
+
+    .box3{
+        width: 200px;
+        height: 200px;
+        border: red 4px solid;
+        /*转为行元素 不识别宽高*/
+        display: inline;
+    }
+    .box4{
+        width: 200px;
+        height: 200px;
+        border: orange 4px solid;
+        /*隐藏*/
+        display: none;
+    }
+
+    .big{
+        width: 600px;
+        height: 400px;
+        border: 4px red solid;
+    }
+
+    .small1,.small2,.small3{
+        width: 100px;
+        height: 100px;
+        border: 2px blue solid;
+        float: left;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <hr>
+    <div class="box2"></div>
+    <hr>
+    <div class="box3"></div>
+    <hr>
+    <div class="box4"></div>
+
+    <br><br><br><br>
+
+    <div class="big">
+        <div class="small1"></div>
+        <div class="small2"></div>
+        <div class="small3"></div>
+    </div>
+
+</body>
+</html>
