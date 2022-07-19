@@ -192,7 +192,7 @@ img {
 }
 
 .lowerright{
-    background-color: #83f583;
+    /*background-color: #83f583;*/
     width: 240px;
     float: right;
 }
@@ -250,4 +250,30 @@ img {
 }
 .lowermind-content-right strong{
     font-weight: bold;
+}
+.img-2{
+    width: 240px;
+    height: 270px;
+    margin-top: 40px ;
+}
+
+.xinxi{
+    width: 250px;
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #666666;
+}
+
+.xinxi span{
+    margin-right: 5px;
+}
+
+.wangjimima{
+    margin-top: 79px;
+    font-size: 12px;
+}
+
+.topright{
+    margin-top: 30px;
+    float: left;
 }
