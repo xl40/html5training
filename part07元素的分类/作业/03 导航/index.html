@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, ul, li, form{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .top{
+            width: 980px;
+            margin: 30px auto;
+            background: url(./images/bg1.jpg) repeat-x;
+            height: 53px;
+            border-bottom: 2px solid #b30909;
+        }
+        .nav{
+            float: left;
+            
+        }
+        .nav li{
+            float: left;
+            border-right: 1px solid #0f0f0f;
+        }
+        .nav li a{
+            display: block;
+            line-height: 53px;
+            padding: 0 20px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+        }
+        .nav li.current a,.nav li a:hover{
+            background: url(./images/bg2.jpg) repeat-x;
+        }
+        .search{
+            float: right;
+            width: 195px;
+            height: 25px;
+            border: 1px solid #000;
+            background-color: #0d0d0d;
+            border-radius: 5px;
+            margin: 13px 19px 0 0;
+        }
+        .text{
+            float: left;
+            width: 150px;
+            height: 25px;
+            line-height: 25px;
+            color: #fff;
+            background-color: transparent;
+            font-size: 14px;
+            padding-left: 10px;
+            border: 0;
+        }
+        .submit{
+            float: right;
+            width: 28px;
+            height: 25px;
+            background: url(./images/icon.jpg) no-repeat center;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="top">
+        <ul class="nav">
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+        <form action="#" class="search">
+            <input type="text" value="Search our website" class="text">
+            <input type="submit" value="" class="submit">
+        </form>
+    </div>
+
+</body>
+</html>

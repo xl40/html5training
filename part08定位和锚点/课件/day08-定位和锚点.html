@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>day08-定位和锚点</title>
+<style>
+*{ margin:0; padding:0;}
+body{ padding: 30px; padding-top:10px; line-height: 35px; font-family: "微软雅黑";}
+h1,h2{padding: 20px 0;}
+h3{    background: #00AA88;
+    color: #FFFCF4;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0;
+    border-radius: 4px;
+    padding: 5px 0px 5px 15px;}
+p{ line-height: 40px;}
+ul li{ list-style: none;line-height: 40px;}
+span{ color: #199475; font-weight: 700; font-size:18px; display: block; border-radius: 4px; padding: 10px; font-size: 18px; padding-left: 0px;}
+em{ font-style: normal; color:red;}
+.other{ color:#044D22;}
+.oo{ color:red; display:inline; font-size:18px; font-weight:normal;}
+.marleft{ margin-left:30px;}
+.marbtom{ margin:15px 0; font-weight:600;}
+.borderbtm{ border-bottom: solid 1px #eee;
+				    padding-bottom: 15px;margin-bottom: 15px;}
+.textcon{
+	    margin: 10px 0;
+    border: solid 1px #ddd;
+    border-left-width: 6px;
+    padding: 10px;
+    border-radius: 4px;
+    border-color: #f60;
+	
+}
+.oos{ color:#000; font-weight:800;}
+</style>
+</head>
+
+<body>
+<div class="boxs">
+	<h1>day08-定位和锚点</h1>
+    <h2 class="borderbtm">学习目标</h2>
+    <ul >
+    	<li>1、position 定位属性和属性值</li>
+        <li>2、定位元素的层级属性</li>
+    	<li>3、包含块的概念和应用</li>
+    	<li>4、锚点连接的语法和应用场景</li>
+    	<li>5、透明属性的应用</li>
+  </ul>
+    <h3>一、position 定位属性和属性值</h3>
+    <div class="marleft">
+      <p><strong class="oo">position 定位属性，检索对象的定位方式；</strong><br>
+        语法：position：static /absolute/relative/fixed/sticky/unset/inherit(未设置是inherit和initial的结合)/initial(最初的，初始的)<br>
+        取值：<br>
+        1、static：默认值，无特殊定位，对象遵循HTML原则；<br>
+      2、absolute：绝对定位，将对象从文档流中完全拖离出来，使用left/right/top/bottom等属性相对其最接近的一个并有定位设置的</p>
+      <p>父元素进行绝对定位；如果不存在这样的父对象，则依据《浏览器》进行定位，而其层叠通过z-index属性定义<br>
+        3、relative ：相对定位遵循正常的文档流，将依据right，top，left，bottom（相对定位）等属性在正常文档流中相对自身位置进行偏移；其层叠通过z-index属性定义.<br>
+      4、fixed：(固定定位)，类似于绝对定位的方式，但是它的参照物是浏览器的“可视”窗口，且脱离标准文档流；      </p>
+      <p>5、sticky：(粘性定位) 相对离自己最近且有滚动条的父元素做的定位</p>
+      <p>粘性定位，该定位是相对定位和固定定位的结合，在跨越特定阈值前类似相对定位，之后类似固定定位。      </p>
+      </p>
+    </div>
+    <h3>二、定位元素的层级属性</h3>
+    <div class="marleft">
+      <p class="oo">z-index : auto |number</p>
+      <p class="oo">设置定位对象的层叠顺序。<br>
+        auto：默认值。遵循结构，后写的定位元素层的顺序靠上。<br>
+        number:无单位的整数值。可为负数，数值越大，层的顺序越靠上<br>
+      </p>
+      <p>说明：<br>
+      此属性仅仅作用于 position 属性值 relative 或 absolute,fixed ，sticky的对象。</p>
+      <p></p>
+    </div>
+    <h3>三、包含块的概念及作用</h3>
+    <div class="marleft">
+      <p><strong class="oo">包含块是绝对定位的基础，包含块就是为绝对定位元素提供坐标，偏移和显示范围的参照物，即确定绝对定位的偏移起点和百分比 长度的参考；</strong><br>
+        默认状态下，浏览器是一个大的包含块，所有绝对定位的元素都是根据窗口来定自己所处的位置和百分比大小的显示的，如果我们定义了包含元素为包含元素块以后，对于被包含的绝对定位元素来说，就会根据最接近的具有定位功能的上级包含元素来定位自己的显示位置。<br>
+        <strong class="oo">定义元素为包含块：给绝对定位元素的父元素添加声明position：relative；</strong></p>
+      <p>如果我们的父素设置了position:absolute;那么子元素也会相对父元素来定义自己的位置。</p>
+      <p class="oo">绝对和相对定位的区别</p>
+      <p>1、参照物不同，绝对定位（absolute）的参照物是包含块（父级），相对定位的参照物是元素本身位置；</p>
+      <p>2、绝对定位将对象从文档流中拖离出来因此不占据空间，相对定位不破坏正常的文档流顺序无论是否进行移动，元素仍然占据原来的空间。<br>
+      </p>
+    </div>
+    <h3>四、锚点连接的语法和应用场景</h3>
+    <div class="marleft">
+      <p><strong class="oo">命名锚点的作用：在同一页面内的不同位置进行跳转。</strong><br>
+      锚点链接语法：<br>
+        1)给元素定义命名锚记名<br>
+        语法：&lt;标记   id=&quot;命名锚记名&quot;&gt;    &lt;/标记&gt;<br>
+        2)命名锚记连接<br>
+        语法：&lt;a href=&quot;#命名锚记名称&quot;&gt;链接文本或图片&lt;/a&gt;<br>
+      </p>
+</div>
+    <h3>五、透明写法</h3>
+    <div class="marleft">
+      <p>IE9以下浏览器写法：filter:alpha(opacity=value);取值范围 0-100之间的整数值<br>
+      兼容其他浏览器写法：opacity:0.5;&nbsp;&nbsp;&nbsp;&nbsp;(value的取值范围0-1     0.1,0.2,0.3-----0.9---1)</p>
+      <p>rgba(255,255,0,0.5)(最后一位值表示透明，取值范围0-1) 只支持IE8以上的浏览器<br>
+      </p>
+    </div>
+
+    
+<div style="     width: 130px;
+    height: 45px;
+    line-height: 44px;
+    text-align: center;
+    color: #f00;
+    background: #000;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 50px;
+    cursor:pointer;
+    right: 10px; "><a href="#" style="color:#f00; text-decoration:none;">返回顶部</a></div>
+
+
+</body>
+</html>
