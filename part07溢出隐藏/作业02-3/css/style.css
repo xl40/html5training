@@ -168,3 +168,26 @@ img {
 .more a {
     color: #999999;
 }
+
+.lower{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.lowerleft{
+    background-color: #f57979;
+    width: 265px;
+    float: left;
+}
+
+.lowermid{
+    background-color: #7d7df5;
+    width: 265px;
+    float: left;
+}
+
+.lowerright{
+    background-color: #83f583;
+    width: 265px;
+    float: right;
+}
