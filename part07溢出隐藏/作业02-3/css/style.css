@@ -1,54 +1,58 @@
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-a{
-    text-decoration: none; color: black;
+a {
+    text-decoration: none;
+    color: black;
 }
-strong,b {
+strong, b {
     font-weight: normal;
 }
-
-em,i{font-style: normal}
-
-u,del,s {
+em, i {
+    font-style: normal
+}
+u, del, s {
     text-decoration: none;
 }
 .over {
     overflow: hidden;
     zoom: 1;
 }
+img {
+    display: block;
+}
 
-.top{
+.top {
     background: #e4e4e4;
 }
-.topcon{
+.topcon {
     width: 1000px;
     margin: auto;
     /*border: 2px red solid;*/
 }
-
-.topleft{
+.topleft {
     float: left;
     /*background-color: yellow;*/
     width: 625px;
 }
 
-.topleft a{
+.topleft a {
     display: inline-block;
     line-height: 35px;
     background: url("../images/bg2.png") no-repeat right center;
     font-size: 12px;
     color: #666666;
-    padding: 0 10px 0 5px ;
+    padding: 0 10px 0 5px;
 }
 
-.topmid{
+.topmid {
     float: left;
     width: 200px;
     /*background-color: pink;*/
 }
+
 .topmid a {
     font-size: 12px;
     color: #666666;
@@ -56,20 +60,20 @@ u,del,s {
     margin-right: 10px;
 }
 
-.topright{
+.topright {
     float: right;
     width: 175px;
     /*background-color: aqua;*/
     padding-top: 5px;
 }
 
-.search{
+.search {
     float: left;
     width: 140px;
     height: 20px;
 }
 
-.sub{
+.sub {
     float: left;
     width: 18px;
     height: 21px;
@@ -78,4 +82,25 @@ u,del,s {
     border: 0;
     margin-top: 3px;
     margin-left: 5px;
+}
+
+.header {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+}
+
+.add {
+    float: right;
+}
+
+.logo a {
+    background: url("../images/logo.png") no-repeat;
+    display: block;
+    width: 343px;
+    height: 98px;
+    text-indent: -999px;
 }
