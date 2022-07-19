@@ -176,8 +176,13 @@ img {
 
 .lowerleft{
     background-color: #f57979;
-    width: 265px;
+    width: 270px;
     float: left;
+}
+
+.img1{
+    width: 270px;
+    height: 120px;
 }
 
 .lowermid{
@@ -191,4 +196,13 @@ img {
     background-color: #83f583;
     width: 240px;
     float: right;
+}
+
+.p1{
+    line-height: 40px;
+    border-bottom: 2px #999999 solid;
+    background-color: white;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    font-size: 16px;
 }
