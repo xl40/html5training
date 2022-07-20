@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .banner{
+            width: 800px;
+            height: 450px;
+            margin: 50px auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .banleft{
+            position: absolute;
+            left: 0;
+            top: 200px;
+            width: 50px;
+            height: 50px;
+            background-color: #CCC;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;cursor: pointer;
+        }
+
+        .banright{
+            position: absolute;
+            right: 0;
+            top: 200px;
+            width: 50px;
+            height: 50px;
+            background-color: #CCC;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;cursor: pointer;
+        }
+
+        .banspan{
+            position: absolute;
+            left: 50%;
+            bottom: 20px;
+            width: 150px;
+            height: 20px;
+            margin-left: -75px;
+        }
+
+        .banspan span{
+            background-color: #CCCCCC;
+            width: 20px;
+            height: 20px;
+            float: left;
+            margin: 0 5px;
+            line-height: 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .banspan span:hover{
+            background-color: #adb03d;
+            color: #FFF;
+        }
+
+        .banright:hover,.banleft:hover{
+            background-color: #adb03d;
+            color: #FFF;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="banner">
+      <div class="banimg">
+        <img src="images/img.png" alt="">
+      </div>
+
+      <div class="banleft">&lt;</div>
+      <div class="banright">&gt;</div>
+
+      <div class="banspan">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+      </div>
+
+    </div>
+</body>
+</html>

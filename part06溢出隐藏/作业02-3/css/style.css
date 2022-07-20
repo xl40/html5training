@@ -300,9 +300,12 @@ img {
 }
 
 .footer2 ul li{
-    float: left;
     line-height:40px;
-    font-size: 14px;
-    margin-left: 5px;
     text-align: center;
+}
+
+.footer2 ul li a{
+    margin-left: 5px;
+    float: left;
+    font-size: 12px;
 }
