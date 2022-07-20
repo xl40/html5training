@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        /**
+        position: absolute 绝对定位（父子关系）
+            - 脱离文档流，后面元素会补位
+            - 子元素设绝对定位，若父元素和祖元素没有定位，则相对于浏览器窗口进行定位
+            - 子元素设绝对定位，若父元素有定位（一般指相定位），则相对于父元素进行定位
+            - 子元素设绝对定位，若父元素没有定位，则依据就近的已定位的祖辈元素进行定位
+         */
+
+        .parent{
+            width: 500px;
+            height: 500px;
+            border: 2px solid #000;
+            margin: 100px;
+            position: relative;
+        }
+
+
+        .parent div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+            background-color: #00AA88;
+            float: left;
+        }
+
+        .sub-position{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+  <div class="parent">
+    <div class="sub">1</div>
+    <div class="sub-position">2</div>
+    <div class="sub">3</div>
+  </div>
+
+</body>
+</html>
