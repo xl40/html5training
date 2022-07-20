@@ -281,10 +281,28 @@ img {
 .footer{
     margin-top: 90px;
     border-top: orange 3px solid;
-    background: #aba6a6;
-    height: 195px;
+    background: #c5c3c3;
+    height: 40px;
 }
 .footer img {
     text-align: center;
     margin: 0 auto;
+}
+.footer2{
+    height: 40px;
+    background-color: #969494;
+}
+
+.footer2 ul{
+    height: 40px;
+    width: 1000px;
+    margin: 10px auto 0;
+}
+
+.footer2 ul li{
+    float: left;
+    line-height:40px;
+    font-size: 14px;
+    margin-left: 5px;
+    text-align: center;
 }
