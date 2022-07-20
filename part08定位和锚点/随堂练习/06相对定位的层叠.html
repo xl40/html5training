@@ -13,9 +13,40 @@
             - 可调节层级，属性 z-index
             - 取值：可正可负，数值越大，层级顺序越高，默认值为 0
      */
+
+    .box1{
+        width: 200px;
+        height: 200px;
+        background-color: orange;
+        position: relative;
+        left: 50px;
+        top: 150px;
+        z-index: 30;
+    }
+    .box2{
+        width: 400px;
+        height: 100px;
+        background-color: deeppink;
+        position: relative;
+        left: 20px;
+        top: 50px;
+        z-index: 20;
+    }
+    .box3{
+        width: 200px;
+        height: 400px;
+        background-color: aqua;
+        position: relative;
+        left: 200px;
+        top: -20px;
+        z-index: 10;
+    }
+
   </style>
 </head>
 <body>
-
+<div class="box1">1</div>
+<div class="box2">2</div>
+<div class="box3">3</div>
 </body>
 </html>
