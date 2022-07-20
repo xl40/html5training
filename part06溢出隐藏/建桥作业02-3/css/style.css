@@ -3,23 +3,29 @@
     padding: 0;
     list-style: none;
 }
+
 a {
     text-decoration: none;
     color: black;
 }
+
 strong, b {
     font-weight: normal;
 }
+
 em, i {
     font-style: normal
 }
+
 u, del, s {
     text-decoration: none;
 }
+
 .over {
     overflow: hidden;
     zoom: 1;
 }
+
 img {
     display: block;
 }
@@ -27,11 +33,13 @@ img {
 .top {
     background: #e4e4e4;
 }
+
 .topcon {
     width: 1000px;
     margin: auto;
     /*border: 2px red solid;*/
 }
+
 .topleft {
     float: left;
     /*background-color: yellow;*/
@@ -105,17 +113,17 @@ img {
     text-indent: -999px;
 }
 
-.nav{
+.nav {
     background-color: #d92b34;
 }
 
-.nav ul{
+.nav ul {
     width: 1000px;
     margin: 0 auto;
     background-color: #c8141f;
 }
 
-.nav ul li{
+.nav ul li {
     float: left;
     line-height: 45px;
     margin: 0 17px;
@@ -125,22 +133,22 @@ img {
     color: white;
 }
 
-.content{
+.content {
     background: #e6e6e6;
 }
 
-.banner{
+.banner {
     width: 1000px;
     margin: 0 auto;
 }
 
-.banleft{
+.banleft {
     width: 669px;
     height: 328px;
     float: left;
 }
 
-.banright{
+.banright {
     width: 261px;
     height: 308px;
     float: right;
@@ -157,47 +165,50 @@ img {
 .news li a {
     font-weight: bold;
 }
-.news li span{
+
+.news li span {
     color: #999;
 }
-.more{
+
+.more {
     text-align: right;
     margin-top: 15px;
     font-size: 14px;
 }
+
 .more a {
     color: #999999;
 }
 
-.lower{
+.lower {
     width: 1000px;
     margin: 0 auto;
 }
 
-.lowerleft{
+.lowerleft {
     width: 270px;
     float: left;
 }
 
-.img1{
+.img1 {
     width: 270px;
     height: 120px;
 }
 
-.lowermid{
+.lowermid {
     margin-left: 55px;
     /*background-color: #7d7df5;*/
     width: 420px;
     float: left;
 }
 
-.lowerright{
+.lowerright {
     /*background-color: #83f583;*/
     width: 240px;
     float: right;
 }
 
-.p1{
+.p1 {
     line-height: 40px;
     border-bottom: 2px #999999 solid;
     background-color: white;
@@ -206,20 +217,20 @@ img {
     font-size: 16px;
 }
 
-.p1-1{
+.p1-1 {
     width: 190px;
     font-size: 12px;
-    margin:  0 auto;
+    margin: 0 auto;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.lowerleft,.lowermid ul{
+.lowerleft, .lowermid ul {
     font-size: 12px;
 }
 
-.lowerleft ul span{
+.lowerleft ul span {
     color: #666666;
 }
 
@@ -233,7 +244,7 @@ img {
     font-size: 12px;
 }
 
-.lowermind-content-left{
+.lowermind-content-left {
     color: white;
     text-align: center;
     width: 60px;
@@ -241,71 +252,95 @@ img {
     background-color: #af0202;
     float: left;
 }
-.lowermind-content-right{
+
+.lowermind-content-right {
     float: right;
     font-size: 12px;
     width: 345px;
     height: 60px;
     margin-top: 10px;
 }
-.lowermind-content-right strong{
+
+.lowermind-content-right strong {
     font-weight: bold;
 }
-.img-2{
+
+.img-2 {
     width: 240px;
     height: 270px;
-    margin-top: 40px ;
+    margin-top: 40px;
 }
 
-.xinxi{
+.xinxi {
     width: 250px;
     height: 35px;
     line-height: 35px;
     border-bottom: 1px solid #666666;
 }
 
-.xinxi span{
+.xinxi span {
     margin-right: 5px;
 }
 
-.wangjimima{
+.wangjimima {
     margin-top: 79px;
     font-size: 12px;
 }
 
-.topright{
+.topright {
     margin-top: 30px;
     float: left;
 }
 
-.footer{
+.footer {
     margin-top: 90px;
     border-top: orange 3px solid;
-    background: #c5c3c3;
-    height: 40px;
+    background: #f1efef;
+    height: 25px;
 }
+
 .footer img {
     text-align: center;
     margin: 0 auto;
 }
-.footer2{
-    height: 40px;
-    background-color: #969494;
+
+.footer2 {
+    background-color: #bbb8b8;
 }
 
-.footer2 ul{
-    height: 40px;
+.footer2 ul {
     width: 1000px;
-    margin: 10px auto 0;
+    margin: 0 auto;
 }
 
-.footer2 ul li{
-    line-height:40px;
-    text-align: center;
-}
-
-.footer2 ul li a{
-    margin-left: 5px;
+.footer2 ul li {
     float: left;
+    line-height: 40px;
+    margin: 0 70px;
+}
+
+.footer2 ul li a {
     font-size: 12px;
+    display: inline-block;
+}
+
+.footer3 {
+    background-color: #794622;
+}
+
+.footer3 ul {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.footer3 ul li {
+    float: left;
+    line-height: 40px;
+    margin: 0 20px;
+}
+
+.footer3 ul li a {
+    font-size: 12px;
+    display: inline-block;
+    color: white;
 }
