@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin: 50px auto;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .item{
+            margin-left: 10px;
+            width: 200px;
+            overflow: hidden;
+            float: left;
+        }
+        
+        .item:hover{
+            width: 300px;
+        }
+
+        .word{
+            position: absolute;
+            top: 10%;
+            margin-left: 10px;
+            border-bottom: 2px solid #FFF;
+            width: 170px;
+            /*left: 1px;*/
+            color: white;
+            font-size: 20px;
+            z-index: 100;
+        }
+
+        .word2{
+            position: absolute;
+            top: 14%;
+            margin-left: 10px;
+            color: white;
+            font-size: 14px;
+            z-index: 100;
+        }
+
+        .black{
+            position: absolute;
+            z-index: 99;
+            width: 200px;
+            height: 300px;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .item:hover .black{
+            display: none;
+        }
+
+        .item:hover .word{
+            display: none;
+        }
+
+        .item:hover .word2{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="item">
+        <div class="black"></div>
+        <div class="word">一些文字</div>
+        <div class="word2">另一些文字</div>
+        <img src="images/image1.jpg" alt="">
+    </div>
+    <div class="item">
+        <div class="black"></div>
+        <div class="word">一些文字</div>
+        <div class="word2">另一些文字</div>
+        <img src="images/image2.jpg" alt="">
+    </div>
+    <div class="item">
+        <div class="black"></div>
+        <div class="word">一些文字</div>
+        <div class="word2">另一些文字</div>
+        <img src="images/image3.jpg" alt="">
+    </div>
+    <div class="item">
+        <div class="black"></div>
+        <div class="word">一些文字</div>
+        <div class="word2">另一些文字</div>
+        <img src="images/image4.jpg" alt="">
+    </div>
+    <div class="item">
+        <div class="black"></div>
+        <div class="word">一些文字</div>
+        <div class="word2">另一些文字</div>
+        <img src="images/image5.jpg" alt="">
+    </div>
+    <div class="item">
+        <div class="black"></div>
+        <div class="word">一些文字</div>
+        <div class="word2">另一些文字</div>
+        <img src="images/image6.jpg" alt="">
+    </div>
+</div>
+
+</body>
+</html>
