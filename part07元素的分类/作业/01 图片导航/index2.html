@@ -4,46 +4,41 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
+
+        *{
+            margin: 0;padding: 0;
+        }
+        ul{
+            width: 700px;
+            /*border: #1ea151 1px solid;*/
+            margin: 50px auto;
+            overflow: hidden;
+            zoom: 1;
+        }
+        li{
             list-style: none;
-        }
-
-        li {
             float: left;
-            /*border: red 1px solid;*/
-            margin: 20px;
-            line-height: 50px;
-            /*display: inline;*/
-            width: 85px;
-            height: 50px;
-            /*background-color: #999999;*/
-
-            /*background: url("images/bg.png") no-repeat;*/
+            width: 92px;
+            height: 92px;
+            /*border: #999999 1px solid;*/
+            margin: 3px;
+            text-align: center;
+            line-height: 92px;
         }
 
-        ul {
-            margin: 0 auto;
+        li img{
+            vertical-align: middle;
         }
 
-        .nav {
-            /*margin-top: 100px auto;*/
-            margin: 100px auto;
-            width: 1000px;
-            height: 150px;
-            /*background-color: #999999;*/
-        }
-
-        li:hover {
+        li:hover{
             background: url("images/bg.png") no-repeat;
+            cursor: pointer;
         }
 
     </style>
 </head>
 <body>
 
-<div class="nav">
     <ul>
         <li><a href="#"><img src="images/logo1.png" alt=""></a></li>
         <li><a href="#"><img src="images/logo2.png" alt=""></a></li>
@@ -53,7 +48,6 @@
         <li><a href="#"><img src="images/logo6.png" alt=""></a></li>
         <li><a href="#"><img src="images/logo7.png" alt=""></a></li>
     </ul>
-</div>
 
 </body>
 </html>
