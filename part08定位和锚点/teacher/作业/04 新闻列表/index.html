@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, h2, dl, dt, dd{
+            margin: 0;
+            padding: 0;
+        }
+        .content{
+            width: 260px;
+            margin: 20px auto;
+        }
+        .content h2{
+            background-color: #00d055;
+            color: #fff;
+            font-size: 14px;
+            height: 32px;
+            line-height: 32px;
+            padding-left: 10px;
+        }
+        .hot{
+            width: 236px;
+            height: 130px;
+            overflow: hidden;
+            margin: 12px auto 0;
+            position: relative;
+        }
+        .hot dd{
+            font-size: 12px;
+            color: #fff;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 236px;
+        }
+        .num{
+            text-align: center;
+        }
+        .num span{
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: #cccccc;
+            display: inline-block;
+        }
+        .num span.current{
+            background-color: #49c521;
+        }
+        .list{
+            padding: 0 10px;
+            line-height: 30px;
+        }
+        .list dt a{
+            color: #3b44b4;
+        }
+        .list dd{
+            background: url(./images/icon4.jpg) no-repeat left center;
+            padding-left: 20px;
+        }
+        .list dt,.list dd{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .list a{
+            text-decoration: none;
+            font-size: 14px;
+            color: #353535;
+        }
+        .list a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <h2>WIFI快报</h2>
+        <dl class="hot">
+            <dt><img src="./images/img3.jpg" alt=""></dt>
+            <dd>光影胜揽中的另一种风景</dd>
+        </dl>
+        <div class="num">
+            <span></span>
+            <span class="current"></span>
+        </div>
+        <dl class="list">
+            <dt><a href="#">金砖国家合作机制是团结协作的良好平台</a></dt>
+            <dd><a href="#">收藏这份全运金牌日历，让你追比赛省心又省力！</a></dd>
+            <dd><a href="#">全球连线 | 美国反恐越反越恐，军工巨头稳赚不赔</a></dd>
+            <dd><a href="#">赵立坚用6个对比痛批美国</a></dd>
+            <dd><a href="#">广东省公安厅原党委副书记、副厅长何广平接受审查调查</a></dd>
+        </dl>
+    </div>
+
+</body>
+</html>

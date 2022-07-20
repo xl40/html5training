@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        父元素正中间显示
+            - 子元素绝对定位，父元素也定位（建议相对定位）
+            - 给元素添加定位，偏移属性 left:50%; top:50%;
+            - margin-top:负的元素高度的一半; margin-left:负的元素宽度的一半;
+        */
+        .big{
+            width: 800px;
+            height: 500px;
+            background-color: yellowgreen;
+            position: relative;
+        }
+        .small{
+            width: 400px;
+            height: 200px;
+            background-color: pink;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -200px;
+            margin-top: -100px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="big">
+        <div class="small"></div>
+    </div>
+    
+</body>
+</html>

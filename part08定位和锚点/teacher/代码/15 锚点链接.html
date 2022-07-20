@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        实现页面中不同区域的跳转
+
+        基本语法：
+            - a标签里面的href属性是跳转的锚点位置
+            - <a href="#锚点名"></a>
+            - 想要跳转的区域
+            - <div id="锚点名"></div>
+        */
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            text-align: center;
+        }
+        .top{
+            height: 200px;
+            background-color: #ccc;
+        }
+        .one{
+            height: 500px;
+            background-color: yellowgreen;
+        }
+        .two{
+            height: 500px;
+            background-color: orange;
+        }
+        .three{
+            height: 500px;
+            background-color: antiquewhite;
+        }
+        .four{
+            height: 500px;
+            background-color: burlywood;
+        }
+        .footer{
+            height: 200px;
+            background-color: #ccc;
+        }
+        .list{
+            position: fixed;
+            right: 0;
+            bottom: 200px;
+            list-style: none;
+            width: 200px;
+        }
+        .list li{
+            line-height: 40px;
+            border-bottom: 1px solid #fff;
+            background-color: deeppink;
+            color: #fff;
+        }
+        .list li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top" id="a1">顶部</div>
+    <div class="one" id="a2">第一楼</div>
+    <div class="two" id="a3">第二楼</div>
+    <div class="three" id="a4">第三楼</div>
+    <div class="four" id="a5">第四楼</div>
+    <div class="footer" id="a6">底部</div>
+
+    <ul class="list">
+        <li><a href="#a2">第一层</a></li>
+        <li><a href="#a3">第二层</a></li>
+        <li><a href="#a4">第三层</a></li>
+        <li><a href="#a5">第四层</a></li>
+        <li><a href="#a1">返回顶部</a></li>
+    </ul>
+    
+</body>
+</html>

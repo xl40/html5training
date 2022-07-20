@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .box{
+            width: 1000px;
+            height: 500px;
+            margin: 0 auto;
+        }
+        .left{
+            width: 250px;
+            height: 500px;
+            background-color: orange;
+            float: left;
+            position: relative;
+        }
+        .left li{
+            color: #fff;
+            line-height: 45px;
+            border-bottom: 1px dashed #fff;
+            padding-left: 20px;
+        }
+        .left li .demo{
+            position: absolute;
+            left: 250px;
+            top: 0;
+            width: 300px;
+            height: 500px;
+            background-color: pink;
+            display: none;
+        }
+        .left li:hover{
+            background-color: pink;
+        }
+        .left li:hover .demo{
+            display: block;
+        }
+        .right{
+            width: 750px;
+            height: 500px;
+            background-color: yellowgreen;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <ul class="left">
+            <li>
+                电脑/电视机
+                <div class="demo">111</div>
+            </li>
+            <li>
+                彩妆/护肤品
+                <div class="demo">222</div>
+            </li>
+            <li>
+                母婴/家居
+                <div class="demo">333</div>
+            </li>
+            <li>
+                美食/零食
+                <div class="demo">444</div>
+            </li>
+            <li>
+                女装/女鞋
+                <div class="demo">555</div>
+            </li>
+        </ul>
+        <div class="right"></div>
+    </div>
+    
+</body>
+</html>

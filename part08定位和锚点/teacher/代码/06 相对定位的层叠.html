@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        相对定位里面的层叠
+            - 只给一个元素添加相对定位
+                - 会产生层叠，但调整不了后面被覆盖的元素的层级
+            - 给所有元素添加定位
+                - 后面的元素会把前面的元素覆盖
+                - 可调节层级，属性z-index
+                - 取值：可正可负，数值越大，层级顺序越高，默认值为0
+        */
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            position: relative;
+            left: 50px;
+            top: 150px;
+            z-index: 30;
+        }
+        .box2{
+            width: 400px;
+            height: 100px;
+            background-color: deeppink;
+            position: relative;
+            left: 20px;
+            top: 50px;
+            z-index: 20;
+        }
+        .box3{
+            width: 200px;
+            height: 400px;
+            background-color: aqua;
+            position: relative;
+            left: 100px;
+            top: -20px;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+    
+</body>
+</html>

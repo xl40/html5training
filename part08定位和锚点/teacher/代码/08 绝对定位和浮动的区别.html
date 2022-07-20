@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        区别：
+            - 浮动是半脱离文档流，如果补位元素中有文本，会产生环绕效果
+            - 绝对定位是全脱离文档流，如果补位元素中有文本，会被定位的元素覆盖，不会产生环绕效果
+        相同点：
+            - 如果补位元素内没有内容，则实现效果一致
+            - 都可以让元素识别宽高
+            - 添加定位和浮动后，是一个自适应的盒子，会被内容自动撑开作为宽度
+        一般左中右结构用浮动，层叠关系用定位
+        */
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* position: absolute;
+            left: 0;
+            top: 0; */
+        }
+        /* span{
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+            position: absolute;
+            left: 0;
+            top: 0;
+        } */
+
+        /* .box3{
+            background-color: aqua;
+            float: left;
+            position: absolute;
+            left: 0;
+            top: 0;
+        } */
+    </style>
+</head>
+<body>
+
+    <div class="box1"></div>
+    <div class="box2">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio debitis voluptatibus suscipit dolor nam et beatae officia repellendus in nemo, nesciunt, modi natus, libero cumque reprehenderit? A ab beatae perferendis!
+    </div>
+
+    <span>文本内容</span>
+    <div class="box3">文本内容</div>
+    
+</body>
+</html>

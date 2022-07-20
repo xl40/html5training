@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        position:absolute 绝对定位（父子关系）
+            - 脱离文档流，后面元素会补位
+            - 子元素设绝对定位，若父元素和祖元素没有定位，则相对于浏览器窗口进行定位
+            - 子元素设绝对定位，若父元素有定位（一般指相对定位），则相对于父元素进行定位
+            - 子元素设绝对定位，若父元素没有定位，则依据就近的已定位的祖辈元素进行定位
+        */
+        .big{
+            width: 600px;
+            height: 400px;
+            border: 3px solid blue;
+            margin: 100px;
+            /* 参照物 */
+            position: relative;
+        }
+        .big div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            float: left;
+        }
+        .small2{
+            background-color: yellowgreen;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="big">
+        <div class="small1">1</div>
+        <div class="small2">2</div>
+        <div class="small3">3</div>
+    </div>
+    
+</body>
+</html>

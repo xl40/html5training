@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .banner{
+            width: 800px;
+            height: 450px;
+            margin: 50px auto;
+            overflow: hidden;
+            position: relative;
+        }
+        .banleft{
+            position: absolute;
+            left: 0;
+            top: 200px;
+            width: 50px;
+            height: 50px;
+            background-color: #ccc;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .banright{
+            position: absolute;
+            right: 0;
+            top: 200px;
+            width: 50px;
+            height: 50px;
+            background-color: #ccc;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .banspan{
+            position: absolute;
+            left: 50%;
+            bottom: 20px;
+            width: 150px;
+            height: 20px;
+            margin-left: -75px;
+        }
+        .banspan span{
+            width: 20px;
+            height: 20px;
+            background-color: #ccc;
+            float: left;
+            margin: 0 5px;
+            text-align: center;
+            line-height: 20px;
+            cursor: pointer;
+        }
+        .banspan span:hover{
+            background-color: deeppink;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="banner">
+        <div class="banimg">
+            <img src="./images/afanda.jpg" alt="">
+            <img src="./images/afanda.jpg" alt="">
+            <img src="./images/afanda.jpg" alt="">
+            <img src="./images/afanda.jpg" alt="">
+            <img src="./images/afanda.jpg" alt="">
+        </div>
+        <div class="banleft">&lt;</div>
+        <div class="banright">&gt;</div>
+        <div class="banspan">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+        </div>
+    </div>
+    
+</body>
+</html>

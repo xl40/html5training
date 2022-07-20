@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        position:static 静态定位
+            - 默认值，普通文档流定位，有偏移属性也无效
+         */
+        .big{
+            width: 600px;
+            height: 400px;
+            border: 2px solid blue;
+        }
+        .big div{
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+            float: left;
+        }
+        .small2{
+            background-color: yellowgreen;
+            position: static;
+            left: 30px;
+            top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="big">
+        <div class="small1">1</div>
+        <div class="small2">2</div>
+        <div class="small3">3</div>
+    </div>
+    
+</body>
+</html>

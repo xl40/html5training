@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        position:fixed 固定定位
+            - 脱离文档流
+            - 相对于浏览器窗口进行定位，无论页面如何滚动，都会固定在那个位置
+        */
+        h1{
+            height: 1000px;
+        }
+        .top{
+            width: 200px;
+            height: 50px;
+            background-color: deeppink;
+            color: #fff;
+            text-align: center;
+            line-height: 50px;
+            position: fixed;
+            right: 0;
+            bottom: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>111111</h1>
+    <h1>222222</h1>
+    <h1>333333</h1>
+
+    <div class="top">返回顶部</div>
+    
+</body>
+</html>
