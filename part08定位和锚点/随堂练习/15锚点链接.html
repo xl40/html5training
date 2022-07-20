@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        .header {
+            background-color: #999999;
+            height: 100px;
+
+        }
+
+        .content {
+            height: 500px;
+            background-color: yellowgreen;
+        }
+
+        .main {
+            height: 800px;
+            background-color: #52329e;
+        }
+
+        .footer {
+            height: 1100px;
+            background-color: #61a0fd;
+        }
+
+        .nav {
+            background-color: #ff6600;
+            height: 300px;
+        }
+
+        .sideBar {
+            width: 90px;
+            position: fixed;
+            right: 0;
+            top: 50%;
+        }
+
+        .sideBar ul {
+            background-color: red;
+        }
+
+        .sideBar ul li {
+            height: 30px;
+            line-height: 30px;
+            border: 1px solid #FFF;
+        }
+
+        .sideBar ul li a {
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="sideBar">
+    <ul>
+        <li><a href="#a1">header</a></li>
+        <li><a href="#a2">nav</a></li>
+        <li><a href="#a3">content</a></li>
+        <li><a href="#a4">main</a></li>
+        <li><a href="#a5">footer</a></li>
+    </ul>
+</div>
+
+<div class="header" id="a1"><h1>header</h1></div>
+<div class="nav" id="a2"><H1>nav</H1></div>
+<div class="content" id="a3"><h1>content</h1></div>
+<div class="main" id="a4"><h1>main</h1></div>
+<div class="footer" id="a5"><h1>footer</h1></div>
+
+</body>
+</html>
