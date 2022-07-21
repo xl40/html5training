@@ -6,45 +6,63 @@
 
     <style>
 
-        *{
+        * {
             margin: 0;
             padding: 0;
+            list-style: none;
         }
 
-        .container{
+        .container {
             margin: 50px auto;
             padding: 20px;
             width: 490px;
-            height: 535px;
+            /*height: 535px;*/
             border: 1px solid #000;
         }
 
-        .main{
+        .content {
             margin: 25px auto 15px;
         }
-        
-        p{
-            float: left;
-            border: 1px solid #000;
-            margin-left: 15px;
-            font-size: 14px;
-            width: 95px;
-            height: 20px;
-            text-align: center;
-            line-height: 20px;
-            font-weight: bold;
+
+        p {
+            font-size: 12px;
             color: #59747B;
         }
 
-        .main{
+        legend p {
+            float: left;
+            border: 1px solid #000;
+            margin-left: 15px;
+            text-align: center;
+            line-height: 20px;
+
+            width: 95px;
+            height: 20px;
+            font-weight: bold;
+
+        }
+
+        .content {
             width: 450px;
         }
-        
-        span{
-            float: left;
+
+        .box {
+            text-align: right;
+            /*border: 1px solid #000;*/
+            margin-top: 15px;
+            margin-right: 188px;
+            padding-left: 30px;
         }
 
+        fieldset > p {
+            margin-left: 15px;
+            margin-top: 8px;
+            width: 405px;
+        }
 
+        span {
+            font-size: 12px;
+        }
 
     </style>
 
@@ -55,41 +73,77 @@
 
     <h4>已注册用户登录</h4>
 
-    <div class="main">
+    <div class="content">
         <fieldset>
             <legend><p>用户登录</p></legend>
 
-            <span>用户名</span>
-            <span>密码</span>
+            <div class="box">
+                <span>用户名</span>
+                <input type="text">
+            </div>
 
-            <input type="text" name="username" id="username">
-            <input type="password" name="pws" id="pwd">
-            <input type="submit" value="登录">
-            <label for="remember-me">
-                <a href="#"><span>记住我</span></a>
-                <input type="checkbox" name="remember-me" id="remember-me">
-            </label>
-            <a href="#"><span>您忘记密码？</span></a>
+            <div class="box">
+                <span>密码</span>
+                <input type="text">
+            </div>
+
+            <div class="box">
+                <input type="submit" value="登录">
+                <input type="checkbox">
+                <span>记住我</span>
+            </div>
+
+            <div class="box">
+                <a href="#"><span>您忘记密码？</span></a>
+            </div>
+
         </fieldset>
     </div>
 
     <h4>未注册创建账户</h4>
 
-    <div class="main">
+    <div class="content">
         <fieldset>
             <legend><p>用户注册</p></legend>
-            <span><strong>您的电子邮箱不会被公布出去，但是必须填写。</strong>在您注册之前请认真阅读服务条款</span>
 
-            <span>用户名</span> <input type="text" name="username-foot" id="username-foot"> <span>*（最多30个字符）</span>
-            <span>电子邮箱</span> <input type="text" name="email" id="email"> <span>*</span>
-            <span>密码</span> <input type="password" name="pwd-foot" id="pwd-foot"> <span>*(最多15个字符)</span>
-            <span>重复密码</span> <input type="password" name="pwd-foot2" id="pwd-foot2"> <span>*</span>
-            <span>同意服务条款</span> <input type="checkbox" name="" id=""> <span>*</span>
-            <input type="submit" value="提交">
-            <input type="submit" value="重置">
+            <p><strong>您的电子邮箱不会被公布出去，但是必须填写。</strong>在您注册之前请认真阅读服务条款</p>
 
-            <span>*在提交您的注册信息时，我们认为您已经同意了我们的服务条款。</span>
-            <span>*这些条款可能在未经您同意的时候进行修稿。</span>
+            <div class="box">
+                <span>用户名</span>
+                <input type="text">
+                <!--                <span>*（最多30个字符）</span>-->
+            </div>
+
+            <div class="box">
+                <span>电子邮箱</span>
+                <input type="text">
+                <!--                <span>*</span>-->
+            </div>
+
+            <div class="box">
+                <span>密码</span>
+                <input type="pwd">
+                <!--                <span>*(最多15个字符)</span>-->
+            </div>
+            <div class="box">
+                <span>重复密码</span>
+                <input type="pwd">
+            </div>
+
+            <div class="box">
+                <span>同意服务条款</span>
+                <input type="checkbox">
+
+            </div>
+
+            <div class="box">
+                <input type="submit" value="提交">
+                <input type="submit" value="重置">
+
+            </div>
+
+            <p><strong>*在提交您的注册信息时，我们认为您已经同意了我们的服务条款。</strong></p>
+            <p><strong>*这些条款可能在未经您同意的时候进行修稿。</strong></p>
 
         </fieldset>
     </div>
