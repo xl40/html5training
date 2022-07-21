@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 933px;
+            margin: 50px auto;
+            overflow: hidden;
+            /*border: 1px solid #000;*/
+            zoom: 1;
+        }
+
+        .box div > img {
+            display: block;
+            width: 275px;
+            height: 275px;
+        }
+
+        .box div p {
+            position: absolute;
+            left: 0;
+            top: 0;
+            /*border: 1px solid red;*/
+            padding: 10px;
+            font-size: 14px;
+            display: none;
+        }
+
+        .box div p img {
+            vertical-align: middle;
+        }
+
+        .box div span {
+            position: absolute;
+            left: 20px;
+            bottom: 20px;
+            width: 25px;
+            height: 25px;
+            background: url("images/tu.gif");
+            /*border: 1px solid #000;*/
+        }
+
+        .box div {
+            width: 275px;
+            height: 275px;
+            margin: 24px 12px 0 12px;
+            border: 6px solid #CCCCCC;
+            float: left;
+            position: relative;
+        }
+
+        .box div:hover img{
+            opacity: 0.5;
+        }
+        .box div:hover p{
+          display: block;
+        }
+        .box div:hover span{
+          background: url("images/tu2.gif");
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="box">
+    <div>
+        <img src="images/img03.jpg" alt="">
+        <p>
+            <img src="images/logo.gif" alt="">
+            一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字
+        </p>
+        <span></span>
+    </div>
+
+    <div>
+        <img src="images/img03.jpg" alt="">
+        <p><img src="images/logo.gif" alt="">一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字</p>
+        <span></span>
+    </div>
+
+    <div>
+        <img src="images/img03.jpg" alt="">
+        <p><img src="images/logo.gif" alt="">一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字</p>
+        <span></span>
+    </div>
+
+    <div>
+        <img src="images/img03.jpg" alt="">
+        <p><img src="images/logo.gif" alt="">一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字</p>
+        <span></span>
+    </div>
+
+    <div>
+        <img src="images/img03.jpg" alt="">
+        <p><img src="images/logo.gif" alt="">一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字</p>
+        <span></span>
+    </div>
+
+    <div>
+        <img src="images/img03.jpg" alt="">
+        <p><img src="images/logo.gif" alt="">一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字一些文字</p>
+        <span></span>
+    </div>
+
+</div>
+</body>
+</html>

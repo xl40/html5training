@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 933px;
+            margin: 0 auto;
+            overflow: hidden;
+            zoom: 1;
+        }
+        .box div{
+            width: 275px;
+            height: 275px;
+            margin: 24px 12px 0 12px;
+            border: 6px solid #ccc;
+            float: left;
+            /* 参照物 */
+            position: relative;
+        }
+        .box div > img{
+            display: block;
+            width: 275px;
+            height: 275px;
+        }
+        .box div p{
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 10px;
+            font-size: 14px;
+            display: none;
+        }
+        .box div p img{
+            vertical-align: middle;
+        }
+        .box div span{
+            position: absolute;
+            left: 20px;
+            bottom: 20px;
+            width: 25px;
+            height: 25px;
+            background: url(./images/tu.gif);
+        }
+        .box div:hover img{
+            opacity: 0.5;
+        }
+        .box div:hover p{
+            display: block;
+        }
+        .box div:hover span{
+            background: url(./images/tu2.gif);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <div>
+            <img src="./images/img02.jpg" alt="">
+            <p><img src="./images/logo.gif" alt=""> 我11点半开会，真的，我11点半开会，真的，我11点半开会，真的，我11点半开会，真的，我11点半开会，真的，我11点半开会，真的，</p>
+            <span></span>
+        </div>
+        <div>
+            <img src="./images/img02.jpg" alt="">
+            <p><img src="./images/logo.gif" alt=""> 我11点半开会，真的</p>
+            <span></span>
+        </div>
+        <div>
+            <img src="./images/img02.jpg" alt="">
+            <p><img src="./images/logo.gif" alt=""> 我11点半开会，真的</p>
+            <span></span>
+        </div>
+        <div>
+            <img src="./images/img02.jpg" alt="">
+            <p><img src="./images/logo.gif" alt=""> 我11点半开会，真的</p>
+            <span></span>
+        </div>
+        <div>
+            <img src="./images/img02.jpg" alt="">
+            <p><img src="./images/logo.gif" alt=""> 我11点半开会，真的</p>
+            <span></span>
+        </div>
+        <div>
+            <img src="./images/img02.jpg" alt="">
+            <p><img src="./images/logo.gif" alt=""> 我11点半开会，真的</p>
+            <span></span>
+        </div>
+    </div>
+    
+</body>
+</html>
