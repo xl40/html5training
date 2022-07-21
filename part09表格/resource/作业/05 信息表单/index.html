@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            background-color: #fafafa;
+            border: 1px solid #eeeeee;
+            width: 360px;
+            margin: 20px auto;
+            font-size: 12px;
+            padding: 20px 25px;
+        }
+        .require{
+            text-align: right;
+        }
+        .title{
+            height: 8px;
+            border-bottom: 1px solid #c9dca6;
+            position: relative;
+            margin-bottom: 12px;
+            margin-top: 10px;
+        }
+        .title span{
+            position: absolute;
+            left: 10px;
+            top: 0;
+            height: 20px;
+            background-color: #fafafa;
+            padding: 0 10px;
+        }
+        .box{
+            margin-top: 15px;
+            padding-left: 30px;
+        }
+        textarea{
+            margin: 10px 0 0 15px;
+            width: 220px;
+            height: 115px;
+            display: block;
+        }
+        .btn{
+            margin: 10px 0 0 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="#">
+        <div class="require">*所在项为必填项</div>
+        <div class="title"><span>个人信息</span></div>
+        <div class="box">
+            <span>姓名*</span>
+            <input type="text">
+        </div>
+        <div class="box">
+            <span>地址*</span>
+            <input type="text">
+        </div>
+        <div class="box">
+            <span>出生*</span>
+            <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+            <select>
+                <option value="Jan">Jan</option>
+                <option value="Feb">Feb</option>
+            </select>
+            <select>
+                <option value="1979">1979</option>
+                <option value="1980">1980</option>
+            </select>
+        </div>
+        <div class="title"><span>其他信息</span></div>
+        <div class="title"><span>你喜欢这个表单吗？*</span></div>
+        <div class="box">
+            <input type="radio" name="like"> 喜欢
+            <input type="radio" name="like"> 不喜欢
+        </div>
+        <div class="title"><span>你喜欢什么运动？*</span></div>
+        <div class="box">
+            <input type="checkbox"> 足球
+            <input type="checkbox"> 篮球
+            <input type="checkbox"> 乒乓球
+        </div>
+        <div class="title"><span>请写下你的建议？*</span></div>
+        <textarea cols="30" rows="10"></textarea>
+        <input type="submit" value="提交个人信息" class="btn">
+    </form>
+
+</body>
+</html>

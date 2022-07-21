@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 
+    form 表单
+        - action="跳转地址"
+        - method=“提交方式”
+        
+    input 表单中的控件
+        - 语法：<input type="?">
+        - type="text" 单行文本输入框
+            - disabled 禁用
+            - readonly 只读
+            - placeholder="" 提示文本属性
+            - value='' 默认值
+        - type="password" 密码框
+        - type="file" 文件上传，文件域
+        - type="hidden" 隐藏域，用来隐藏数据不被用户看到
+        - type="radio" 单选框，单选按钮
+            - name 属性解决共选，取值需要一致
+            - checked 默认选中状态
+        - type="checkbox" 复选框，多选框
+            - 也有name属性，不是用来解决共选，主要为了分组，获取元素
+            - checked 默认选中状态
+        - type=‘submit’ 提交按钮，配合form的action属性能实现跳转
+        - type=‘reset’ 重置按钮，清空前面输入的数据
+        - type=‘button’ 普通按钮，什么功能都没有
+     -->
+    <form action="#" method="get">
+        用户名1:<input type="text" value="请输入用户名..."> <br><br>
+        用户名2:<input type="text" placeholder="请输入用户名..."> <br><br>
+        用户名3:<input type="text" disabled> <br><br>
+        用户名3:<input type="text" readonly> <br><br>
+        密码：<input type="password"> <br><br>
+        文件上传：<input type="file"> <br><br>
+        隐藏域：<input type="hidden"> <br><br>
+        性别：<input type="radio" name="sex" checked> 男
+            <input type="radio" name="sex"> 女
+            <input type="radio" name="sex"> 保密 <br><br>
+        爱好：<input type="checkbox" name="hobby" checked> 吃
+            <input type="checkbox" name="hobby"> 喝
+            <input type="checkbox" name="hobby"> 玩
+            <input type="checkbox" name="hobby"> 乐 <br><br>
+        <input type="submit" value="立即提交">
+        <input type="reset" value="小心重置">
+        <input type="button" value="普通按钮">
+    </form>
+    
+</body>
+</html>

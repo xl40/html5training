@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        caption{
+            caption-side: top;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+    caption 表格标题
+        - 位于table里面第一个tr前面
+        - css属性
+            - caption-side:top/bottom;
+
+    th 表格标题单元格
+        - 默认加粗居中
+    
+    行分组标签
+        - thead 表格头部分组
+        - tbody 表格主体分组
+        - tfoot 表格底部分组
+        - 注意：
+            - 如果不带任何分组标签，浏览器会为你创建一个tbody作为盛放数据的主体
+                - 编辑器：table>tr>td
+                - 浏览器：table>tbody>tr>td
+            - 一个表格只有一个头部一个尾部，可以出现多个主体
+            - 添加了行分组后，头部和尾部会自动压缩降低高度 
+    
+    colgroup 列分组
+        - <colgroup span="数值"></colgroup>
+        - 数值：让几列分为一组
+     -->
+
+    <table border="1" width="500" height="400">
+        <caption>表格标题</caption>
+        <colgroup bgcolor="yellow"></colgroup>
+        <colgroup bgcolor="orange" span="2"></colgroup>
+        <thead>
+            <tr>
+                <th>第一列</th>
+                <th>第二列</th>
+                <th>第三列</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>底部</td>
+                <td>底部</td>
+                <td>底部</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>

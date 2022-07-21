@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        table
+            - border 边框
+            - border-spacing 单元格和单元格的间距
+            - border- collapse 边框合并
+            - table-layout 表格布局算法
+                - auto 默认值，自动计算
+                    - 优点：能够盛放很多内容
+                    - 缺点：容易把表格撑开，每次页面刷新都需要重新计算宽度
+                - fixed 固定宽度
+                    - 优点：内容不会撑大表格，每次刷新页面不需要重新计算表格宽度
+                    - 缺点：灵活性差，文本容易溢出
+                    - 解决：强制换行，word-break:break-all;
+        td
+            - border 边框
+            - empty-cells 隐藏空内容的单元格
+                - show 默认，显示
+                - hide 隐藏
+        */
+        table{
+            border: 1px solid #000;
+            width: 600px;
+            height: 300px;
+            /* border-spacing: 10px; */
+            /* border-collapse: collapse; */
+            table-layout: fixed;
+        }
+        td{
+            border: 1px solid #000;
+            empty-cells: hide;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td>http://finance.people.com.cn/n1/2022/0721/c100432481361.htmlhttp://finance.people.com.cn/n1/2022/0721/c100432481361.html</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td></td>
+        </tr>
+    </table>
+    
+</body>
+</html>
