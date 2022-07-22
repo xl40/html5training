@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+        }
+
+
+
+        .box {
+            width: 490px;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            padding: 0 20px 20px 20px;
+        }
+
+        .box h1 {
+            font-size: 14px;
+            line-height: 50px;
+        }
+
+        .box fieldset {
+            border: 1px solid #ccc;
+            padding: 0 15px 15px 15px;
+        }
+
+        .box fieldset legend {
+            border: 1px solid #ccc;
+            margin-left: 20px;
+            color: #4d6a78;
+            font-weight: bold;
+            padding: 0 20px;
+            line-height: 20px;
+        }
+
+        .box p {
+            font-size: 14px;
+            line-height: 20px;
+            margin-top: 10px;
+        }
+
+        .box form div {
+            overflow: hidden;
+            zoom: 1;
+            margin-top: 8px;
+        }
+
+        .box form div span {
+            width: 120px;
+            height: 20px;
+            /*background-color: yellowgreen;*/
+            float: left;
+            text-align: right;
+            margin-right: 10px;
+            color: #666666;
+            line-height: 20px;
+        }
+
+        .box form div .text1 {
+            width: 117px;
+            height: 18px;
+            border: 1px solid #ccc;
+            float: left;
+        }
+
+        .box form div .text2 {
+            width: 130px;
+            height: 18px;
+            border: 1px solid #ccc;
+            float: left;
+        }
+
+        .box form div .text3 {
+            width: 112px;
+            height: 18px;
+            border: 1px solid #ccc;
+            float: left;
+        }
+
+        .box form div strong {
+            width: 100px;
+            height: 20px;
+            line-height: 20px;
+            font-weight: normal;
+            /* background-color: pink; */
+            color: #666;
+            margin-left: 5px;
+            float: left;
+        }
+
+        .box form div .sub {
+            width: 62px;
+            height: 18px;
+            border: 1px solid #ccc;
+            background-color: #d0f0fd;
+            float: left;
+            margin-right: 5px;
+        }
+
+        .box form div .check {
+            width: 18px;
+            height: 18px;
+            float: left;
+            margin-right: 5px;
+        }
+
+        .box form div a {
+            text-decoration: none;
+            line-height: 20px;
+            float: left;
+            color: #40707c;
+        }
+
+    </style>
+</head>
+<body>
+<div class="box">
+    <h1>已注册用户登录</h1>
+    <fieldset>
+        <legend>用户登录</legend>
+        <form action="#">
+            <div>
+                <span>用户名</span>
+                <input type="text" class="text1">
+            </div>
+            <div>
+                <span>密码</span>
+                <input type="text" class="text1">
+            </div>
+
+            <div>
+
+                <span></span>
+                <input type="submit" class="sub">
+                <input type="checkbox" class="check">
+                <u>记住我</u>
+            </div>
+
+            <div>
+                <span></span>
+                <a href="#"> 您忘记密码</a>
+            </div>
+
+        </form>
+    </fieldset>
+    <h1>未注册创建账户</h1>
+    <fieldset>
+        <legend>用户注册</legend>
+        <p><b>您的电子邮箱不会被公布出去，但是必须填写。</b>在您注册之前请认真阅读服务条款</p>
+        <form action="#">
+            <div>
+                <span>用户名</span>
+                <input type="text" class="text2">
+                <strong>*（最多30个字符）</strong>
+            </div>
+
+            <div>
+                <span>电子邮箱</span>
+                <input type="text" class="text2">
+                <strong>*</strong>
+            </div>
+
+            <div>
+                <span>密码</span>
+                <input type="text" class="text3">
+                <strong>*（最多15个字符）</strong>
+            </div>
+
+            <div>
+                <span>重复密码</span>
+                <input type="text" class="text3">
+                <strong>*</strong>
+            </div>
+
+            <div>
+                <span>同意服务条款</span>
+                <input type="checkbox" class="check">
+                <a href="#">先看看条款？</a>
+                <strong>*</strong>
+            </div>
+            <div>
+                <span></span>
+                <input type="submit" value="提交" class="sub">
+                <input type="reset" value="重置" class="sub">
+            </div>
+        </form>
+        <p><b>在提交您的注册信息时，我们认为您已经同意了我们的服务条款。</b><br><b>这些条款可能在未经您同意的时候进行修稿。</b></p>
+    </fieldset>
+</div>
+</body>
+</html>
