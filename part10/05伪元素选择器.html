@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+
+      /**
+      1、在父元素的里面末尾位置添加一个内容
+        - :: after
+       */
+
+    .box1::before{
+        content:'123'
+    }
+
+    .box1::after{
+        content: url("img05.jpg");
+    }
+
+    .box2{
+        width: 400px;
+        border: 1px solid #000;
+    }
+
+    .box2::first-letter{
+        font-size: 49px;
+    }
+
+    .box2::first-line{
+        color: #ff6600;
+    }
+
+
+
+  </style>
+</head>
+<body>
+
+    <div class="box1">文本内容</div>
+
+    <div class="box2">
+
+        您的电子邮箱不会被公布出去，但是必须填写.在您注册之前请认真阅读服务条款
+        您的电子邮箱不会被公布出去，但是必须填写.在您注册之前请认真阅读服务条款
+        您的电子邮箱不会被公布出去，但是必须填写.在您注册之前请认真阅读服务条款
+        您的电子邮箱不会被公布出去，但是必须填写.在您注册之前请认真阅读服务条款
+        您的电子邮箱不会被公布出去，但是必须填写.在您注册之前请认真阅读服务条款
+        您的电子邮箱不会被公布出去，但是必须填写.在您注册之前请认真阅读服务条款
+        您的电子邮箱不会被公布出去，但是必须填写.在您注册之前请认真阅读服务条款
+
+    </div>
+</body>
+</html>
