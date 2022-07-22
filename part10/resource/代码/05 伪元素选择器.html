@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        1. 在父元素的里面末尾位置添加一个内容
+            - ::after{content:'';}
+        2. 在父元素的里面开始位置添加一个内容
+            - ::before{content:url();}
+        3. 首字符
+            - ::first-letter
+        4. 首行
+            - ::first-line
+        */
+        .box1::before{
+            content: '123';
+        }
+        .box1::after{
+            content: url(./images/icon.png);
+        }
+        .box2{
+            width: 400px;
+            border: 2px solid red;
+        }
+        .box2::first-letter{
+            font-size: 50px;
+        }
+        .box2::first-line{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box1">文本内容</div>
+    <div class="box2">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque voluptatum non ullam commodi autem labore consequatur cumque odio, dignissimos veniam minima dolorem quia obcaecati beatae ipsam. Saepe porro illum sint.
+    </div>
+    
+</body>
+</html>

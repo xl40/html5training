@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        1. rgba()
+            - 背景透明，元素占空间
+        2. opacity 
+            - 所有内容透明，元素占空间
+        3. visibility: hidden;
+            - 元素不可见，元素占空间
+        4. transform: scale(0);
+            - 缩放为0，元素占空间
+        5. display:none;
+            - 隐藏元素，元素不占空间，后面元素补位
+        6. width:0; height:0;
+            - 隐藏元素，元素不占空间，后面元素补位，若溢出则可以overflow:hidden;
+        */
+        .box1{
+            width: 0px;
+            height: 0px;
+            background-color: red;
+            /* opacity: 0; */
+            /* visibility: hidden; */
+            /* transform: scale(0); */
+            /* display: none; */
+        }
+        .box2{
+            width: 300px;
+            height: 300px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    
+</body>
+</html>

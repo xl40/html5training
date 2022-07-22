@@ -1,0 +1,15 @@
+.guanyu{
+    height: 500px;
+    font-size: 30px;
+    line-height: 60px;
+    background-color: yellowgreen;
+    text-align: center;
+}
+
+.xinwen{
+    height: 400px;
+    font-size: 30px;
+    line-height: 60px;
+    background-color: orange;
+    text-align: center;
+}

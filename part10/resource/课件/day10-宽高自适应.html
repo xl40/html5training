@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>day10-宽高自适应</title>
+<style>
+*{ margin:0; padding:0;}
+body{ padding: 30px; padding-top:10px; line-height: 35px; font-family: "微软雅黑";}
+h1,h2{padding: 20px 0;}
+ h3{    background: #00AA88;
+    color: #FFFCF4;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0;
+    border-radius: 4px;
+    padding: 5px 0px 5px 15px;}
+p{ line-height: 40px;} 
+ul li{ list-style: none;line-height: 40px;}
+span{ color: #199475; font-weight: 700; font-size:18px; display: block; border-radius: 4px; padding: 10px; font-size: 18px; padding-left: 0px;}
+em{ font-style: normal; color:red;}
+.other{ color:#044D22;}
+.oo{ color:red; display:inline; font-size:18px; font-weight:normal;}
+.marleft{ margin-left:30px;}
+.marbtom{ margin:15px 0; font-weight:600;}
+.borderbtm{ border-bottom: solid 1px #eee;
+				    padding-bottom: 15px;margin-bottom: 15px;}
+.textcon{
+	    margin: 10px 0;
+    border: solid 1px #ddd;
+    border-left-width: 6px;
+    padding: 10px;
+    border-radius: 4px;
+    border-color: #f60;
+	
+}
+.oos{ color:#000; font-weight:800;}
+</style>
+</head>
+
+<body>
+	<h1>day10-宽高自适应</h1>
+    <h2 class="borderbtm">学习目标</h2>
+    <ul >
+    	<li>1、自适应</li>
+        <li>2、宽度自适应高度自适应</li>
+    	<li>3、浮动元素的高度自适应</li>
+    	<li>4、伪元素</li>
+    	<li>5、元素的显示与隐藏</li>
+    	<li>6、最小最大宽高</li>
+		<li>7、窗口自适应</li>		
+		<li>8、iframe使用</li>
+		<li>9、calc()函数的使用</li>
+		<li>10、两栏三栏布局</li>
+	</ul>
+	<h3>一、自适应</h3>	
+	<p>网页布局中经常要定义元素的宽和高。但很多时候我们希望元素的大小能够根据窗口或子元素自动调整，这就是自适</p>
+	<h3>二、宽度自适应高度自适应</h3>
+	<p>
+	（1）宽度自适应<br>
+      元素宽度的默认值为auto
+	</p>	
+	<p>
+		(2) 高度自适应<br>
+		元素高度的默认值 {height:auto;}
+	</p>
+	<h3>三、浮动元素的高度自适应</h3>
+	<p>
+		<b>父元素不写高度时，子元素写了浮动后，父元素会发生高度塌陷</b>
+	</p>	
+	<p>
+		<b>方法1：给父元素添加声明overflow:hidden;(缺点：会隐藏溢出的元素)</b><br>
+ 
+
+		<b>方法2:在浮动元素下方添加空块元素,并给该元素添加声明：clear:both;height:0;overflow:hidden;</b><br>
+		（缺点：在结构里增加了空的标签，不利于代码可读性，且降低了浏览器的性能）<br>
+
+ 
+
+		<b>方法3:万能清除浮动法</b><br>
+		选择符:after{content:" ";clear:both;display:block;height:0;visibility:hidden;/overflow:hidden;}<br>
+		(缺点：伪元素选择器在IE7及以下浏览器不识别，所以此方法只能解决IE8 及以上浏览器高度塌陷问题）	
+	</p>
+
+
+
+
+	<h3>四、伪元素</h3>
+	<p>
+		<b>1）:after(与content属性一起使用，定义在对象后的内容。)</b><br>
+		如：div:after{content:url(logo.jpg);}<br>
+		div:after{content:"文本内容";}<br>
+		<b>2）:before:与content属性一起使用，定义在对象前的内容。</b><br>
+			如：div:before{content:"在其前放内容";}<br>
+		<b>3）：first-letter:定义对象内第一个字符的样式。</b><br>
+		<b>4）：first-line:定义对象内第一行文本的样式</b><br>
+		</p>
+	
+	<h3>五、元素的显示与隐藏和透明</h3>
+	<p>
+		<span>隐藏</span>
+			<b>1、display:none；</b><br>
+                    隐藏后的元素不占页面空间，后面元素上去补位置<br>
+           <b> 2、visibility:visible(显示)/hidden(隐藏)</b><br>
+                    隐藏元素，但是隐藏后的元素仍占页面空就按<br>
+            <b>3、opcity:0</b><br>
+                    隐藏元素，占页面空间<br>
+           <b> 4、height:0px;/不设置高度</b><br>
+                    隐藏元素可以,不占页面空间,<br>
+                    弊端:如果里卖弄有文本的话,文本会留在原来的位置;可以配合font-size:0px/oveflow:hideen/visibility:hideen<br>
+           <b> 5、使用缩放====缩放比例为0</b><br>
+                    transform:scale(0)<br>
+		<span>透明</span>
+			transparent(透明色)===背景<br>
+            rgba(0,0,0,0)====背景<br>
+                        &emsp;&emsp;&emsp;a==alpha透明度0-1<br>
+                           &emsp;&emsp;&emsp; 0代表的是透明；1代表的是不透明<br>
+                    
+            opacity======透明度的意思<br>
+                        &emsp;&emsp;&emsp;这个透明度取值范围0-1；不单纯只透明背景颜色，还能透明内容，文本，图片，边框等等<br>
+                        &emsp;&emsp;&emsp;0===透明<br>
+                        &emsp;&emsp;&emsp;1===不透明<br>
+
+                IE浏览器的兼容
+                    filter:alpha(opcity=数值)
+                    数值：1-100
+	</p>
+	<h3>六、最小最大宽高</h3>
+	<p>
+	min-height属性：最小高度；<br>
+	min-width:最小宽度<br>
+	max-height:最大高度<br>
+	max-width:最大宽度<br>
+	</p>
+
+
+	<h3>七、窗口自适应</h3>	
+	盒子根据窗口的大小进行改变<br>
+	设置方法：html,body{height:100%;}
+	<h3>八、iframe使用</h3>
+	<p>作用：iframe是用来在网页中插入第三方页面，早期的页面使用iframe主要是用于导航栏这种很多页面都相同的部分，这样在切换页面的时候避免重复下载。</p>
+	<p>
+	语法：&lt;iframe   src="规定在 iframe 中显示的文档的 URL(默认的显示页面)" width="" height=""   frameborder="1/0"  name="iframe名称"     scrolling="yes/no/auto"&gt;   &lt;/iframe&gt;
+	</p>
+	<p>
+		frameborder="1/0"  1代表有框架边框 /0代表无框架边框<br>
+		滚动条：scrolling="yes/no/auto" yes :有   no:无    auto：自动<br>
+		&lt;a href="" target="iframe的name属性值"&gt;&lt;/a&gt;表示超链接的目标地址在框架中打开
+	</p>
+
+	<h3>九、calc()函数的使用</h3>	
+	<p>
+		calc() 函数：用于动态计算长度值。<br>
+需要注意的是，运算符前后都需要保留一个空格，例如：width: calc(100% - 10px)；<br>
+任何长度值都可以使用calc()函数进行计算；<br>
+calc()函数支持 "+", "-", "*", "/" 运算；<br>
+calc()函数使用标准的数学运算优先级规则；<br>
+	</p>
+	<h3>十、两栏三栏布局</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
