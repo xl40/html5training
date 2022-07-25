@@ -133,12 +133,12 @@ nav a{
     color: white;
 }
 
-li:hover{
+nav li:hover{
     color: red;
     background-color: white;
 }
 
-li:hover a{
+nav li:hover a{
     color: red;
 }
 
