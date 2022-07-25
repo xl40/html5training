@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 
+    表单
+        - 基本语法：<input type="?">
+        - type="color" 颜色拾取器
+        - type="range" 滑块
+            - value=“当前值” 默认最小为0，最大为100
+            - min=“最小值”
+            - max=“最大值”
+            - step=“数值间隔”
+        - type=“number” 数值
+            - value=“当前值”
+            - min=“最小值”
+            - max=“最大值”
+            - step=“数值间隔”
+        - type=“tel” 拨号盘，唤起拨号盘，移动端使用
+        - type=“email” 邮箱
+            - 没有输入内容的话，会默认直接验证通过
+            - 只要输入内容，必须遵循邮箱地址格式
+        - type=“url” 地址栏
+            - 没有输入内容的话，会默认直接验证通过
+            - 只要输入内容，必须遵循地址栏格式
+        - type="search" 搜索框
+            - 可以清空输入框中自己输入的数据
+        - type=“date” 日期，包含年月日
+        - type=“month” 月份，包含年月
+        - type=“week” 周期，包含年周
+        - type=“time” 时间
+        - type=“datetime-local” 本地时间，年月日时间
+     -->
+    <form action="#">
+        颜色：<input type="color"> <br><br>
+        滑块：<input type="range" min="0" max="100" value="20" step="20"> <br><br>
+        数值：<input type="number" min="0" max="20" value="2" step="5"> <br><br>
+        拨号盘：<input type="tel"> <br><br>
+        邮箱：<input type="email"> <br><br>
+        地址栏：<input type="url"> <br><br>
+        搜索框：<input type="search"> <br><br>
+        日期：<input type="date"> <br><br>
+        月份：<input type="month"> <br><br>
+        星期：<input type="week"> <br><br>
+        时间：<input type="time"> <br><br>
+        本地时间：<input type="datetime-local"> <br><br>
+        <input type="submit">
+    </form>
+    
+</body>
+</html>

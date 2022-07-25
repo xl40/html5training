@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 80px;
+            height: 30px;
+            border: 1px solid red;
+            margin: 50px;
+            padding-left: 40px;
+            position: relative;
+        }
+        select{
+            /* 清除默认样式 */
+            appearance: none;
+            border: 0;
+            line-height: 30px;
+        }
+        .box::after{
+            content: '';
+            position: absolute;
+            left: 75px;
+            top: 12px;
+            width: 0px;
+            height: 0px;
+            border: 5px solid transparent;
+            border-top: 5px solid blue;
+        }
+        input{
+            margin-left: 40px;
+            border: 1px solid red;
+            /* 轮廓 */
+            outline: 0;
+        }
+        .demo{
+            width: 300px;
+            height: 300px;
+            margin: 100px;
+            border: 10px solid blue;
+            /* 轮廓 */
+            outline: 3px dotted red;
+            /* 轮廓偏离距离 */
+            outline-offset: -40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <select>
+            <option value="服装">服装</option>
+            <option value="美妆">美妆</option>
+            <option value="母婴">母婴</option>
+        </select>
+    </div>
+
+    <input type="text">
+
+    <div class="demo"></div>
+    
+</body>
+</html>

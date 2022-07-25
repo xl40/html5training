@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 
+    属性
+        - required 验证不能为空，必须填写此字段
+        - autofocus 自动获取焦点，只能有一个获取到，无论添加多好都是第一个选中
+        - multiple 能提交多个邮箱，多个邮箱之间用逗号分隔
+        - 列表清单，仿模糊搜索
+            - 语法：
+                <input type="text" list="car">
+                <datalist id="car">
+                    <option value="bmw">宝马/</option>
+                </datalist>
+            - 注意：
+                - input标签的list属性值要与datalist标签的id属性值匹配
+        - autocomplete=‘off/on’ 开启或关闭自动提示文本
+            - on 默认值，开启
+            - off 关闭
+        - pattern=“[0-9]{2}[a-z]{3}” 正则表达式，实际开发的时候用js编写
+     -->
+
+    <form action="#">
+        用户名：<input type="text" required autofocus> <br><br>
+        密码：<input type="password" autofocus> <br><br>
+        邮箱：<input type="email" multiple> <br><br>
+
+        车：<input type="text" list="car">
+        <datalist id="car">
+            <option value="宝马">宝马</option>
+            <option value="五菱宏光">五菱宏光</option>
+            <option value="大众">大众</option>
+            <option value="奥迪">奥迪</option>
+            <option value="奔驰">奔驰</option>
+            <option value="法拉利">法拉利</option>
+            <option value="保时捷">保时捷</option>
+            <option value="马自达">马自达</option>
+        </datalist> <br><br>
+
+        昵称：<input type="text" autocomplete="off"> <br><br>
+        密码：<input type="text" pattern="[0-9]{2}[a-z]{3}"> <br><br>
+        <input type="submit">
+    </form>
+    
+</body>
+</html>
