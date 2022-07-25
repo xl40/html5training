@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            margin: 50px auto;
+            width: 900px;
+        }
+
+        input{
+            margin-top: 40px;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="#">
+
+        <input type="text" required placeholder="请输入用户名...">
+        <input type="password" autofocus required placeholder="请输入密码...">
+        <input type="email" placeholder="请输入邮箱..." multiple>
+        <input type="text" list="car" placeholder="请选择...">
+
+        <datalist id="car">
+            <option value="宝马">宝马</option>
+            <option value="五菱宏光">五菱宏光</option>
+            <option value="大众">大众</option>
+            <option value="奥迪">奥迪</option>
+            <option value="奔驰">奔驰</option>
+            <option value="法拉利">法拉利</option>
+            <option value="保时捷">保时捷</option>
+            <option value="马自达">马自达</option>
+        </datalist>
+
+        <input type="submit">
+
+    </form>
+</body>
+</html>
