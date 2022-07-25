@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body{
+            background-color: #eee;
+        }
+        .content{
+            width: 900px;
+            margin: 0 auto;
+            border: 3px solid #fff;
+        }
+        .content > header{
+            background-color: orange;
+            color: #fff;
+            font-size: 50px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+        section{
+            background-color: #999;
+            overflow: hidden;
+            zoom: 1;
+        }
+        nav{
+            width: 200px;
+            float: left;
+        }
+        figcaption{
+            font-size: 14px;
+            color: #fff;
+            line-height: 50px;
+            text-align: center;
+        }
+        nav ul{
+            padding: 0 15px;
+        }
+        nav ul li{
+            color: orange;
+            border-bottom: 3px solid #fff;
+            font-size: 14px;
+            line-height: 35px;
+        }
+        main{
+            width: 500px;
+            float: left;
+        }
+        article{
+            background-color: #fff;
+            margin-top: 20px;
+            padding: 10px;
+        }
+        article header,article footer{
+            background-color: orange;
+            color: #fff;
+            text-align: center;
+            height: 35px;
+            line-height: 35px;
+        }
+        article p{
+            padding: 15px 0;
+            font-size: 14px;
+            line-height: 24px;
+        }
+        aside{
+            width: 200px;
+            float: left;
+        }
+        aside p{
+            color: #fff;
+            line-height: 24px;
+            font-size: 14px;
+            padding: 0 15px;
+        }
+        .content > footer{
+            background-color: orange;
+            color: #fff;
+            font-size: 20px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <header>HEADER</header>
+        <section>
+            <nav>
+                <figcaption>Nav</figcaption>
+                <ul>
+                    <li>LINK1</li>
+                    <li>LINK2</li>
+                    <li>LINK3</li>
+                </ul>
+            </nav>
+            <main>
+                <article>
+                    <header>article header</header>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus dignissimos ducimus architecto, minima accusantium iusto impedit ipsam praesentium vitae iste facilis maxime nobis enim aut ullam deleniti illo autem optio.
+                    </p>
+                    <footer>article footer</footer>
+                </article>
+                <article>
+                    <header>article header</header>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus dignissimos ducimus architecto, minima accusantium iusto impedit ipsam praesentium vitae iste facilis maxime nobis enim aut ullam deleniti illo autem optio.
+                    </p>
+                    <footer>article footer</footer>
+                </article>
+            </main>
+            <aside>
+                <figcaption>Aside</figcaption>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque eveniet officia deleniti eum vero velit commodi laboriosam porro, minus blanditiis laborum. Voluptate esse, sint quam quia vero dolor illum quisquam?
+                </p>
+            </aside>
+        </section>
+        <footer>FOOTER</footer>
+    </div>
+    
+</body>
+</html>
