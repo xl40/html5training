@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        /**
+        - 子元素
+            - 常用于父元素下只有一种子元素
+            - :first-child
+                - 获取子元素中的第一个
+            - :last-child
+                - 获取子元素中的最后一个
+            - :nth-child(参数)
+                - 获取子元素中的第？个
+                - 参数取值：
+                    - 具体的数值：表示匹配第几个，比如1 ，2，,3....
+                    - 表达式，比如3n，4n + 1 ...
+                    - 关键词，even偶数，odd技术
+
+
+         */
+
+        li:first-child{
+            color: red ;
+        }
+
+        li:last-child{
+            color:blue;
+        }
+        
+        li:nth-child(3n){
+            border: 1px solid #000;
+        }
+
+        li:nth-child(3) {
+            background-color: #ff6600;
+        }
+
+
+        li:nth-last-child(3) {
+            background-color: #1ea151;
+        }
+
+    </style>
+</head>
+<body>
+
+<ul>
+    <li>我是列表</li>
+    <li>我是列表</li>
+    <li>我是列表</li>
+    <li>我是列表</li>
+    <li>我是列表</li>
+    <li>我是列表</li>
+    <li>我是列表</li>
+    <li>我是列表</li>
+    <li>我是列表</li>
+    <li>我是列表</li>
+    <li>我是列表</li>
+</ul>
+
+</body>
+</html>
