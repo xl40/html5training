@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        [title^=t] {
+            color: red;
+        }
+
+        [title$=u] {
+            color: green;
+        }
+
+        [title*=in] {
+            background-color: #ff6600;
+        }
+
+        [title~=jd] {
+            color: black;
+        }
+
+        [title|=jd] {
+            border: 2px solid magenta;
+        }
+
+    </style>
+
+</head>
+<body>
+<a href="http://baidu.com" title="baidu">百度</a>
+<a href="http://taobao.com" title="taobao">淘宝</a>
+<a href="http://jd.com" title="jd">京东</a>
+<a href="http://weipinhui.com" title="jd weipinhui">唯品会</a>
+</body>
+</html>
