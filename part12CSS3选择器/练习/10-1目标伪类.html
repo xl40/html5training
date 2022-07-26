@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div[id]{
+            margin: 50px auto;
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+        }
+
+        #box1:target{
+            background-color: red;
+        }
+        #box2:target{
+            background-color: #ff6600;
+        }
+
+    </style>
+</head>
+<body>
+
+<a href="#box1">点我box1点亮</a>
+<a href="#box2">点我box2点亮</a>
+<a href="#box3">clear</a>
+
+<div id="box1">1</div>
+<div id="box2">2</div>
+
+</body>
+</html>
