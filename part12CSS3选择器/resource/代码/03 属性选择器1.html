@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        - [属性]
+            - 匹配页面中的带有对应属性的元素
+        - [属性="值"]
+            - 匹配页面中的带有对应属性，并且有对应属性值的元素
+        - E[属性]
+            - 匹配页面中某一类元素中带有对应属性的元素
+        - E[属性=“值”]
+            - 匹配页面中的某一类元素中带有对应属性并且有属性值的元素
+        */
+
+        /* [class]{
+            color: red;
+        } */
+        /* [class="demo1"]{
+            color: red;
+        } */
+        /* h1[class]{
+            color: red;
+        } */
+        div[class='demo2']{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="demo1">我是div---demo1</div>
+    <div class="demo2">我是div---demo2</div>
+    <div id="box1">我是box1---id</div>
+    <div id="box2">我是box2---id</div>
+    <p class="demo2">我是段落---demo2</p>
+    <p>我是段落---没有名</p>
+    <h1 class="demo2">我是标题---demo2</h1>
+    <h1>我是标题---没有名</h1>
+    
+</body>
+</html>

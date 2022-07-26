@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        目标伪类
+            - :target 需要配合锚点效果进行实现，点击哪个锚点实现对应目标高亮
+        */
+        div{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+        }
+        #box1:target{
+            background-color: red;
+        }
+        #box2:target{
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#box1">点我box1点亮</a>
+    <a href="#box2">点我box2点亮</a>
+
+    <div id="box1">1</div>
+    <div id="box2">2</div>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        box-shadow 盒子阴影
+            - box-shadow:h-shadow v-shadow blur spread color inset
+            - h-shadow 水平方向阴影的偏离位置，正值右偏，负值左偏
+            - v-shadow 垂直方向阴影的偏离位置，正值下偏，负值上偏
+            - blur 模糊距离
+            - spread 阴影大小（px），可选
+            - color 阴影颜色，默认黑色
+            - inset 设置内阴影，可选
+            - 可以添加多个方向的阴影，每一组方向用逗号隔开
+        */
+        .box{
+            width: 300px;
+            height: 200px;
+            margin: 60px;
+            border: 1px solid red;
+            /* box-shadow: 15px 15px 15px 15px blue; */
+            box-shadow: 5px 5px 5px 5px blue,10px 10px 10px 10px #666 inset;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+    
+</body>
+</html>

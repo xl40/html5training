@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        - [属性^=“值”]
+            - 匹配属性值以这个值开头的元素
+        - [属性$=“值”]
+            - 匹配属性值以这个值结尾的元素
+        - [属性*=“值”]
+            - 匹配属性值包含这个值的元素，可以是词或字母
+        - [属性~=“值”]
+            - 匹配属性值包含这个值的元素，必须是完整的词
+        - [属性|=“值”]
+            - 匹配属性值等于这个值的元素，必须仅有这个完整的词
+        */
+
+        /* [title^='sh']{
+            color: red;
+        } */
+        /* [title$='du']{
+            color: red;
+        } */
+        /* [title*="ai"]{
+            color: red;
+        } */
+        /* [title~='shopping']{
+            color: red;
+        } */
+        [title|='shopping']{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="http://baidu.com" title="baidu">百度一下</a>
+    <a href="http://taobao.com" title="shopping">淘宝购物</a>
+    <a href="http://jd.com" title="shopping jingdong">京东购物</a>
+    
+</body>
+</html>

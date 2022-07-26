@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        - 子元素
+            - 常用于父元素下只有一种子元素
+            - :first-child
+                - 获取子元素中的第一个
+            - :last-child
+                - 获取子元素中的最后一个
+            - :nth-child(参数)
+                - 获取子元素中的第？个
+                - 参数取值：
+                    - 具体的数值：表示匹配第几个，比如1，2，3....
+                    - 表达式，比如3n，4n+1...
+                    - 关键词，even偶数，相当于2n，odd奇数相当于2n+1
+            - :nth-last-child(参数)
+                - 获取子元素中倒数第？个
+                - 参数取值同上
+            - :only-child
+                - 匹配有且仅有一个子元素的
+        */
+        li:first-child{
+            color: red;
+        }
+        li:last-child{
+            color: blue;
+        }
+        li:nth-child(3){
+            background-color: orange;
+        }
+        li:nth-last-child(3){
+            background-color: yellowgreen;
+        }
+        li:only-child{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    
+    <ul>
+        <li>我是列表</li>
+        <li>我是列表</li>
+        <li>我是列表</li>
+        <li>我是列表</li>
+        <li>我是列表</li>
+        <li>我是列表</li>
+        <li>我是列表</li>
+        <li>我是列表</li>
+        <li>我是列表</li>
+        <li>我是列表</li>
+    </ul>
+    <ul>
+        <li>我是独生子</li>
+    </ul>
+
+</body>
+</html>

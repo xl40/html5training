@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        关系选择器（层级选择器）
+            - 后代选择器
+                - 符号（空格）
+            - 子代选择器
+                - 符号（>）
+            - 匹配当前元素的后面一个兄弟（紧紧挨着的兄弟）
+                - 符号（+）
+            - 匹配当前元素后面所有的兄弟
+                - 符号（~）
+        */
+
+        /* .list li{
+            border: 1px solid red;
+        } */
+        /* .list > li{
+            border: 1px solid red;
+        } */
+        /* .demo + li{
+            color: red;
+        } */
+        .demo ~ li{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <ul class="list">
+        <li>
+            <ol>
+                <li>我是嵌套的有序列表</li>
+                <li>我是嵌套的有序列表</li>
+                <li>我是嵌套的有序列表</li>
+            </ol>
+        </li>
+        <li>我是无序列表</li>
+        <li class="demo">demo我是无序列表</li>
+        <li>我是无序列表</li>
+        <li>我是无序列表</li>
+        <li>我是无序列表</li>
+    </ul>
+    
+</body>
+</html>

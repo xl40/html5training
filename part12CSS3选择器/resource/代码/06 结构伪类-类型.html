@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* 
+        类型
+            - 常用于父元素下有多种子元素
+            - :first-of-type
+                - 获取某类型元素中的第一个
+            - :last-of-type
+                - 获取某类型元素中的最后一个
+            - :nth-of-type(参数)
+                - 获取某类型元素中的第？个
+                - 参数取值：
+                    - 具体的数值：表示匹配第几个，比如1，2，3....
+                    - 表达式，比如3n，4n+1...
+                    - 关键词，even偶数，相当于2n，odd奇数相当于2n+1
+            - :nth-last-of-type(参数)
+                - 获取某类型元素中的倒数第？个
+                - 参数取值同上
+            - :only-of-type
+                - 匹配有且仅有一个某类型元素
+    */
+        .box h1:first-of-type{
+            color: red;
+        }
+        .box h1:last-of-type{
+            color: blue;
+        }
+        .box h1:nth-of-type(2){
+            background-color: orange;
+        }
+        .box h1:nth-last-of-type(4){
+            background-color: yellowgreen;
+        }
+        .box span:only-of-type{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <div>我是第1个div</div>
+        <h1>我是第1个标题</h1>
+        <h1>我是第2个标题</h1>
+        <div>我是第2个div</div>
+        <div>我是第3个div</div>
+        <div>我是第4个div</div>
+        <h1>我是第3个标题</h1>
+        <h1>我是第4个标题</h1>
+        <span>我是span，只有一个span</span>
+        <h1>我是第5个标题</h1>
+        <h1>我是第6个标题</h1>
+        <h1>我是第7个标题</h1>
+    </div>
+    
+</body>
+</html>

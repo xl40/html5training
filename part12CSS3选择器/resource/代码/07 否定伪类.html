@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        否定伪类
+            - :not(选择器) 排除掉的意思，排除某一个/某一类元素
+        */
+        ul li:not(.demo){
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>文本内容</li>
+        <li class="demo">文本内容</li>
+        <li>文本内容</li>
+        <li>文本内容</li>
+        <li>文本内容</li>
+        <li>文本内容</li>
+    </ul>
+    
+</body>
+</html>

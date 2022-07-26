@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        background 多背景属性
+            - 取值：url(图片1) no-repeat 10px 10px, url(图片2) repeat;
+            - 哪一个图片插入的位置在前面，谁的层级就比较高
+        */
+        .box{
+            width: 500px;
+            height: 500px;
+            border: 3px solid red;
+            background: url(./images/bg1.jpg) no-repeat 30px 40px,url(./images/bg2.jpg);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+    
+</body>
+</html>
