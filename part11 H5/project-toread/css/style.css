@@ -91,7 +91,7 @@ header{
     margin-left: 24px;
 }
 .bottom{
-    border: 1px solid #fff;
+    /*border: 1px solid #fff;*/
     width: 962px;
     height: 36px;
     margin: 30px auto 0;
@@ -351,7 +351,7 @@ footer{
     background-color: #E50011;
 }
 
-.item{
+.left .item{
 
     width: 302px;
     height: 94px;
@@ -362,7 +362,7 @@ footer{
     margin-left: 20px;
 }
 
-.item::after{
+.left .item::after{
     content: '';
     display: block;
     width: 0;
@@ -371,10 +371,10 @@ footer{
     clear: both;
 }
 
-.item img {
+.left .item img {
     float: left;
 }
-.item p {
+.left .item p {
     margin-left: 5px;
     margin-top: 15px;
     font-size: 10px;
@@ -384,11 +384,53 @@ footer{
     line-height: 20px;
 }
 
-.item span {
+.left .item span {
     line-height: 40px;
     color: #666666;
     font-size: 10px;
     float: left;
     height: 55px;
     width: 156px;
+}
+
+.bottom .bottom-core{
+    height: 276px;
+}
+
+.bottom .bottom-core::after{
+    content: "";
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
+.bottom .bottom-core .item{
+    height: 276px;
+    width: calc(100% / 3 - 2px);
+    float: left;
+    position: relative;
+}
+
+
+.bottom .bottom-core img{
+    float: left;
+}
+
+.bottom .bottom-core span{
+    position: absolute;
+    left: 0;
+    top: 180px;
+}
+
+.bottom .bottom-core p{
+    margin-top: 200px;
+    background-color: green;
+    width: 60px;
+    text-align: center;
+    color: white;
+    float: left;
+    position: absolute;
+    bottom: 0;
 }
