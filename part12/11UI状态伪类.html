@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        input:disabled {
+            border: 1px solid #FF9F0F;
+        }
+
+        input:enabled {
+            border: 1px solid green;
+        }
+
+        input:focus {
+            background-color: red;
+        }
+
+        input[type=text]:focus {
+            width: 200px;
+        }
+
+        input[type=radio]:checked + label {
+            color: #00d055;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .box{
+            width: 400px;
+        }
+
+        .box::selection{
+            background-color: #ff6600;
+            color: #fff;
+        }
+        
+    </style>
+</head>
+<body>
+
+<form action="#">
+
+    111111111 <input type="text" name="" id="1"><br>
+    2222222222222 <input type="text" name="" id="2"><br>
+
+    选一个 <br> <input type="radio" name="sex" id="3"> <label for="3">3333333333333</label>
+    <input type="radio" name="sex" id="4">444444444444
+
+</form>
+
+<div class="box">
+    should_bind_type_to_a_class_with_default_constructor
+    should_bind_type_to_a_class_with_default_constructor
+    should_bind_type_to_a_class_with_default_constructor
+    should_bind_type_to_a_class_with_default_constructor
+    should_bind_type_to_a_class_with_default_constructor
+</div>
+
+</body>
+</html>
