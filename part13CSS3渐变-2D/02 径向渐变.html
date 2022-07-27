@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        .box1, .box2 {
+            background-color: #CCCCCC;
+            float: left;
+            width: 200px;
+            height: 200px;
+        }
+
+        .box4 {
+            overflow: hidden;
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+
+
+        }
+
+        [class*="box4-"] {
+            float: left;
+            width: 94px;
+            height: 94px;
+            border: 1px solid #000;
+            margin: 2px;
+        }
+
+        p {
+            margin: 10px;
+            float: left;
+        }
+
+        span {
+            font-size: 12px;
+            color: #666666;
+        }
+
+        article {
+            width: 200px;
+            float: left;
+            padding: 20px;
+        }
+
+
+        /*   设置渐变   */
+
+        .box1 {
+            background-image: radial-gradient(red, yellow, #ff6600);
+        }
+
+        .box2 {
+            background-image: radial-gradient(red 60%, yellow 70%, #ff6600 80%);
+        }
+
+        .box3-1 {
+            height: 100px;
+            background-image: radial-gradient(ellipse, red 50%, yellow 55%, #ff6600);
+        }
+
+        .box3-2 {
+            height: 100px;
+            background-image: radial-gradient(circle, red 50%, yellow 55%, #ff6600);
+        }
+
+        /*closest-side：最近边； farthest-side：最远边； closest-corner：最近角； farthest-corner：最远角*/
+        .box4-1{
+            background-image: -webkit-radial-gradient(30% 70%, closest-side, red, yellow, #ff6600);
+        }
+
+        .box4-2{
+            background-image: -webkit-radial-gradient(30% 70%, farthest-side, red, yellow, #ff6600);
+        }
+
+        .box4-3{
+            background-image: -webkit-radial-gradient(30% 70%, closest-corner, red, yellow, #ff6600);
+        }
+
+        .box4-4{
+            background-image: -webkit-radial-gradient(30% 70%, farthest-corner, red, yellow, #ff6600);
+        }
+
+
+    </style>
+</head>
+<body>
+
+<main>
+    <article>
+        <div class="box1"></div>
+        <p>示例1：多颜色点均匀分布</p>
+    </article>
+
+    <article>
+        <div class="box2"></div>
+        <p>示例2：多颜色节点不均匀分布 <span> red 60%, yellow 70%, #ff6600 80% </span></p>
+    </article>
+
+    <article>
+        <div class="box3-1"></div>
+        <div class="box3-2"></div>
+        <p>示例3：设置渐变形状</p>
+    </article>
+
+    <article>
+        <div class="box4">
+            <div class="box4-1">
+                <span>最近边</span>
+            </div>
+            <div class="box4-2">
+                <span>farthest-side：最远边</span>
+            </div>
+            <div class="box4-3">
+                <span>closest-corner：最近角</span>
+            </div>
+            <div class="box4-4">
+                <span>farthest-corner：最远角</span>
+            </div>
+        </div>
+        <p>示例4：不同尺寸的渐变</p>
+    </article>
+
+</main>
+
+</body>
+</html>
