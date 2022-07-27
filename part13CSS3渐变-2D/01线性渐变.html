@@ -4,18 +4,30 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-
+        p{
+            color: white;
+            font-size: 20px;
+            margin: 10px;
+        }
         main {
-            width: 409px;
+            border: 5px solid #FFFFFF;
+            width: 400px;
             height: 300px;
-            margin: 30px auto;
             background-image: linear-gradient( red 50%, yellow 90%);
+        }
+
+        .box2{
+            width: 400px;
+            height: 400px;
+            float: left;
+            border: 5px solid #fff;
+            background-image: linear-gradient(to top right, blue, green);
         }
 
         h1 {
             width: 300px;
             margin: 20px auto;
-            font-size: 100px;
+            font-size: 50px;
             background-image: linear-gradient(to bottom, red, gold);
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
@@ -26,7 +38,14 @@
 
 <body>
 
-<main></main>
-<h1>main</h1>
+<main>
+    <p>默认向下渐变, 红色50%开始，黄色90%</p>
+</main>
+
+<div class="box2">
+    <p>向右上角 蓝 → 绿</p>
+</div>
+
+<h1>文本线性渐变</h1>
 </body>
 </html>
