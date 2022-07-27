@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        效果图：
+            - 如果放在:hover里面，只有经过的时候过渡
+            - 如果放在未经过的选择器内，则经过和离开都过渡
+        语法
+            - transition-property 过渡的css属性
+                - 单一属性，多个值空格隔开
+                - all 所有的css属性
+            - transition-duration 过渡所需要的时间
+                - 必须有单位s
+            - transition-timing-function 过渡的时间曲线
+                - linear 匀速
+                - 
+            - transition-delay 过渡延迟时间
+                - 必须有单位s
+            - transition: all 2s linear 0s;
+                - 过渡复合属性：过渡的css属性 所需时间 时间曲线 延迟时间
+        */
+        .box{
+            width: 400px;
+            height: 400px;
+            background-color: aqua;
+
+            /* transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+            transition-delay: 0s; */
+            transition: all 2s linear 0s;
+        }
+        .box:hover{
+            border-radius: 50%;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+    
+</body>
+</html>

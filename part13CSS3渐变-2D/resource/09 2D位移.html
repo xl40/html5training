@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* 
+    位移
+        - transform:translate()
+        - translateX() 水平方向位移
+        - translateY() 垂直方向位移
+        - translate(x,y)
+            - x 水平方向位移
+            - y 垂直方向位移
+        - translate(x) 水平方向位移
+    */
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: deeppink;
+            margin: 100px;
+            transition-duration: 0.5s;
+        }
+        .box:hover{
+            transform: translate(50px);
+            transform: translateX(50px);
+            transform: translateY(50px);
+            transform: translate(50px,20px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+    
+</body>
+</html>

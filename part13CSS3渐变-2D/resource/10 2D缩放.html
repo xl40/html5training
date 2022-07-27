@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* 
+    缩放
+        - transform:scale(数值)
+        - scaleX() 沿着水平方向缩小放大倍数
+        - scaleY() 沿着垂直方向缩小放大倍数
+        - scale(x,y) 
+            - x 水平缩小放大x倍
+            - y 垂直缩小放大y倍
+        - scale(val) 水平垂直都放大缩小val倍
+        - ()里面的取值
+            - 等于1，不缩小不放大
+            - 大于1，放大
+            - 小于1，缩小
+            - 等于0，隐藏
+            - 取值可以为负值，-号代表倒像
+                - 负号后面取值等于1，不缩小不放大的倒像
+                - 负号后面取值小于1，缩小的倒像
+                - 负号后面取值大于1，放大的倒像
+    */
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: deeppink;
+            color: #fff;
+            text-align: center;
+            line-height: 200px;
+            font-size: 24px;
+            margin: 100px;
+            transition-duration: 0.5s;
+        }
+        .box:hover{
+            transform: scale(1.5);
+            transform: scaleX(1.5);
+            transform: scaleY(1.5);
+            transform: scale(0.8,1.5);
+            transform: scale(1);
+            transform: scale(0);
+            transform: scale(-1.5);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">文本内容</div>
+    
+</body>
+</html>

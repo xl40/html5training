@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* 
+    线性渐变
+        - 语法：background-image: linear-gradient(deg,col1,col2,col3);
+            - deg 方向
+                - 到达某一边
+                    - to bottom 默认，到达下边，从上边开始到下边结束
+                    - to top 到达上边，从下边开始到上边结束
+                    - to right 到达右边，从左边开始到右边结束
+                    - to left 到达左边，从右边开始到左边结束
+                - 到达某个角
+                    - to top right 到达右上角，从左下开始
+                    - to top left 到达左上角，从右下开始
+                    - to bottom right 到达右下角，从左上开始
+                    - to bottom left 到达左下角，从右上开始
+                - 角度
+                    - 单位deg，比如30deg
+            - col1,col2,col3 颜色
+                - col1 开始颜色
+                - col3 结束颜色
+                - 加百分比：指这个颜色显示的位置，比如col2 50%
+        - 文字渐变
+            background-image: linear-gradient(to bottom,red,green);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+    */
+        .box{
+            width: 400px;
+            height: 300px;
+            border: 2px solid #000;
+            /* background-image: linear-gradient(to bottom,red,yellow,green); */
+            /* background-image: linear-gradient(30deg,red,yellow,green); */
+            background-image: linear-gradient(to bottom,red 50%,yellow 90%,green);
+        }
+        .demo{
+            font-size: 60px;
+            background-image: linear-gradient(to bottom,red,green);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+
+    <div class="demo">文本内容</div>
+    
+</body>
+</html>

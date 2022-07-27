@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* 
+    径向渐变：
+        - background-image: radial-gradient(center,shape,size,col1,col2,col3);
+            - center 渐变中心
+                - 渐变中心需要添加浏览器属性前缀 -webkit-radial-gradient
+                - x y
+            - shape 渐变的形状
+                - 形状不可以跟渐变大小同时使用
+                - ellipse 默认，椭圆
+                - circle 圆形
+            - size 渐变的大小
+                - 形状不可以跟渐变大小同时使用
+                - closest-corner 半径为从圆心到最近角
+                - closest-side 半径为从圆心到最近边
+                - farthest-corner 半径为从圆心到最远角
+                - farthest-side 半径为从圆心到最远边
+            - col1,col2,col3 颜色
+                - col1 开始颜色
+                - col3 结束颜色
+                - 加百分比：指这个颜色显示的位置，比如col2 50%
+    */
+        .box{
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 20px;
+            /* background-image: radial-gradient(red,yellow,green); */
+            /* background-image: -webkit-radial-gradient(100px 100px,red,yellow,green); */
+            /* background-image: -webkit-radial-gradient(circle,red,yellow,green); */
+            background-image: radial-gradient(red 50%,yellow,green 80%);
+        }
+        .demo1{
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 20px;
+            background-image: -webkit-radial-gradient(100px 50px,closest-corner, red,yellow,green);
+        }
+        .demo2{
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 20px;
+            background-image: -webkit-radial-gradient(100px 50px,closest-side, red,yellow,green);
+        }
+        .demo3{
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 20px;
+            background-image: -webkit-radial-gradient(100px 50px,farthest-corner, red,yellow,green);
+        }
+        .demo4{
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 20px;
+            background-image: -webkit-radial-gradient(100px 50px,farthest-side, red,yellow,green);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+    <div class="demo1"></div>
+    <div class="demo2"></div>
+    <div class="demo3"></div>
+    <div class="demo4"></div>
+    
+</body>
+</html>

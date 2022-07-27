@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* 
+    倾斜
+        - transform:skew(度数)
+        - skewX() 水平倾斜，与y形成一个夹角
+        - skewY() 垂直倾斜，与x形成一个夹角
+        - skew(x,y)
+            - x 水平倾斜
+            - y 垂直倾斜
+        - skew(x) 只有水平倾斜
+    */
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: deeppink;
+            margin: 100px;
+            transition-duration: 0.5s;
+        }
+        .box:hover{
+            transform: skew(30deg);
+            transform: skewX(30deg);
+            transform: skewY(10deg);
+            transform: skew(30deg,10deg);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+    
+</body>
+</html>
