@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        ul li {
+            line-height: 40px;
+        }
+
+        ul li::after {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 1px solid #000;
+            vertical-align: middle;
+
+        }
+
+        ul li[icon=word]::after {
+            background: url("images/bg.png") no-repeat;
+        }
+
+        ul li[icon=img]::after {
+            background: url("images/bg.png") no-repeat 0 -173px;
+        }
+
+    </style>
+</head>
+<body>
+
+
+<ul>
+    <li icon="word">w3cplus.com</li>
+    <li icon="img">home</li>
+    <li>Word文档</li>
+    <li>Powerpoint文档</li>
+    <li>Excel文档</li>
+    <li>HTML文档</li>
+    <li icon="img">JPG图片文档</li>
+    <li>PDF文档</li>
+    <li>GIF图片文档</li>
+    <li>PNG图片文</li>
+    <li>Flash文档</li>
+    <li>ZIP压缩文档</li>
+    <li>RAR压缩文档</li>
+    <li>MP3文档</li>
+    <li>EXE安装文件</li>
+    <li>TXT文本文档</li>
+    <li>w3cplus@hotmail.com</li>
+    <li>本地链接</li>
+</ul>
+
+
+</body>
+</html>
