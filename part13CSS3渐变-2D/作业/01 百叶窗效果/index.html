@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            /*background: #FFCC66;*/
+        }
+
+        ul,
+        li,
+        label {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .container {
+            /*width: 100%;*/
+            /*width: 800px;*/
+            height: 320px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        label {
+            display: block;
+            height: 140px;
+            background: #804000;
+            float: left;
+            border-right: 3px solid #66CCFF;
+        }
+
+        label div {
+            overflow: hidden;
+            width: 160px;
+            transition: all .5s ease;
+        }
+
+        /*input:checked~div {*/
+        /*    width: 640px;*/
+        /*}*/
+
+        input:hover~div {
+            width: 640px;
+        }
+
+        input {
+            display: none;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <form>
+        <label for="first">
+            <input type="radio" name="check" id="first" checked="checked">
+            <div>
+                <img src="images/img1.jpg" alt="">
+            </div>
+        </label>
+        <label for="second">
+            <input type="radio" name="check" id="second">
+            <div><img src="images/img2.jpg" alt=""></div>
+        </label>
+        <label for="third">
+            <input type="radio" name="check" id="third">
+            <div><img src="images/img3.jpg" alt=""></div>
+        </label>
+        <label for="forth">
+            <input type="radio" name="check" id="forth">
+            <div><img src="images/img4.jpg" alt=""></div>
+        </label>
+        <label for="fifth">
+            <input type="radio" name="check" id="fifth">
+            <div><img src="images/img5.jpg" alt=""></div>
+        </label>
+    </form>
+
+</div>
+
+</body>
+</html>
