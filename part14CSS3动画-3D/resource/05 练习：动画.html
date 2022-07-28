@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 100px;
+            background-color: #ccc;
+            border-radius: 100px 100px 0 0;
+            transform-origin: center bottom;
+            animation: zhuan1 0.5s linear 0s infinite;
+        }
+        .box2{
+            width: 200px;
+            height: 100px;
+            background-color: #ccc;
+            border-radius: 0 0 100px 100px;
+            transform-origin: center top;
+            animation: zhuan2 0.5s linear 0s infinite;
+        }
+        @keyframes zhuan1{
+            from{ transform: rotate(-30deg);}
+            to{ transform: rotate(0);}
+        }
+        @keyframes zhuan2{
+            from{ transform: rotate(30deg);}
+            to{ transform: rotate(0);}
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box1"></div>
+    <div class="box2"></div>
+    
+</body>
+</html>

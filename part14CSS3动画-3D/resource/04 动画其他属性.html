@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* 
+        - animation-iteration-count 动画播放次数
+            - 数字，是几就是几次
+            - infinite 无限次
+        - animation-direction 动画执行方向
+            - normal 正常方向
+            - reverse 反方向
+            - alternate 先正向再反向，交替反复执行
+            - alternate-reverse 先反向再正向，交替反复执行
+        - animation-fill-mode 动画时间外的属性
+            - backwards 等待时执行第一帧
+            - forwards 结束时执行最后一帧
+            - both 等待时执行第一帧，结束时执行最后一帧
+        - animation-play-state 动画播放状态
+            - running 默认，播放
+            - paused 暂停
+        - 动画复合属性
+            - 动画：名字 播放时间 时间曲线 延迟时间 播放次数 播放方向 时间外的属性；
+    */
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: yellowgreen;
+            margin: 50px;
+        }
+        .box span{
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: #fff;
+            border-radius: 50%;
+
+            /* animation-name: change; */
+            /* animation-duration: 2s; */
+            /* animation-timing-function: linear; */
+            /* animation-delay: 2s; */
+            /* animation-iteration-count: infinite; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-fill-mode: both; */
+            animation: change 2s linear 2s 2 reverse backwards;
+        }
+        .box:hover span{
+            animation-play-state: paused;
+        }
+        @keyframes change{
+            0%{ transform: translate(0,0); background-color: red;}
+            25%{ transform: translate(270px,0);}
+            50%{ transform: translate(270px,270px);}
+            75%{ transform: translate(0,270px);}
+            100%{ transform: translate(0,0); background-color: blue;}
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box"><span></span></div>
+    
+</body>
+</html>

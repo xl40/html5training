@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        transform-style:preserve-3d 父元素添加，出发3D舞台
+
+        transform:rotate() 旋转
+            - rotateX() 绕x轴旋转
+            - rotateY() 绕y轴旋转
+            - rotateZ() 绕z轴旋转
+            - rotate3d(x,y,z,deg) 前三个分别为是否绕x，y，z旋转，1为是，0为否，deg为角度
+        */
+        .big{
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+            margin: 100px;
+            transform-style: preserve-3d;
+            /* 测试 */
+            transform: rotateX(0deg) rotateY(0deg);
+        }
+        .small{
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+            transform: rotateY(30deg);
+            /* transform: rotate3d(1,1,0,30deg); */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="big">
+        <div class="small"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: black;
+        }
+        .box:hover{
+            /* animation: change 10s steps(3) 0s; */
+            animation: change 4s step-start 0s;
+            animation: change 4s step-end 0s;
+        }
+        @keyframes change{
+            0%{ background-color: red;}
+            30%{ background-color: yellow;}
+            60%{ background-color: green;}
+            100%{ background-color: cyan;}
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+    
+</body>
+</html>

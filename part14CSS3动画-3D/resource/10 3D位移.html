@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        transform:translate() 位移
+            - translateX() 水平方向位移
+            - translateY() 垂直方向位移
+            - translateZ() z轴上面前后位移
+        */
+        .big{
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+            margin: 100px;
+            transform-style: preserve-3d;
+            /* 测试 */
+            transform: rotateY(0deg);
+        }
+        .small{
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+            transform: translateZ(-100px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="big">
+        <div class="small"></div>
+    </div>
+    
+</body>
+</html>

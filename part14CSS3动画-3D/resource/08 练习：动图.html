@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box{
+            width: 180px;
+            height: 300px;
+            margin: 30px auto;
+            border: 2px solid #ccc;
+            background-image: url(./images/charector.png);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            animation: change 1s steps(7) 0s infinite;
+        }
+        @keyframes change{
+            0%{ background-position: 0 0;}
+            100%{ background-position: -1260px 0;}
+        } */
+
+        .box{
+            width: 180px;
+            height: 300px;
+            margin: 30px auto;
+            border: 2px solid #ccc;
+            background-image: url(./images/charector.png);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            animation: change 1s step-end 0s infinite;
+        }
+        @keyframes change{
+            0%{ background-position: 0 0;}
+            15%{ background-position: -180px 0;}
+            30%{ background-position: -360px 0;}
+            45%{ background-position: -540px 0;}
+            60%{ background-position: -720px 0;}
+            75%{ background-position: -900px 0;}
+            88%{ background-position: -1080px 0;}
+            100%{ background-position: -1260px 0;}
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+    
+</body>
+</html>
