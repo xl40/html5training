@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width: 500px;
+            height: 300px;
+            border: 1px solid #000;
+            margin: 30px auto;
+            overflow: hidden;
+        }
+
+        .banner{
+            width: 2000px;
+            height: 300px;
+            animation: change 2s steps(4) 0s infinite;
+        }
+
+        .banner div{
+            width: 500px;
+            height: 300px;
+            text-align: center;
+            line-height: 300px;
+            float: left;
+        }
+
+        .banner div:nth-child(1){
+            background: yellow;
+        }
+
+        .banner div:nth-child(2){
+            background: green;
+        }
+
+        .banner div:nth-child(3){
+            background: #ff6600;
+        }
+
+        .banner div:nth-child(4){
+            background: #666666;
+        }
+
+        @keyframes change {
+            from{transform: translateX(0);}
+            to{ transform: translateX(-2000px);}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="banner">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+    </div>
+</body>
+</html>
