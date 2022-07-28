@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #CCCCCC;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        img {
+            width: 200px;
+            height: 300px;
+            transition: all 1.5s;
+        }
+
+        ul {
+            width: 200px;
+            height: 300px;
+            margin: 250px auto;
+            /*border: 1px solid;*/
+            transform-style: preserve-3d;
+            position: relative;
+            animation: play 10s infinite linear;
+
+        }
+
+        @keyframes play {
+            from {
+                transform: rotateX(-20deg) rotateY(0deg);
+            }
+            to {
+                transform: rotateX(-20deg) rotateY(360deg);
+            }
+        }
+
+        ul:hover {
+            animation-play-state: paused;
+        }
+
+        ul:hover li img {
+            opacity: .8;
+        }
+
+        ul li:hover img {
+            opacity: 1;
+            transform: scale(1.5);
+        }
+
+        ul li {
+            width: 200px;
+            height: 300px;
+            position: absolute;
+            list-style: none;
+        }
+
+        ul li:nth-child(1) {
+            background-color: pink;
+            transform: rotateY(60deg) translateZ(300px);
+        }
+
+        ul li:nth-child(2) {
+            background-color: pink;
+            transform: rotateY(120deg) translateZ(300px);
+        }
+
+        ul li:nth-child(3) {
+            background-color: pink;
+            transform: rotateY(180deg) translateZ(300px);
+        }
+
+        ul li:nth-child(4) {
+            background-color: pink;
+            transform: rotateY(240deg) translateZ(300px);
+        }
+
+        ul li:nth-child(5) {
+            background-color: pink;
+            transform: rotateY(300deg) translateZ(300px);
+        }
+
+        ul li:nth-child(6) {
+            background-color: pink;
+            transform: rotateY(360deg) translateZ(300px);
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><img src="./images/10002.jpg"/></li>
+    <li><img src="./images/10003.jpg"/></li>
+    <li><img src="./images/10006.jpg"/></li>
+    <li><img src="./images/10007.jpg"/></li>
+    <li><img src="./images/10008.jpg"/></li>
+    <li><img src="./images/10009.jpg"/></li>
+    <li><img src="./images/10012.jpg"/></li>
+</ul>
+
+</body>
+</html>
