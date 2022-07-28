@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        .box1{
+            width: 200px;
+            height: 100px;
+            background: #CCC;
+            border-radius: 100px 100px 0 0;
+            transform-origin: center bottom;
+            animation: zhuan1 1s linear 0s infinite;
+        }
+
+        .box2{
+            width: 200px;
+            height: 100px;
+            background: red;
+            border-radius: 0 0 100px 100px ;
+            transform-origin: center top;
+
+            animation: zhuan2 1s linear 0s infinite;
+        }
+
+        @keyframes zhuan1 {
+            from{
+                transform: rotate(-30deg);
+            }
+
+            to{
+                transform: rotate(0);
+            }
+        }
+
+        @keyframes zhuan2 {
+            from{
+                transform: rotate(30deg);
+            }
+
+            to{
+                transform: rotate(0);
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+<div class="box1"></div>
+<div class="box2"></div>
+
+</body>
+</html>
