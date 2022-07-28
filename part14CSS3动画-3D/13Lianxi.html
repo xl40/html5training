@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+
+        .big {
+            margin: 50px auto;
+            width: 500px;
+            height: 500px;
+            border: 2px solid #CCC;
+            position: relative;
+
+            transform-style: preserve-3d;
+
+            transform: rotateX(0deg) rotateY(0deg);
+
+        }
+
+        .big div {
+            width: 300px;
+            height: 300px;
+            border: 5px solid red;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            border-radius: 50%;
+            /*background: rgba(0, 0, 0, 0.05);*/
+        }
+
+        /*.big div:nth-child(2) {*/
+        /*    transform: rotateY(30deg);*/
+        /*}*/
+
+        /*.big div:nth-child(4) {*/
+        /*    transform: rotateY(60deg);*/
+        /*}*/
+
+        /*.big div:nth-child(5) {*/
+        /*  transform: rotateY(120deg);*/
+        /*}*/
+
+        /*.big div:nth-child(6) {*/
+        /*  transform: rotateY(150deg);*/
+        /*}*/
+
+        .big div:nth-child(7) {
+          transform: rotateX(0deg);
+        }
+        .big div:nth-child(8) {
+          transform: rotateX(30deg);
+        }
+        .big div:nth-child(9) {
+          transform: rotateX(60deg);
+        }
+        .big div:nth-child(10) {
+          transform: rotateX(90deg);
+        }
+        .big div:nth-child(11) {
+          transform: rotateX(120deg);
+        }
+        .big div:nth-child(12) {
+          transform: rotateX(150deg);
+        }
+
+
+        @keyframes zhuan {
+          0%{}
+          100%{}
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<div class="big">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+</body>
+</html>
