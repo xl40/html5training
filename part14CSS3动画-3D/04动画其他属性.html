@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        .box {
+            width: 300px;
+            height: 300px;
+            background: yellowgreen;
+            margin: 40px;
+        }
+
+        .box span {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: white;
+            border-radius: 50%;
+            animation: change 4s cubic-bezier(.4,0,.49,1) infinite
+
+        }
+
+        @keyframes change {
+
+            0% {
+                transform: translate(0, 0);
+            }
+
+            25% {
+                transform: translate(270px, 0);
+            }
+            50% {
+                transform: translate(270px, 270px);
+            }
+            75% {
+                transform: translate(0, 270px);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+<div class="box">
+    <span></span>
+</div>
+</body>
+</html>
