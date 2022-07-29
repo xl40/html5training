@@ -1,0 +1,84 @@
+.container{
+	width: 1000px;
+	margin: 0 auto;
+}
+.user{
+	min-height: 808px;
+}
+.user_inner{
+	min-height: 808px;
+}
+.iphone{
+	width: 193px;
+	height: 408px;
+	background: url(../images/ui-phone.png) no-repeat;
+	position: relative;
+}
+.iphone_inner{
+	width: 167px;
+	height: 295px;
+	position: absolute;
+	top: 57px;
+	left: 14px;
+	overflow: hidden;
+}
+.iphone_inner ul li img{
+	width: 167px;
+	height: 295px;
+
+}
+.iphone_inner ul{
+	width: 1169px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	animation: imggo 10s linear infinite ;
+}
+/*alternate 反向播放*/
+.iphone_inner ul li{
+	float: left;
+}
+.iphone_inner:hover ul{
+	animation-play-state: paused;
+}
+@keyframes imggo{
+	0%{
+		left: 0;
+	}
+	10%{
+		left: 0;
+	}
+	16.66%{
+		left: -167px;
+	}
+	26.66%{
+		left: -167px;
+	}
+	33.33%{
+		left: -334px;
+	}
+	43.33%{
+		left: -334px;
+	}
+	50%{
+		left: -501px;
+	}
+	60%{
+		left: -501px;
+	}
+	66.66%{
+		left: -668px;
+	}
+	76%{
+		left: -668px;
+	}
+	83.33%{
+		left: -835px;
+	}
+	93.33%{
+		left: -835px;
+	}
+	100%{
+		left: -1002px;
+	}
+}

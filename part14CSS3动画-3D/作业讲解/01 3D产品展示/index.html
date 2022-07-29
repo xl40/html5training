@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        dl{
+            width: 310px;
+            height: 100px;
+            position: relative;
+            margin: 100px;
+            transform-style: preserve-3d;
+            /* 测试 */
+            transform: rotateX(0deg) rotateY(0deg);
+            transition-duration: 0.5s;
+        }
+        dt{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 310px;
+            height: 100px;
+            transform: translateZ(50px);
+            box-shadow: 0 0 4px #333;
+        }
+        dd{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 290px;
+            height: 80px;
+            font-size: 12px;
+            line-height: 20px;
+            background-image: linear-gradient(to bottom,#ccc,pink);
+            padding: 10px;
+            transform: rotateX(-90deg) translateZ(50px);
+            box-shadow: 0 0 4px #333;
+        }
+        dl:hover{
+            transform: rotateX(90deg);
+        }
+    </style>
+</head>
+<body>
+
+    <dl>
+        <dt><img src="./images/chimpified.jpeg" alt=""></dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium tempore illo quia consectetur fugiat similique blanditiis repudiandae ut? </dd>
+    </dl>
+    
+</body>
+</html>

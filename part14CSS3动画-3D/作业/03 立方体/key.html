@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+
+        body {
+            background: #0d0d0d;
+            perspective: 900px;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            /*border: 1px solid #fff;*/
+            margin: 200px auto;
+            position: relative;
+
+            transform-style: preserve-3d;
+            animation: change 5s infinite;
+        }
+
+        .min {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            left: 50px;
+            top: 50px;
+            border: 1px solid yellow;
+
+            transform-style: preserve-3d;
+            transform: rotateX(0deg) rotateY(0deg);
+        }
+
+        .min li {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .max {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 200px;
+
+            transform-style: preserve-3d;
+            transform: rotateX(0deg) rotateY(0deg);
+        }
+
+        .max li {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 198px;
+            height: 198px;
+            border: 1px solid #fff;
+            background: rgba(255, 255, 255, 0.1);
+            transition: 0.5s ;
+        }
+
+        .box:hover{
+
+        }
+
+        @keyframes change {
+            from {
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+            to {
+                transform: rotateX(360deg) rotateY(360deg);
+            }
+        }
+
+        .min li:nth-child(1) {
+            transform: translateZ(50px);
+        }
+
+        .min li:nth-child(2) {
+            transform: rotateY(180deg) translateZ(50px);
+        }
+
+        .min li:nth-child(3) {
+            transform: rotateX(90deg) rotateY(0deg) translateZ(50px);
+        }
+
+        .min li:nth-child(4) {
+            transform: rotateX(-90deg) rotateY(0deg) translateZ(50px);
+        }
+
+        .min li:nth-child(5) {
+            transform: rotateX(0deg) rotateY(90deg) translateZ(50px);
+        }
+
+        .min li:nth-child(6) {
+            transform: rotateX(0deg) rotateY(-90deg) translateZ(50px);
+        }
+
+
+        .max li:nth-child(1) {
+            transform: translateZ(100px);
+        }
+
+        .max li:nth-child(2) {
+            transform: translateZ(-100px);
+        }
+
+        .max li:nth-child(3) {
+            transform: rotateX(90deg) rotateY(0deg) translateZ(100px);
+        }
+
+        .max li:nth-child(4) {
+            transform: rotateX(-90deg) rotateY(0deg) translateZ(100px);
+        }
+
+        .max li:nth-child(5) {
+            transform: rotateX(0deg) rotateY(90deg) translateZ(100px);
+        }
+
+        .max li:nth-child(6) {
+            transform: rotateX(0deg) rotateY(-90deg) translateZ(100px);
+        }
+
+
+        .box:hover .max li:nth-child(1) {
+            transform: translateZ(200px);
+        }
+
+        .box:hover .max li:nth-child(2) {
+            transform: translateZ(-200px);
+        }
+
+        .box:hover .max li:nth-child(3) {
+            transform: rotateX(90deg) rotateY(0deg) translateZ(200px);
+        }
+
+        .box:hover .max li:nth-child(4) {
+            transform: rotateX(-90deg) rotateY(0deg) translateZ(200px);
+        }
+
+        .box:hover .max li:nth-child(5) {
+            transform: rotateX(0deg) rotateY(90deg) translateZ(200px);
+        }
+
+        .box:hover .max li:nth-child(6) {
+            transform: rotateX(0deg) rotateY(-90deg) translateZ(200px);
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+<div class="box">
+    <ul class="min">
+        <li><img src="img/01.png" alt=""></li>
+        <li><img src="img/01.png" alt=""></li>
+        <li><img src="img/01.png" alt=""></li>
+
+        <li><img src="img/01.png" alt=""></li>
+        <li><img src="img/01.png" alt=""></li>
+        <li><img src="img/01.png" alt=""></li>
+    </ul>
+
+    <ul class="max">
+
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+
+    </ul>
+</div>
+
+</body>
+</html>
