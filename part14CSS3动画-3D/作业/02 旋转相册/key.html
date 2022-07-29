@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            background: #070707;
+        }
+
+        body {
+            perspective: 1800px;
+        }
+
+        ul {
+            width: 200px;
+            height: 500px;
+            margin: 100px auto;
+            position: relative;
+            transform-style: preserve-3d;
+            /*    test      */
+            /*transform: rotateX(0deg) rotateY(0deg);*/
+            animation: change 15s linear 0s infinite;
+        }
+
+        li {
+            position: absolute;
+            width: 200px;
+            height: 400px;
+            overflow: hidden;
+            left: 0;
+            top: 100px;
+        }
+
+        ul li:nth-child(1) {
+            transform: translateZ(500px);
+        }
+
+        ul li:nth-child(2) {
+            transform: rotateY(30deg) translateZ(500px);
+        }
+
+        ul li:nth-child(3) {
+            transform: rotateY(60deg) translateZ(500px);
+        }
+
+        ul li:nth-child(4) {
+            transform: rotateY(90deg) translateZ(500px);
+        }
+
+        ul li:nth-child(5) {
+            transform: rotateY(120deg) translateZ(500px);
+        }
+
+        ul li:nth-child(6) {
+            transform: rotateY(150deg) translateZ(500px);
+        }
+
+        ul li:nth-child(7) {
+            transform: rotateY(180deg) translateZ(500px);
+        }
+
+        ul li:nth-child(8) {
+            transform: rotateY(210deg) translateZ(500px);
+        }
+
+        ul li:nth-child(9) {
+            transform: rotateY(240deg) translateZ(500px);
+        }
+
+        ul li:nth-child(10) {
+            transform: rotateY(270deg) translateZ(500px);
+        }
+
+        ul li:nth-child(11) {
+            transform: rotateY(300deg) translateZ(500px);
+        }
+
+        ul li:nth-child(12) {
+            transform: rotateY(330deg) translateZ(500px);
+        }
+
+        @keyframes change {
+            from{
+                transform:rotateX(-10deg) rotateY(0deg);
+            } to{transform: rotateX(-10deg) rotateY(360deg)}
+        }
+
+    </style>
+
+</head>
+<body>
+
+<ul>
+    <li><img src="images/10002.jpg"></li>
+    <li><img src="images/10014.jpg"></li>
+    <li><img src="images/10015.jpg"></li>
+    <li><img src="images/10016.jpg"></li>
+
+    <li><img src="images/10003.jpg"></li>
+    <li><img src="images/10006.jpg"></li>
+    <li><img src="images/10007.jpg"></li>
+    <li><img src="images/10008.jpg"></li>
+
+    <li><img src="images/10009.jpg"></li>
+    <li><img src="images/10014.jpg"></li>
+    <li><img src="images/10015.jpg"></li>
+    <li><img src="images/10016.jpg"></li>
+
+</ul>
+
+</body>
+</html>
