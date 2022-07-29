@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        order 子元素的前后顺序
+            - 是一个数值，没有单位
+            - 取值越大越靠后
+        */
+        .big{
+            width: 600px;
+            height: 400px;
+            border: 1px solid red;
+            display: flex;
+        }
+        .big div{
+            width: 80px;
+            height: 80px;
+            border: 1px dashed blue;
+        }
+        .small3{
+            order: 9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="big">
+        <div class="small1">1</div>
+        <div class="small2">2</div>
+        <div class="small3">3</div>
+        <div class="small4">4</div>
+    </div>
+    
+</body>
+</html>

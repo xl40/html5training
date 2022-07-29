@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        flex-direction 调整主轴方向
+            - row 默认值，规定主轴方向在横向
+            - column 规定主轴方向在纵向
+            - row-reverse 规定主轴方向在横向，项目反向排列
+            - column-reverse 规定主轴方向在纵向，项目反向排列
+        */
+        .big{
+            width: 600px;
+            border: 1px solid red;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .small{
+            width: 100px;
+            height: 100px;
+            border: 1px dashed blue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="big">
+        <div class="small">1</div>
+        <div class="small">2</div>
+        <div class="small">3</div>
+        <div class="small">4</div>
+    </div>
+    
+</body>
+</html>

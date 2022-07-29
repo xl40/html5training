@@ -51,7 +51,7 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
  * <li> include this source file in an html page via
  *   {@code <script type="text/javascript" src="/path/to/prettify.js"></script>}
  * <li> define style rules.  See the example page for examples.
- * <li> mark the {@code <pre>} and {@code <code>} tags in your source with
+ * <li> mark the {@code <prefix>} and {@code <code>} tags in your source with
  *    {@code class=prettyprint.}
  *    You can also use the (html deprecated) {@code <xmp>} tag, but the pretty
  *    printer needs to do more substantial DOM manipulations to support that, so
@@ -59,8 +59,8 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
  * </ol>
  * That's it.  I wanted to keep the API as simple as possible, so there's no
  * need to specify which language the code is in, but if you wish, you can add
- * another class to the {@code <pre>} or {@code <code>} element to specify the
- * language, as in {@code <pre class="prettyprint lang-java">}.  Any class that
+ * another class to the {@code <prefix>} or {@code <code>} element to specify the
+ * language, as in {@code <prefix class="prettyprint lang-java">}.  Any class that
  * starts with "lang-" followed by a file extension, specifies the file type.
  * See the "lang-*.js" files in this directory for code that implements
  * per-language file handlers.
@@ -84,7 +84,7 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
 window['PR_SHOULD_USE_CONTINUATION'] = true;
 
 /**
- * Find all the {@code <pre>} and {@code <code>} tags in the DOM with
+ * Find all the {@code <prefix>} and {@code <code>} tags in the DOM with
  * {@code class=prettyprint} and prettify them.
  *
  * @param {Function?} opt_whenDone if specified, called when the last entry
@@ -498,28 +498,28 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|[!=]=?=?|\\#|%=?|&&?=?|\\(|\\*=?|[
    *
    * <p>
    * The HTML DOM structure:</p>
-   * <pre>
+   * <prefix>
    * (Element   "p"
    *   (Element "b"
    *     (Text  "print "))       ; #1
    *   (Text    "'Hello '")      ; #2
    *   (Element "br")            ; #3
    *   (Text    "  + 'World';")) ; #4
-   * </pre>
+   * </prefix>
    * <p>
    * corresponds to the HTML
    * {@code <p><b>print </b>'Hello '<br>  + 'World';</p>}.</p>
    *
    * <p>
    * It will produce the output:</p>
-   * <pre>
+   * <prefix>
    * {
    *   sourceCode: "print 'Hello '\n  + 'World';",
    *   //                     1          2
    *   //           012345678901234 5678901234567
    *   spans: [0, #1, 6, #2, 14, #3, 15, #4]
    * }
-   * </pre>
+   * </prefix>
    * <p>
    * where #1 is a reference to the {@code "print "} text node above, and so
    * on for the other text nodes.
@@ -609,10 +609,10 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|[!=]=?=?|\\#|%=?|&&?=?|\\(|\\*=?|[
    * it contains contain only space characters, return the sole child element.
    * Otherwise returns undefined.
    * <p>
-   * This is meant to return the CODE element in {@code <pre><code ...>} when
+   * This is meant to return the CODE element in {@code <prefix><code ...>} when
    * there is a single child element that contains all the non-space textual
    * content, but not to return anything where there are multiple child elements
-   * as in {@code <pre><code>...</code><code>...</code></pre>} or when there
+   * as in {@code <prefix><code>...</code><code>...</code></prefix>} or when there
    * is textual content.
    */
   function childContentWrapper(element) {
@@ -707,11 +707,11 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|[!=]=?=?|\\#|%=?|&&?=?|\\(|\\*=?|[
      * style classes preceded by the position at which they start in
      * job.sourceCode in order.
      *
-     * @param {Object} job an object like <pre>{
+     * @param {Object} job an object like <prefix>{
      *    sourceCode: {string} sourceText plain text,
      *    basePos: {int} position of job.sourceCode in the larger chunk of
      *        sourceCode.
-     * }</pre>
+     * }</prefix>
      */
     var decorate = function (job) {
       var sourceCode = job.sourceCode, basePos = job.basePos;
@@ -1118,14 +1118,14 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|[!=]=?=?|\\#|%=?|&&?=?|\\(|\\*=?|[
   /**
    * Breaks {@code job.sourceCode} around style boundaries in
    * {@code job.decorations} and modifies {@code job.sourceNode} in place.
-   * @param {Object} job like <pre>{
+   * @param {Object} job like <prefix>{
    *    sourceCode: {string} source as plain text,
    *    spans: {Array.<number|Node>} alternating span start indices into source
    *       and the text node or element (e.g. {@code <BR>}) corresponding to that
    *       span.
    *    decorations: {Array.<number|string} an array of style classes preceded
    *       by the position at which they start in job.sourceCode in order
-   * }</pre>
+   * }</prefix>
    * @private
    */
   function recombineTagsAndDecorations(job) {
@@ -1488,14 +1488,14 @@ var REGEXP_PRECEDER_PATTERN = '(?:^^\\.?|[+-]|[!=]=?=?|\\#|%=?|&&?=?|\\(|\\*=?|[
 
             // If the classes includes a language extensions, use it.
             // Language extensions can be specified like
-            //     <pre class="prettyprint lang-cpp">
+            //     <prefix class="prettyprint lang-cpp">
             // the language extension "cpp" is used to find a language handler
             // as passed to PR.registerLangHandler.
             // HTML5 recommends that a language be specified using "language-"
             // as the prefix instead.  Google Code Prettify supports both.
             // http://dev.w3.org/html5/spec-author-view/the-code-element.html
             var langExtension = className.match(langExtensionRe);
-            // Support <pre class="prettyprint"><code class="language-c">
+            // Support <prefix class="prettyprint"><code class="language-c">
             var wrapper;
             if (!langExtension && (wrapper = childContentWrapper(cs))
                 && codeRe.test(wrapper.tagName)) {

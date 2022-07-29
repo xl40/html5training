@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        align-content 调整行间距
+            - flex-start 纵轴开始位置对齐，没有行间距
+            - flex-end 纵轴结束位置对齐，没有行间距
+            - center 纵轴中间位置对齐，没有行间距
+            - space-between 纵轴两端对齐，中间间距自动分配
+            - space-around 纵轴间距环绕，元素与元素上下间距是中间的一半
+            - space-evenly 纵轴间距环绕，元素与元素间距一致
+        */
+        .big{
+            width: 600px;
+            height: 500px;
+            border: 1px solid red;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-evenly;
+        }
+        .small{
+            width: 80px;
+            height: 80px;
+            border: 1px dashed blue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="big">
+        <div class="small">1</div>
+        <div class="small">2</div>
+        <div class="small">3</div>
+        <div class="small">4</div>
+        <div class="small">5</div>
+        <div class="small">6</div>
+        <div class="small">7</div>
+        <div class="small">8</div>
+        <div class="small">9</div>
+        <div class="small">10</div>
+        <div class="small">11</div>
+        <div class="small">12</div>
+        <div class="small">13</div>
+        <div class="small">14</div>
+        <div class="small">15</div>
+    </div>
+    
+</body>
+</html>

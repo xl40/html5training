@@ -6356,7 +6356,7 @@ pre.prettyprint {
     border: 1px solid #888
 }
 
-/* Specify class=linenums on a pre to get line numbering */
+/* Specify class=linenums on a prefix to get line numbering */
 ol.linenums {
     margin-top: 0;
     margin-bottom: 0
@@ -6734,7 +6734,7 @@ body {
  * Carbon ads
  *
  * Single display ad that shows on all pages (except homepage) in page headers.
- * The hella `!important` is required for any pre-set property.
+ * The hella `!important` is required for any prefix-set property.
  */
 
 .carbonad {
@@ -8011,7 +8011,7 @@ body {
  * Carbon ads
  *
  * Single display ad that shows on all pages (except homepage) in page headers.
- * The hella `!important` is required for any pre-set property.
+ * The hella `!important` is required for any prefix-set property.
  */
 
 .carbonad {

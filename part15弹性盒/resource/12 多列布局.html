@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        1. 应用：制作瀑布流布局，按照列数进行布局
+        2. column-count 列数
+            - 取值：数值
+        3. column-width 列宽
+            - 取值：px为单位的数值
+        4. column-gap 列间距
+            - 取值：px为单位的数值
+        5. column-rule:1px solid red 列间隔线
+            - 类似于边框属性
+        6. column-fill 列高度
+            - balance 默认值，均分高度
+            - auto 先填满父元素所在的第一列再去补第二列
+        7. column-span 跨列
+            - all 跨所有列
+            - none 不跨列
+        */
+        .box{
+            width: 900px;
+            height: 600px;
+            background-color: antiquewhite;
+            /* column-width: 200px; */
+            column-count: 5;
+            column-gap: 40px;
+            column-rule: 1px dashed red;
+            column-fill: balance;
+        }
+        .box h1{
+            text-align: center;
+            column-span: all;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h1>我是文章标题</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique iusto animi quisquam possimus modi temporibus error minima maxime, consequatur officiis repellat corporis commodi minus porro dolorem. Quos doloribus aliquam natus.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique iusto animi quisquam possimus modi temporibus error minima maxime, consequatur officiis repellat corporis commodi minus porro dolorem. Quos doloribus aliquam natus.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique iusto animi quisquam possimus modi temporibus error minima maxime, consequatur officiis repellat corporis commodi minus porro dolorem. Quos doloribus aliquam natus.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique iusto animi quisquam possimus modi temporibus error minima maxime, consequatur officiis repellat corporis commodi minus porro dolorem. Quos doloribus aliquam natus.
+        </p>
+    </div>
+    
+</body>
+</html>

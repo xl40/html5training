@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* 
+        justify-content 调整项目在横轴对齐方式
+            - flex-start 横轴的开始位置对齐，没有间距
+            - flex-end 横轴的结束位置对齐，没有间距
+            - center 横轴的中间位置对齐，没有间距
+            - space-between 横轴的两端对齐，元素与元素的间距自动分配
+            - space-around 横轴的间距环绕，元素与元素两边间距是中间的一半
+            - space-evenly 横轴的间距环绕，元素与元素的间距一致
+    */
+        .big{
+            width: 700px;
+            border: 1px solid red;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .small{
+            width: 100px;
+            height: 100px;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="big">
+        <div class="small">1</div>
+        <div class="small">2</div>
+        <div class="small">3</div>
+        <div class="small">4</div>
+    </div>
+    
+</body>
+</html>

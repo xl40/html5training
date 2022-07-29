@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .box{
+            width: 600px;
+            height: 500px;
+            border: 3px solid #ccc;
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            height: 50px;
+            background-color: yellowgreen;
+        }
+        header ul{
+            display: flex;
+            line-height: 50px;
+            overflow: auto;
+        }
+        header ul li{
+            margin: 0 15px;
+            /* 不挤压 */
+            flex-shrink: 0;
+        }
+        section{
+            flex: 1;
+            background-color: pink;
+        }
+        footer{
+            height: 50px;
+            background-color: orange;
+        }
+        /* 滚动条隐藏 */
+        ::-webkit-scrollbar{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <header>
+            <ul>
+                <li>热点</li>
+                <li>推荐</li>
+                <li>电影</li>
+                <li>电视剧</li>
+                <li>综艺</li>
+                <li>儿童</li>
+                <li>热点</li>
+                <li>推荐</li>
+                <li>电影</li>
+                <li>电视剧</li>
+                <li>综艺</li>
+                <li>儿童</li>
+                <li>热点</li>
+                <li>推荐</li>
+                <li>电影</li>
+                <li>电视剧</li>
+                <li>综艺</li>
+                <li>儿童</li>
+            </ul>
+        </header>
+        <section>主体</section>
+        <footer>底部</footer>
+    </div>
+    
+</body>
+</html>
