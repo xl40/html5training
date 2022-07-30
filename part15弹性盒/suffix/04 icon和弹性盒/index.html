@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        body,html{
+            height: 100%;
+            width: 100%;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+        }
+
+        .container{
+            height: 200%;
+            width: 750px;
+            border: 1px solid #ccc;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        header{
+            height: 90px;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            width: 750px;
+            color: white;
+            background: black;
+            position: fixed;
+        }
+
+        header > p{
+            font-size: 32px;
+        }
+
+        header > b,span{
+            font-size: 30px;
+            color: #666;
+        }
+
+        header > b{
+
+            margin-left: 10px;
+        }
+
+        header > span{
+            margin-right: 10px;
+        }
+
+        .banner{
+            margin-top: 90px;
+            justify-content: space-between;
+            display: flex;
+            height: 50px;
+            width: inherit;
+            background: #CCCCCC;
+            align-items: center;
+        }
+
+        .banner > p,span{
+            font-size: 24px;
+            color: #666;
+
+        }
+
+        .banner > p{
+            margin-left: 15px;
+        }
+
+        .banner > span{
+            margin-right: 15px;
+        }
+
+        .content{
+            display: flex;
+            width: inherit;
+            height: 360px;
+            /*border: 1px solid #000;*/
+            border-bottom: 1px solid #ccc;
+            flex-wrap: wrap;
+        }
+
+        .content .top{
+            display: flex;
+            height: 182px;
+            width: inherit;
+            /*border: 1px solid #000;*/
+
+        }
+
+        .content .top .item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            flex: 1;
+            /*border: 1px solid #000;*/
+        }
+
+        .content .top .item .img{
+            width: 90px;
+            height: 90px;
+            background: #1ea151;
+        }
+
+        .content .top .item p{
+            margin-top: 20px;
+        }
+
+    </style>
+    
+    
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <b>&lt;</b><p>导航</p><span>编辑</span>
+        </header>
+
+        <div class="banner">
+            <p>常用频道</p>
+            <span>点击编辑按钮可调整常用频道</span>
+        </div>
+
+        <div class="content">
+            <div class="top">
+                <div class="item">
+                    <div class="img"></div>
+                    <p>推荐</p>
+                </div>
+                <div class="item">
+                    <div class="img"></div>
+                    <p>演员</p>
+                </div>
+                <div class="item">
+                    <div class="img"></div>
+                    <p>原生之罪</p>
+                </div>
+            </div>
+
+            <div class="top">
+                <div class="item">
+                    <div class="img"></div>
+                    <p>推荐</p>
+                </div>
+                <div class="item">
+                    <div class="img"></div>
+                    <p>演员</p>
+                </div>
+                <div class="item">
+                    <div class="img"></div>
+                    <p>原生之罪</p>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="top">
+                <div class="item">
+                    <div class="img"></div>
+                    <p>推荐</p>
+                </div>
+                <div class="item">
+                    <div class="img"></div>
+                    <p>演员</p>
+                </div>
+                <div class="item">
+                    <div class="img"></div>
+                    <p>原生之罪</p>
+                </div>
+            </div>
+
+            <div class="top">
+                <div class="item">
+                    <div class="img"></div>
+                    <p>推荐</p>
+                </div>
+                <div class="item">
+                    <div class="img"></div>
+                    <p>演员</p>
+                </div>
+                <div class="item">
+                    <div class="img"></div>
+                    <p>原生之罪</p>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="top">
+                <div class="item">
+                    <div class="img"></div>
+                    <p>推荐</p>
+                </div>
+                <div class="item">
+                    <div class="img"></div>
+                    <p>演员</p>
+                </div>
+                <div class="item">
+                    <div class="img"></div>
+                    <p>原生之罪</p>
+                </div>
+            </div>
+
+            <div class="top">
+                <div class="item">
+                    <div class="img"></div>
+                    <p>推荐</p>
+                </div>
+                <div class="item">
+                    <div class="img"></div>
+                    <p>演员</p>
+                </div>
+                <div class="item">
+                    <div class="img"></div>
+                    <p>原生之罪</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner">
+            <p>qita频道</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
