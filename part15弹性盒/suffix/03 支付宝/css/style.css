@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 
 body,html{
@@ -98,7 +99,7 @@ main {
 
 .main-top {
     width: 740px;
-    border: 1px solid #000;
+    /*border: 1px solid #000;*/
     display: flex;
     justify-content: space-around;
     margin-top: 16px;
@@ -111,13 +112,13 @@ main .item {
     justify-content: center;
     align-items: end;
     flex-wrap: wrap;
-    border: 1px solid #000;
+    /*border: 1px solid #000;*/
 }
 
 .item-top {
     height: 80px;
     width: 80px;
-    background: white;
+    background: #008dd5;
 }
 
 main p {
@@ -314,14 +315,14 @@ main p {
 }
 
 .banner3 .meiribiqiang{
-    border: 1px solid #000;
+    /*border: 1px solid #000;*/
     width: 750px;
     height: 282px;
     display: flex;
 }
 
 .banner3 .meiribiqiang .item {
-    border: 1px solid #000;
+    /*border: 1px solid #000;*/
     flex-direction:column;
     display: flex;
     justify-content: center;
@@ -358,10 +359,75 @@ footer{
 }
 
 footer .item{
-    border: 1px solid #000;
+    /*border: 1px solid #000;*/
     flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+footer p{
+    /*border: 1px solid #000;*/
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
 }
 
 ::-webkit-scrollbar{
     display: none;
+}
+
+
+@font-face {
+    font-family: "iconfont";
+    src: url('../font/iconfont.eot?t=1479642403788');
+    /* IE9*/
+    src: url('../font/iconfont.eot?t=1479642403788#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/iconfont.woff?t=1479642403788') format('woff'), /* chrome, firefox */
+    url('../font/iconfont.ttf?t=1479642403788') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('../font/iconfont.svg?t=1479642403788#iconfont') format('svg');
+    /* iOS 4.1- */
+}
+
+
+
+.icon-gouwuche:before {
+    content: "\e63c";
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-style: normal;
+
+}
+
+.icon{
+    font-size: 42px;
+}
+
+footer .item:nth-child(1) p{
+    color: #008dd5;
+}
+
+.icon-zhifubao:before {
+    content: "\e69b";
+    color: #008dd5;
+}
+
+.icon-zhifu-01:before {
+    content: "\e72e";
+}
+
+.icon-wode:before {
+    content: "\e647";
+}
+.icon-pengyouquan:before {
+    content: "\e6b2";
+}
+.icon-50:before {
+    content: "\e662";
 }
