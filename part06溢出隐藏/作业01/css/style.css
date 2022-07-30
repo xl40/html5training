@@ -20,12 +20,12 @@
     margin: 10px;
 }
 
-.top{
+.header-top{
     height: 150px;
     background-color: #aba6a6;
     overflow: hidden;
 }
-.top p{
+.header-top p{
     float: left;
     color: white;
     margin: 20px 0 0 30px;

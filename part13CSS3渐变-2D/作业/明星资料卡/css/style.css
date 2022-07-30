@@ -295,7 +295,7 @@ figure:hover img{
 	position: relative;
 }
 
-.view8 .top{
+.view8 .header-top{
 	position: absolute;
 	left: 125px;
 	top: 70px;
@@ -305,7 +305,7 @@ figure:hover img{
 	border-bottom: 2px solid #ccc;
 }
 
-.view8:hover .top{
+.view8:hover .header-top{
 	width: 240px;
 }
 

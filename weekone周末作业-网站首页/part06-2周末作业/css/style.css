@@ -20,7 +20,7 @@ ul, ol {
     zoom: 1;
 }
 /*top*/
-.top{
+.header-top{
     height: 36px;
     background-color: #f6f6f6;
     border-bottom: 1px solid #f2f2f2;

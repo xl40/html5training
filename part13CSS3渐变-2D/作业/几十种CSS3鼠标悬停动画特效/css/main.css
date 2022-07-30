@@ -5628,7 +5628,7 @@ button.close {
     filter: alpha(opacity=90)
 }
 
-.tooltip.top {
+.tooltip.header-top {
     margin-top: -3px;
     padding: 5px 0
 }
@@ -5666,7 +5666,7 @@ button.close {
     border-style: solid
 }
 
-.tooltip.top .tooltip-arrow {
+.tooltip.header-top .tooltip-arrow {
     bottom: 0;
     left: 50%;
     margin-left: -5px;
@@ -5745,7 +5745,7 @@ button.close {
     white-space: normal
 }
 
-.popover.top {
+.popover.header-top {
     margin-top: -10px
 }
 
@@ -5794,7 +5794,7 @@ button.close {
     content: ""
 }
 
-.popover.top > .arrow {
+.popover.header-top > .arrow {
     left: 50%;
     margin-left: -11px;
     border-bottom-width: 0;
@@ -5803,7 +5803,7 @@ button.close {
     bottom: -11px
 }
 
-.popover.top > .arrow:after {
+.popover.header-top > .arrow:after {
     content: " ";
     bottom: 1px;
     margin-left: -10px;

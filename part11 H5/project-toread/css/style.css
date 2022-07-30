@@ -19,13 +19,13 @@ header{
     padding-top: 28px;
 }
 
-.top{
+.header-top{
     width: 962px;
     margin: 0 auto;
     height: 36px;
 }
 
-.top::after{
+.header-top::after{
     content: '';
     display: block;
     width: 0;
@@ -34,13 +34,13 @@ header{
     clear: both;
 }
 
-.top .left{
+.header-top .left{
     height: 38px;
     float: left;
     width: 176px;
 }
 
-.top .center{
+.header-top .center{
     height: 38px;
     float: left;
     width: 322px;
@@ -48,7 +48,7 @@ header{
     border: 1px solid #fff;
 }
 
-.top .center select{
+.header-top .center select{
     appearance: none;
     border: 0;
     line-height: 38px;
@@ -58,7 +58,7 @@ header{
     width: 100px;
 }
 
-.top .center input{
+.header-top .center input{
     /* 清除默认样式 */
     appearance: none;
     border: 0;
@@ -67,7 +67,7 @@ header{
     /*margin-left: 20px;*/
 }
 
-.top .center img{
+.header-top .center img{
     margin: 10px 20px 0 0;
     float: right;
 
@@ -84,7 +84,7 @@ header{
     border-top: 8px solid #656565;
 }
 
-.top .right{
+.header-top .right{
     height: 38px;
     float: left;
     width: 276px;
@@ -208,11 +208,11 @@ main{
     height: 920px;
 }
 
-main .top {
+main .header-top {
     height: 180px;
 }
 
-main .top p{
+main .header-top p{
     margin-top: 50px;
     float: left;
     background-color: #BEBDBD;
