@@ -1,0 +1,228 @@
+
+@font-face {
+    font-family: "iconfont";
+    src: url('../font/iconfont.eot?t=1479642403788');
+    /* IE9*/
+    src: url('../font/iconfont.eot?t=1479642403788#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/iconfont.woff?t=1479642403788') format('woff'), /* chrome, firefox */
+    url('../font/iconfont.ttf?t=1479642403788') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('../font/iconfont.svg?t=1479642403788#iconfont') format('svg');
+    /* iOS 4.1- */
+}
+
+
+
+.icon-gouwuche:before {
+    content: "\e63c";
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-style: normal;
+
+}
+
+.icon{
+    font-size: 42px;
+}
+
+footer .item:nth-child(1) p{
+    color: #008dd5;
+}
+
+.icon-zhifubao:before {
+    content: "\e69b";
+    color: #008dd5;
+}
+
+.icon-zhifu-01:before {
+    content: "\e72e";
+}
+
+.icon-wode:before {
+    content: "\e647";
+}
+.icon-pengyouquan:before {
+    content: "\e6b2";
+}
+.icon-50:before {
+    content: "\e662";
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+.container{
+    height: 70%;
+    width: 750px;
+    border: 1px solid #ccc;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    height: 90px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 750px;
+    /*position: fixed;*/
+}
+
+header > p{
+    font-size: 32px;
+}
+
+header > p:nth-child(1){
+    margin-left: 10px;
+}
+
+header > p:nth-child(4){
+    margin-right: 10px;
+}
+
+header > p:nth-child(2){
+    color: #1ea151;
+    position: relative;
+}
+
+header > p:nth-child(2):after{
+    content: "";
+    width: 20px;
+    height: 4px;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -10px;
+    background: #1ea151;
+    position: absolute;
+}
+header > p:nth-child(3){
+    position: relative;
+}
+
+header > p:nth-child(3):after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: -5px;
+    right: -10px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+}
+
+header > b,span{
+    font-size: 30px;
+    color: #666;
+}
+
+header > b{
+
+    margin-left: 10px;
+}
+
+header > span{
+    margin-right: 10px;
+}
+
+.content{
+    width: inherit;
+    height: 200px;
+
+    display: flex;
+    align-items: center;
+}
+
+.content .img{
+    width: 90px;
+    height: 90px;
+    background: #1ea151;
+    margin-left: 20px;
+}
+
+.content .right{
+    margin-left: 20px;
+}
+
+.content .right p{
+    font-size: 30px;
+}
+
+.content .right span{
+    font-size: 20px;
+}
+
+.content:nth-child(3){
+    border-bottom: 1px #CCCCCC solid;
+}
+
+footer{
+    width: inherit;
+    height: 98px;
+    border: 1px solid #ccc;
+    position: absolute;
+    bottom: 0;
+    background: white;
+    display: flex;
+}
+
+footer .item{
+    /*border: 1px solid #000;*/
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+footer p{
+    /*border: 1px solid #000;*/
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+footer .item:nth-child(3){
+    position: relative;
+}
+
+footer .item:nth-child(3) .add{
+    width: 120px;
+    height: 120px;
+    background: #00d055;
+    border-radius: 50%;
+    position: absolute;
+    top: -55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .item:nth-child(3) .add span{
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    bottom: 0;
+}
+
+footer .item:nth-child(3) p{
+    position: absolute;
+    bottom: 5px;
+}
