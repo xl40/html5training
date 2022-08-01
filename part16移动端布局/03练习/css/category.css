@@ -37,8 +37,55 @@ header input{
 
 section{
     flex: 1;
-    background: yellow;
     overflow: auto;
+    display: flex;
+}
+
+section aside{
+    width: 90px;
+    line-height: 47px;
+    text-align: center;
+    background: #f6f6f6;
+    font-size: 12px;
+    overflow: auto;
+}
+
+section aside ul li:hover{
+    color: #e78c16;
+    background: white;
+}
+
+
+section main{
+    flex: 1;
+    overflow: auto;
+}
+
+section main h2{
+    font-size: 11px;
+    /*line-height: 60px;*/
+    text-indent: 20px;
+    margin-top: 25px;
+}
+
+section main .box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section main .box dl{
+    margin-top: 20px;
+    width: 28%;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+
+}
+
+section main .box dl dt img{
+    width: 100%;
+
 }
 
 footer{
@@ -64,3 +111,5 @@ footer div:hover{
 footer div:hover p{
     color: #e78c16;
 }
+
+
