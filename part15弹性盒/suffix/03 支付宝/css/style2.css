@@ -73,6 +73,45 @@ section {
     background: #00d055;
 }
 
+section nav {
+    height: 225px;
+    background: #3f343f;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 70px;
+    text-align: center;
+}
+
+section nav div p {
+    font-size: 28px;
+    line-height: 60px;
+}
+
+section main{
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+}
+
+section main div{
+    width: 25%;
+    text-align: center;
+    padding: 40px 0;
+    box-sizing: border-box;
+    border-right: 1px solid silver;
+    border-bottom: 1px solid silver;
+    font-size: 52px;
+}
+
+section main div:nth-child(4n){
+    border-right: 0;
+}
+
+section main div:nth-child(1){
+    color: #2eb3e8;
+}
 
 
 
