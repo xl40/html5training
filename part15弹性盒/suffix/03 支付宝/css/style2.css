@@ -105,6 +105,10 @@ section main div{
     font-size: 52px;
 }
 
+section main div p{
+    font-size: 25px;
+}
+
 section main div:nth-child(4n){
     border-right: 0;
 }
