@@ -100,3 +100,40 @@ section{
     flex: 1;
     overflow: auto;
 }
+
+footer{
+    height: 44px;
+    /*border: 1px solid #000;*/
+    background: white;
+
+}
+
+footer{
+    box-sizing: border-box;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    /*font-size: 21px;*/
+    color: #999999;
+}
+footer div p{
+    font-size: 10px;
+}
+footer div:hover{
+    color: #298ccf;
+}
+
+.icon-fengjing{
+    border: 1px solid #dedede;
+    width: 53px;
+    border-radius: 50%;
+    line-height: 48px;
+    font-size: 35px;
+    color: #999999;
+    padding-top: 5px;
+    position: relative;
+    bottom: 10px;
+    background: white;
+}
