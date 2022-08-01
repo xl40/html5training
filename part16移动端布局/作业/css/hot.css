@@ -1,0 +1,45 @@
+section{
+    column-count: 2;
+    /*padding: 0 20px;*/
+}
+section dl{
+    border: 2px solid #666666;
+    padding: 5px;
+    margin-bottom: 10px;
+    /* 不折列 */
+    break-inside: avoid;
+}
+section dl dd{
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+}
+section dl dt img{
+    width: 100%;
+    height: 100%;
+    background: #e78c16;
+}
+
+nav{
+    display: flex;
+    height: 35px;
+    border-bottom: 1px solid #666666;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+nav p:nth-child(2){
+    color: #008dd5;
+    position: relative;
+}
+
+nav p:nth-child(2):after{
+    content: "";
+    background: #008dd5;
+    width: 125px;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: -30px;
+}
