@@ -99,7 +99,7 @@ main {
 
 .main-top {
     width: 740px;
-    /*border: 1px solid #000;*/
+    /*border: 1px solid #02-1练习：支付宝;*/
     display: flex;
     justify-content: space-around;
     margin-top: 16px;
@@ -112,7 +112,7 @@ main .item {
     justify-content: center;
     align-items: end;
     flex-wrap: wrap;
-    /*border: 1px solid #000;*/
+    /*border: 1px solid #02-1练习：支付宝;*/
 }
 
 .item-top {
@@ -157,7 +157,7 @@ main p {
     flex:1;
     font-size: 26px;
     color: #666666;
-    /*border: 1px solid #000;*/
+    /*border: 1px solid #02-1练习：支付宝;*/
 }
 
 .banner2{
@@ -175,7 +175,7 @@ main p {
 .banner2 .banner2-left{
     width: 410px;
     height: 99px;
-    /*border: 1px solid #000;*/
+    /*border: 1px solid #02-1练习：支付宝;*/
     margin-left: 26px;
     margin-right: 90px;
     display: flex;
@@ -210,7 +210,7 @@ main p {
 .banner2 .banner2-left strong{
     width: 90px;
     font-weight: normal;
-    /*border: 1px solid #000;*/
+    /*border: 1px solid #02-1练习：支付宝;*/
     border-radius: 5px;
     background: #fc4948;
     text-align: center;
@@ -245,7 +245,7 @@ main p {
     line-height: 80px;
     height: 80px;
     border-bottom: 1px solid #666666;
-    /*border: 1px solid #000;*/
+    /*border: 1px solid #02-1练习：支付宝;*/
     font-size: 26px;
     position: relative;
 
@@ -278,7 +278,7 @@ main p {
 
 .banner3 .banner3-bottom .item{
     width: 50%;
-    /*border: 1px solid #000;*/
+    /*border: 1px solid #02-1练习：支付宝;*/
     height: 110px;
     display: flex;
     align-items: center;
@@ -292,13 +292,13 @@ main p {
 }
 
 .banner3 .banner3-bottom .item .left p{
-    /*border: 1px solid #000;*/
+    /*border: 1px solid #02-1练习：支付宝;*/
     width: 200px;
     font-size: 26px;
 }
 
 .banner3 .banner3-bottom .item .left span{
-    /*border: 1px solid #000;*/
+    /*border: 1px solid #02-1练习：支付宝;*/
     font-size: 24px;
     color: #aba6a6;
 }
@@ -315,14 +315,14 @@ main p {
 }
 
 .banner3 .meiribiqiang{
-    /*border: 1px solid #000;*/
+    /*border: 1px solid #02-1练习：支付宝;*/
     width: 750px;
     height: 282px;
     display: flex;
 }
 
 .banner3 .meiribiqiang .item {
-    /*border: 1px solid #000;*/
+    /*border: 1px solid #02-1练习：支付宝;*/
     flex-direction:column;
     display: flex;
     justify-content: center;
@@ -359,7 +359,7 @@ footer{
 }
 
 footer .item{
-    /*border: 1px solid #000;*/
+    /*border: 1px solid #02-1练习：支付宝;*/
     flex: 1;
 
     display: flex;
@@ -370,7 +370,7 @@ footer .item{
 }
 
 footer p{
-    /*border: 1px solid #000;*/
+    /*border: 1px solid #02-1练习：支付宝;*/
     flex: 1;
 
     display: flex;
