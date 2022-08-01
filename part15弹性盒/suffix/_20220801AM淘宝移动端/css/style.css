@@ -57,3 +57,7 @@ section ul li{
 ::-webkit-scrollbar{
     display: none;
 }
+
+ul::after{
+    content: '';
+}
