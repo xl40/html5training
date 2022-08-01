@@ -92,6 +92,11 @@ header .guanzhu{
     background-image: linear-gradient(to top,#1d2c67,#436e99);
 }
 
+.content .middle img{
+    width: 390px;
+    height: 284px;
+}
+
 body{
     background: #f1f1f1;
 }
