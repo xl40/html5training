@@ -29,6 +29,11 @@ nav{
     margin-bottom: 20px;
 }
 
+nav p{
+    height: 35px;
+    line-height: 35px;
+}
+
 nav p:nth-child(2){
     color: #008dd5;
     position: relative;
