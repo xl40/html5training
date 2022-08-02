@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* 
+        百分比和vw区别
+            - 100% 占父元素的一个百分比
+            - 100vw 屏幕的宽度
+            - 分情况：
+                - 如果页面没有滚动条或间距清零的话，两者实现效果一致
+                - 如果页面有滚动条或间距不清零，两者实现效果不一致
+                    - 视口的宽度，里面包括滚动条
+                    - width：100% 里面不包括滚动条
+    */
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+        .box1{
+            width: 100%;
+            height: 500px;
+            background-color: yellowgreen;
+        }
+        .box2{
+            width: 100vw;
+            height: 500px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box1"></div>
+    <div class="box2"></div>
+    
+</body>
+</html>

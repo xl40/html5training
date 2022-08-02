@@ -1,0 +1,79 @@
+/* 重置 */
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+a,u,del,s{text-decoration: none;}
+em,i{font-style: normal;}
+b,strong{font-weight: normal;}
+img{display: block;}
+a img{border: 0;}
+input,textarea{outline: 0;}
+.over{overflow: hidden;zoom: 1;}
+.wnqc::after{content: ''; display: block; width: 0; height: 0; visibility: hidden;clear: both;}
+html,body{width: 100%;height: 100%;}
+/* html{font-size: 50px;} */
+::-webkit-scrollbar{display: none;}
+body{display: flex; flex-direction: column;}
+
+/* header */
+header{
+    height: 0.9rem;
+    display: flex;
+    background-image: linear-gradient(to right,#ff7138,#ff2120);
+    align-items: center;
+}
+header div{
+    width: 1.15rem;
+    font-size: 0.4rem;
+    text-align: center;
+    color: #fff;
+}
+header div p{
+    font-size: 0.16rem;
+}
+header input{
+    flex: 1;
+    margin-left: 0.3rem;
+    border: 0;
+    height: 0.6rem;
+    border-radius: 0.3rem;
+}
+
+/* nav */
+nav{
+    height: 0.72rem;
+    display: flex;
+}
+nav span{
+    width: 0.75rem;
+    text-align: center;
+    color: #ff1f1f;
+    font-size:0.3rem;
+    line-height: 0.72rem;
+}
+nav ul{
+    flex: 1;
+    display: flex;
+    font-size: 0.3rem;
+    overflow: auto;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    box-shadow: -2px 0 2px #999 inset;
+}
+nav ul li{
+    flex-shrink: 0;
+    margin: 0 0.2rem;
+    line-height: 0.72rem;
+}
+
+
+
+section{
+    flex: 1;
+    overflow: auto;
+    background-color: pink;
+}
+footer{
+    height: 1rem;
+    box-shadow: 0 -3px 3px #999;
+    background-color: orange;
+}
