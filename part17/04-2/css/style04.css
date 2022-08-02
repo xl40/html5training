@@ -86,8 +86,8 @@ header button {
 }
 
 .smalladd {
-    /*display: flex;*/
-    /*justify-content: space-between;*/
+    display: flex;
+    justify-content: space-between;
 }
 
 .smalladd img {
@@ -123,21 +123,21 @@ header button {
 
 @media screen and (max-width: 1024px) {
     .box dl {
-        width: 31%
+        width: 31%;
     }
 }
 
-@media screem and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     header i {
         display: block;
     }
 
     header nav {
-        display: none
+        display: none;
     }
 
     .add {
-        display: block
+        display: block;
     }
 
     .bigadd img {
@@ -148,9 +148,10 @@ header button {
     .box dl {
         width: 48%;
     }
-    @media screen and (max-width: 580px) {
-        .box dl {
-            width: 100%;
-        }
+}
+
+@media screen and (max-width: 580px) {
+    .box dl {
+        width: 100%;
     }
 }
