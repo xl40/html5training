@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #container {
+            display: grid;
+            grid-template-columns: minmax(max-content, 300px) minmax(200px, 1fr) 150px;
+            grid-gap: 5px;
+            box-sizing: border-box;
+            height: 200px;
+            width: 100%;
+            background-color: #8cffa0;
+            padding: 10px;
+        }
+
+        #container > div {
+            background-color: #8ca0ff;
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>
+            Item as wide as the content,<br/>
+            but at most 300 pixels.
+        </div>
+        <div>
+            Item with flexible width but a minimum of 200 pixels.
+        </div>
+        <div>
+            Inflexible item of 150 pixels width.
+        </div>
+    </div>
+</body>
+</html>
