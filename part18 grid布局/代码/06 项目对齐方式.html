@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* 
+    项目对齐方式（子元素在各自单元格的对齐方式），子元素设宽高
+        - justify-items 项目水平对齐方式
+            - start 单元格的起始位置
+            - end 单元格的结束位置
+            - center 单元格的居中位置
+            - stretch 拉伸，不设宽度的话，占满整个单元格
+        - align-items 项目垂直对齐方式
+            - start 单元格的起始位置
+            - end 单元格的结束位置
+            - center 单元格的居中位置
+            - stretch 拉伸，不设高度的话，占满整个单元格
+        - 复合属性
+            - place-items:垂直对齐方式 水平对齐方式;
+    */
+        .box{
+            width: 600px;
+            height: 600px;
+            border: 3px solid #ccc;
+            display: grid;
+            grid-template-columns: 150px 150px 150px;
+            grid-template-rows: 150px 150px 150px;
+            /* justify-items: center;
+            align-items: end; */
+            place-items: end center;
+        }
+        .box div{
+            width: 50px;
+            height: 50px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+    
+</body>
+</html>

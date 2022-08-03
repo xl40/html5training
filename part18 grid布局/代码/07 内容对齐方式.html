@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* 
+    内容对齐方式（子元素整体在容器内的对齐方式）
+        - justify-content 内容水平对齐方式
+            - start 容器的起始位置
+            - end 容器的结束位置
+            - center 容器的中间位置
+            - space-around 项目两侧的间距是中间的一半
+            - space-between 两端对齐无间距，中间间距均分
+            - space-evenly 所有间距均分
+        - align-content 内容垂直对齐方式
+            - start 容器的起始位置
+            - end 容器的结束位置
+            - center 容器的中间位置
+            - space-around 项目两侧的间距是中间的一半
+            - space-between 两端对齐无间距，中间间距均分
+            - space-evenly 所有间距均分
+            - stretch 拉伸，行只有线没有高度，则盛满父级
+        - 复合属性
+            - place-content:垂直对齐方式 水平对齐方式
+    */
+        .box{
+            width: 600px;
+            height: 600px;
+            border: 3px solid #ccc;
+            display: grid;
+
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+
+            justify-content: center;
+            align-content: space-around;
+            /* place-content: space-around center; */
+        }
+        .box div{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+    
+</body>
+</html>
