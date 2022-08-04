@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>标题1</h1>
+    <h2>标题2</h2>
+    <h3>标题3</h3>
+    <h4>标题4</h4>
+    <h5>标题5</h5>
+    <h6>标题6</h6>
+    <strong>加粗</strong>
+    <b>加粗</b>
+    <i>倾斜</i>
+    <em>倾斜</em>
+    <u>下划线</u>
+    <del>删除</del>
+    <s>删除</s>
+    <sup>上标</sup>
+    <sub>下标</sub>
+    <p>段落</p>
+    <br>换行
+    <hr>水平线
+    &nbsp; 空格
+    &lt; 小于
+    &gt; 大于
+    &copy; 版权
+    &trade; 商标
+    &reg; 注册商标
+    &yen; 元
+    &times; 乘
+    &divide; 除
+    <div>块级标签</div>
+    <span>行内标签</span>
+    <ul type="disc/circle/square/none" start=''>
+        <li>无序列表</li>
+    </ul>
+    <ol type='1/a/A/i/I'>
+        <li>有序列表</li>
+    </ol>
+    <dl>
+        <dt>定义术语</dt>
+        <dd>定义内容</dd>
+    </dl>
+    <img src="图片路径" alt="文本替换" title="悬浮文本" width="图片宽度" height="图片高度" border="图片边框">
+    <a href="链接地址" title="悬浮文本" target="打开方式"></a>
+    <iframe src="页面的路径" frameborder="0" width='' height=''></iframe>
+    <header>头部</header>
+    <footer>尾部</footer>
+    <section>主体</section>
+    <nav>导航</nav>
+    <main>主要内容</main>
+    <aside>侧边栏</aside>
+    <article>文章</article>
+    <figure>独立文档流</figure>
+    <figcaption>独立文档流标题</figcaption>
+    <audio src="音频路径" controls loop autoplay muted></audio>
+    <video src="视频路径" controls loop autoplay muted poster="加载图像"></video>
+
+    <table width='表格宽度' border="表格边框" height='表格高度' bordercolor='边框颜色' bgcolor='背景颜色' cellspacing='边框和边框的间距' cellpadding='内容和边框的间距' align='水平对齐方式 left/center/right' rules='内边框线 row/cols'frame='外边框线 above/below/box/lhs/rhs'>
+        <caption></caption>
+        <colgroup span="几列为一组"></colgroup>
+        <thead></thead>
+        <tbody>
+            <tr bgcolor='背景颜色' height='高度' align='水平对齐 left/center/right' valign='垂直对齐 top/middle/bottom'>
+                <th bgcolor='背景颜色' background='背景图像' align="水平对齐 left/center/right" valign='垂直对齐 top/middle/bottom' width='宽度' height='高度' colspan="跨列" rowspan="跨行"
+                ></th>
+                <td></td>
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+
+    <form action="提交后跳转地址" target="打开方式" method="提交方式">
+        <label for="指向">标记标签</label>
+        <input type="text" disabled readonly placeholder="占位符" required autofocus> 单行文本
+        <input type="password"> 密码
+        <input type="file"> 文件上传
+        <input type="hidden"> 隐藏域
+        <input type="radio" name="获取元素" checked> 单选按钮
+        <input type="checkbox"> 复选框
+        <input type="submit"> 提交
+        <input type="reset"> 重置
+        <input type="button"> 普通按钮
+        <button>按钮</button>
+        <select size="显示多个" multiple>
+            <option value="默认值" selected>下拉选项</option>
+        </select>
+        <textarea cols="字符列数" rows="字符行数">多行文本域</textarea>
+        <fieldset>
+            <legend>字段集和字段集标题</legend>
+        </fieldset>
+        <input type="color"> 颜色
+        <input type="range" value="当前值" min="最小值" max="最大值" step="数值间隔"> 滑动条
+        <input type="number" value="当前值" min="最小值" max="最大值" step="数值间隔"> 数值
+        <input type="tel"> 电话
+        <input type="email" multiple autocomplete="off/on" pattern="正则表达式"> 邮箱
+        <input type="url"> 地址栏
+        <input type="search"> 搜索框
+        <input type="date"> 日期
+        <input type="month"> 月份
+        <input type="week"> 周期
+        <input type="time"> 时间
+        <input type="datetime-local"> 本地时间
+        <input type="text" list='demo'>
+        <datalist id="demo"></datalist>
+    </form>
+
+</body>
+</html>
