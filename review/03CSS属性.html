@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        html,body {
+            /*width: 200%;*/
+            /*height: 200%;*/
+        }
+
+        *{
+            font-size: 12px;
+        }
+
+        body {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+
+
+        div {
+            width: 150px;
+            height: 150px;
+            border: 1px solid #000;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        div:nth-child(1){
+            font-size: 11px;
+            font-family:"Academy Engraved LET";
+            color: #ff6600;
+        }
+
+        div:nth-child(2){
+            font-size: 12px;
+        }
+
+        div:nth-child(2) span:nth-child(1){
+            font-weight:100;
+        }
+        div:nth-child(2) span:nth-child(2){
+            font-weight:900;
+        }
+
+
+        .leave-2{
+            display: flex;
+            flex-wrap: wrap;
+            width: 1000px;
+            height: 400px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div>
+        font-size: 11px;
+        font-family:"Academy Engraved LET";
+        color: #ff6600;
+    </div>
+    <div>
+        <span>font-weight:100;</span><br>
+        <span>font-weight:900;</span>
+    </div>
+
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <div class="fuheshuxing leave-2">
+        <h1>复合属性</h1>
+        <div style="font: bold italic 18px  -apple-system">
+            <p style="border: 1px solid #000;">font：加粗 倾斜 字号/行高；</p>
+            <p style="border: 1px solid #000;">font: bold italic 8px 'Academy Engraved LET'</p>
+        </div>
+
+        <div style="list-style: circle">
+            <ul class="one">
+                <li>标记类型</li>
+                <li>图像标记</li>
+                <li>标记位置</li>
+            </ul>
+        </div>
+
+        <div style="list-style: square inside">
+            <ul class="one">
+                <li>标记类型</li>
+                <li>图像标记</li>
+                <li>标记位置</li>
+            </ul>
+        </div>
+
+        <div>background 图片路径 是否平铺 水平位置 垂直位置 固定 颜色 </div>
+        <div>border 宽度 样式 颜色</div>
+        <div>transition css属性 所属时间 时间曲线 延迟时间</div>
+        <div>animation 名字 播放时间 时间曲线 延迟时间 播放次数 播放方向 时间外属性</div>
+    </div>
+
+    <div>单行文本省略号</div>
+    <div>多行文本省略号</div>
+
+    <div>图片垂直对齐</div>
+    <div>opacity</div>
+    <div>visibility:hidden</div>
+
+</body>
+</html>

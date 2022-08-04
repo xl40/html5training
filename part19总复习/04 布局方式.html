@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    一、浮动，哪里有浮动哪里清除浮动
+        float 子元素浮动，父元素不能扩高，要解决高度塌陷
+        方法：
+            1. 父元素添加高度
+            2. 父元素后添加块级子元素，设置clear:both
+            3. 父元素设置overflow:hidden;zoom:1;
+            4. 父元素::after{content:'';display:block;width:0;height:0;visibility:hidden;clear:both;}
+
+    二、盒模型(百分比、px、em、rem、vw、vh)，哪里有内边距哪里减宽高
+        标准盒子：width+padding+border+margin
+        怪异盒子：width+margin
+        怪异盒子转换：box-sizing:border-box/content-box;
+        元素类型转换：display:block/inline/inline-block/none;
+
+    三、定位，哪里有定位哪里设坐标
+        position：要设坐标
+    
+    四、弹性盒子，容器属性和项目属性
+        display:flex
+    
+    五、多列布局
+        column
+    
+    六、响应式
+        @media
+    
+    七、网格布局，容器属性和项目属性
+        display:grid;
+    
+    八、移动端适配的方法
+        百分比
+        vw
+        rem
+        flexible.js
+        媒体查询
+        引入视口
+    
+</body>
+</html>

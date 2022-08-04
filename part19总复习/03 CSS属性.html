@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<style>
+    *{
+        /* 文本 */
+        /* font-size: ; 字号 */
+        /* font-family: ; 字体 */
+        /* color: red/rgb()/rgba()/#色值; 颜色 */
+        /* font-weight: lighter/normal/bold/bolder/100-900; 加粗 */
+        /* font-style: italic/oblique/normal; 倾斜 */
+        /* text-align: left/center/right/justify; 水平对齐 */
+        /* line-height: ; 行高 */
+        /* word-spacing: ; 词间距 */
+        /* letter-spacing: ; 字符间距 */
+        /* text-indent: ; 首行缩进 */
+        /* text-decoration: underline/overline/line-through/none; 文本修饰线 */
+        /* text-transform: capitalize/lowercase/uppercase/none; 字符大小写 */
+        /* text-shadow: 水平阴影 垂直阴影 模糊距离 颜色; */
+        /* box-shadow: 水平阴影 垂直阴影 阴影大小 模糊距离 阴影颜色 内阴影 */
+
+        /* 列表 */
+        /* list-style-type: decimal/disc/circle/square/none; 列表项显示类型 */
+        /* list-style-image: url(); 列表显示图片 */
+        /* list-style-position: inside/outside; 列表显示位置 */
+
+        /* 背景属性 */
+        /* background-color: red/rgb()/rgba()/#色值; 背景颜色 */
+        /* background-image: url(); 背景图片 */
+        /* background-repeat: repeat/repeat-x/repeat-y/no-repeat; 背景图片的平铺 */
+        /* background-position: ;背景图像的位置 */
+        /* background-attachment: scroll/fixed; 背景图像的固定 */
+        /* background-size: contain/cover; 背景图像的尺寸 */
+        /* background-clip: border-box/padding-box/content-box; 背景图像裁剪 */
+        /* background-image: linear-gradient(方向，颜色1，颜色1); 线性渐变 */
+        /* background-image: radial-gradient(渐变中心，形状，大小，颜色1，颜色2); 径向渐变 */
+        /* background: repeating-linear-gradient(); 重复渐变 */
+
+        /* 边框属性 */
+        /* border-width: ; 边框宽度 */
+        /* border-style: solid/dashed/dotted/double; 边框样式 */
+        /* border-color: ; 边框颜色 */
+        /* border-top/right/bottom/left 边框方向 */
+        /* border-radius: ; 圆角 */
+
+        /* 过渡 */
+        /* transition-property: ; 过渡css属性 */
+        /* transition-duration: ; 过渡所需时间 */
+        /* transition-timing-function:  linear/ease/ease-in/ease-out/ease-in-out/steps()/cubic-bezier(); 过渡时间曲线 */
+        /* transition-delay: ; 过渡延迟时间 */
+
+        /* 2D/3D */
+        /* transform: rotate()/rotateX()/rotateY()/rotateZ(); 旋转 */
+        /* transform: translate()/translateX()/translateY()/translateZ(); 位移 */
+        /* transform: scale()/scaleX()/scaleY(); 缩放 */
+        /* transform: skew()/skewX()/skewY(); 倾斜 */
+        /* transform-origin: 水平坐标 垂直坐标; */
+
+        /* 动画 */
+        /* animation-name: ; 调用动画名 */
+        /* animation-duration: ; 动画播放时间 */
+        /* animation-timing-function: linear/ease/ease-in/ease-out/ease-in-out/steps()/cubic-bezier(); 动画播放时间曲线 */
+        /* animation-delay: ; 动画延迟时间 */
+        /* animation-iteration-count: infinite/2; 动画播放次数 */
+        /* animation-direction: normal/reverse/alternate/alternate-reverse; 动画播放方向 */
+        /* animation-fill-mode: backwards/forwards/both; 动画时间外的属性 */
+        /* animation-play-state: running/paused; 动画播放状态 */
+
+        /* 复合属性 */
+        /* font：加粗  倾斜  字号/行高  字体 */
+        /* list-style: 标记类型  图像标记  标记位置 */
+        /* background：图片路径  是否平铺   水平平铺位置   垂直平铺位置   是否固定  背景颜色 */
+        /* border：宽度  样式  颜色； */
+        /* transition：过渡的css属性  所需时间  时间曲线  延迟时间 */
+        /* animation：名字  播放时间  播放时间曲线  延迟时间  播放次数  播放方向  时间外的属性 */
+
+        /* 单行文本省略号 */
+        /* width:; 宽度  */
+        /* white-space:nowrap; 阻止换行  */
+        /* overflow:hidden; 文本溢出隐藏  */
+        /* text-overflow:ellipsis; 省略号 */
+
+        /* 多行文本省略号 */
+        /* width: ; 宽度 */
+        /* height: ; 高度 */
+        /* display: -webkit-box; 弹性伸缩盒子 */
+        /* -webkit-box-orient: vertical; 垂直排列子元素 */
+        /* -webkit-line-clamp: ; 文本显示行数 */
+        /* overflow: hidden;  文本溢出隐藏 */
+        /* text-overflow: ellipsis; 省略号 */
+
+        /* vertical-align: top/middle/bottom/baseline; 垂直对齐方式 */
+        /* opacity: ; 透明 */
+        /* filter: alpha(opacity=30); 透明兼容IE */
+        /* width:calc(100% - 100px); 动态长度计算 */
+        /* appearance: none; 清除默认样式 */
+        /* backface-visibility: hidden; 元素在不面对屏幕时不可见 */
+        
+        /* 盒模型 */
+        /* width: ; 宽度 */
+        /* height: ; 高度 */
+        /* padding: ; 内边距 */
+        /* border: ; 边框 */
+        /* margin: ; 外边距 */
+        /* box-sizing: content-box/border-box; 怪异盒子转换 */
+        /* display: inline/inline-block/block/none; 元素类型转换 */
+
+        /* 浮动 */
+        /* float: left; 左浮动 */
+        /* float: right; 右浮动 */
+
+        /* 定位 */
+        /* position:static; 静态定位 */
+        /* position:relative; 相对定位 */
+        /* position:absolute; 绝对定位 */
+        /* position:fixed; 固定定位 */
+        /* positon:sticky; 粘性定位 */
+
+        /* 弹性盒 */
+        /* flex-direction: row/column/row-reverse/column-reverse; 主轴方向 */
+        /* justify-content: flex-start/flex-end/center/space-between/space-around; 横轴对齐方式 */
+        /* align-items: flex-start/flex-end/center/stretch; 纵轴对齐方式 */
+        /* flex-wrap: nowrap/wrap; 换行 */
+        /* align-content: flex-start/flex-end/center/space-between/space-around; 行间距 */
+        /* align-self: flex-start/flex-end/center/baseline/stretch; 项目对齐方式 */
+        /* order: ; 排序 */
+        /* flex:1; 剩余宽度 */
+        /* flex-shrink: 0/1; 是否挤压 */
+
+        /* 多列 */
+        /* column-count: ; 列数 */
+        /* column-width: ; 列宽 */
+        /* column-gap: ; 列间距 */
+        /* column-rule: ; 列边框 */
+        /* column-fill: ; 列高度 */
+        /* column-span: ; 跨列 */
+        /* break-inside: avoid; 不折行 */
+
+        /* 网格布局 */
+        /* grid-template-columns: ; 列 */
+        /* grid-template-rows: ; 行 */
+        /* grid-gap: 行间距 列间距; */
+        /* grid-auto-flow: ; 排列方式 */
+
+        /* justify-items: start/end/center/stretch ; 项目水平对齐方式 */
+        /* align-items:  start/end/center/stretch ; 项目垂直对齐方式 */
+        /* place-items: 垂直 水平; 项目对齐方式 */
+
+        /* justify-content:  start/end/center/stretch/space-between/space-around/space-evenly; 内容水平对齐方式 */
+        /* align-content:  start/end/center/stretch/space-between/space-around/space-evenly; 内容垂直对齐方式 */
+        /* place-content: 垂直 水平; 内容对齐方式  */
+
+        /* grid-column-start: ; 垂直网格线起始位置 */
+        /* grid-column-end: ; 垂直网格线结束位置 */
+        /* grid-column: 起始/结束 ; 垂直网格线合并 */
+
+        /* grid-row-start: ;水平网格线起始位置 */
+        /* grid-row-end: ;水平网格线结束位置 */
+        /* grid-row: 起始/结束 ; 水平网格线合并 */
+
+        /* grid-template-areas: ; 区域命名 */
+        /* grid-area: ; 子元素设定区域 */
+    }
+
+    /* @font-face {
+        font-family: ;
+        src: url();
+    } */
+
+    /* @keyframes 动画名 {
+        0%{}
+        100%{}
+    } */
+
+    /* @media screen and (min-width:320px) and (max-width:480px){} 媒体查询 */
+    /* @media screen and (orientation:portrait){} 竖屏 */
+    /* @media screen and (orientation:landscape){} 横屏 */
+
+</style>
+
+</body>
+</html>

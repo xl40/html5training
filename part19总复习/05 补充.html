@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 地址栏图标 -->
+    <link rel="shortcut icon" href="./images/icon.ico" type="image/x-icon">
+    <!-- 向搜索引擎说明网页关键词 -->
+    <meta name="keywords" content="">
+    <!-- 向搜索哦引擎说明网页主要内容 -->
+    <meta name="description" content="">
+
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            text-align: center;
+            line-height: 200px;
+            font-size: 30px;
+            transition-duration: 1s;
+        }
+        .box:hover{
+            transform: rotateX(180deg);
+            /* 元素在不面对屏幕时不可见 */
+            backface-visibility: hidden;
+        }
+        input{
+            appearance: none;
+            width: 50px;
+            height: 50px;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+        }
+        input:focus{
+            background: url(./images/img1.png) no-repeat center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">文本内容</div>
+    <input type="checkbox">
+    
+</body>
+</html>
