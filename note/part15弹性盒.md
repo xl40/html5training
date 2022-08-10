@@ -1,18 +1,21 @@
 # 一、复习
+
 1. 定义动画两种方式
-    @keyframe 动画名{ from{}  to{} }
-    @keyframe 动画名{ 0%{}  50%{}  100%{} }
+   @keyframe 动画名{ from{} to{} }
+   @keyframe 动画名{ 0%{} 50%{} 100%{} }
 2. 动画的属性，8个，及复合属性
-    animation-name / animation-duration / animation-timing-function / animation-delay / animation-iteration-count / animation-direction / animation-fill-mode / animation-play-state
-    animation:动画名 播放时间 时间曲线 延迟时间 播放次数 播放方向 时间外的属性
+   animation-name / animation-duration / animation-timing-function / animation-delay / animation-iteration-count /
+   animation-direction / animation-fill-mode / animation-play-state
+   animation:动画名 播放时间 时间曲线 延迟时间 播放次数 播放方向 时间外的属性
 3. 3D旋转、位移
-    transform:rotateX() / rotateY() / rotateZ() / rotate3d(1,0,0,deg)
-    transform:translateX() / translateY() / translateZ()
+   transform:rotateX() / rotateY() / rotateZ() / rotate3d(1,0,0,deg)
+   transform:translateX() / translateY() / translateZ()
 4. 3D舞台、景深
-    transform-style:preserve-3d; perspective
+   transform-style:preserve-3d; perspective
 5. 姓名
 
 # 二、弹性盒
+
 1. 含义
     - 弹性盒是css3里面引入进来的一种新的布局方式，只对子元素起作用，只会影响子元素的排列方式
     - 父元素设置 display:flex;
@@ -27,6 +30,7 @@
     - 当父元素变成弹性盒之后，如果只有一个子元素，实现水平垂直居中可以给子元素添加margin:auto;
 
 # 三、容器属性
+
 1. flex-direction 调整主轴方向
     - row 默认值，规定主轴方向在横向
     - column 规定主轴方向在纵向
@@ -68,6 +72,7 @@
     - space-evenly 纵轴间距环绕，元素与元素间距一致
 
 # 四、项目属性
+
 1. align-self 项目纵轴的对齐方式
     - flex-start 纵轴的开始位置
     - flex-end 纵轴的结束位置
@@ -86,11 +91,12 @@
     - 0 不挤压，制作移动端的横向滚动
 
 5. 移动端滚动条隐藏
-    ::-webkit-scrollbar{
-        display:none;
-    }
+   ::-webkit-scrollbar{
+   display:none;
+   }
 
 # 五、多列布局
+
 1. 应用：制作瀑布流布局，按照列数进行布局
 2. column-count 列数
     - 取值：数值
@@ -109,8 +115,13 @@
 8. break-inside: avoid; 不折列
 
 # 作业
+
 1. 整理笔记
 2. 敲知识点
 3. 作业
     - 03 长图 / 04 / 练习小青蛙
 4. 预习
+
+# 面试题
+
+1. <font color="#ffffff">ceshi</font>  
